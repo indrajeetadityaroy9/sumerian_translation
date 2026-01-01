@@ -3,41 +3,41 @@ Test inference on the trained Sumerian-English translation model.
 
 Runs inference on multiple examples for robust verification.
 """
-import json
 import torch
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
-# Configuration
-MODEL_PATH = "./models/sumerian_mt5_continued"
-VALID_JSONL = "output_training_v2_clean/finetune/valid.jsonl"
-TASK_PREFIX = "translate Sumerian to English: "
-MAX_LENGTH = 128
-NUM_EXAMPLES = 30  # Test on 30 examples
+from common.io import load_jsonl
+from config import Paths, TrainingDefaults, get_model_checkpoint
 
-def load_jsonl(path):
-    with open(path) as f:
-        return [json.loads(line) for line in f]
+# Configuration
+TASK_PREFIX = TrainingDefaults.MT5["task_prefix"]
+MAX_LENGTH = TrainingDefaults.MT5["max_length"]
+NUM_EXAMPLES = 30  # Test on 30 examples
 
 def main():
     print("=" * 70)
     print("Sumerian-English Translation Model - Inference Test")
     print("=" * 70)
 
+    # Get model path dynamically
+    model_path = get_model_checkpoint()
+
     # Load model and tokenizer
-    print(f"\nLoading model from {MODEL_PATH}...")
+    print(f"\nLoading model from {model_path}...")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Device: {device}")
 
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
-    model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_PATH)
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
+    model = AutoModelForSeq2SeqLM.from_pretrained(model_path)
     model = model.to(device)
     model.eval()
 
     print(f"Model loaded successfully!")
 
     # Load validation data
-    print(f"\nLoading validation data from {VALID_JSONL}...")
-    raw_valid = load_jsonl(VALID_JSONL)
+    valid_path = Paths.VALID_FILE
+    print(f"\nLoading validation data from {valid_path}...")
+    raw_valid = load_jsonl(valid_path)
 
     # Prepare examples
     examples = [{

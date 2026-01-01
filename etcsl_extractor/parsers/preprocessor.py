@@ -79,37 +79,8 @@ def get_determinative_type(placeholder: str) -> str:
     return "unknown"
 
 
-def placeholder_to_display(text: str) -> str:
-    """
-    Convert placeholder markers to display format.
-
-    Args:
-        text: Text with {{DET_*}} placeholders
-
-    Returns:
-        Text with superscript-style determinatives
-    """
-    result = text
-    for entity, (placeholder, _, display) in DETERMINATIVES.items():
-        # Use superscript notation for display
-        result = result.replace(placeholder, f"<{display}>")
-    return result
-
-
-def placeholder_to_normalized(text: str) -> str:
-    """
-    Remove all determinative placeholders for normalized text.
-
-    Args:
-        text: Text with {{DET_*}} placeholders
-
-    Returns:
-        Text with determinatives removed
-    """
-    result = text
-    for entity, (placeholder, _, _) in DETERMINATIVES.items():
-        result = result.replace(placeholder, "")
-    return result
+# Note: placeholder_to_display() and placeholder_to_normalized() are defined in
+# etcsl_extractor/exporters/text_generator.py - import from there if needed.
 
 
 if __name__ == "__main__":

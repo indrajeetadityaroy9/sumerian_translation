@@ -32,33 +32,8 @@ from transformers import (
     AutoTokenizer,
 )
 
-# Default model path
-MODEL_DIR = Path("./models/sumerian_nmt_final")
-
-
-def get_hardware_info():
-    """Detect available hardware."""
-    info = {
-        "cuda_available": torch.cuda.is_available(),
-        "gpu_count": torch.cuda.device_count() if torch.cuda.is_available() else 0,
-        "bf16_supported": False,
-        "flash_attn_available": False,
-    }
-
-    if info["cuda_available"]:
-        capability = torch.cuda.get_device_capability()
-        info["bf16_supported"] = capability[0] >= 8
-
-        try:
-            from transformers.utils import is_flash_attn_2_available
-            info["flash_attn_available"] = is_flash_attn_2_available()
-        except ImportError:
-            pass
-
-        info["gpu_name"] = torch.cuda.get_device_name(0)
-        info["gpu_memory"] = torch.cuda.get_device_properties(0).total_memory / 1e9
-
-    return info
+from common.hardware import get_hardware_info
+from config import Paths, TrainingDefaults, get_model_checkpoint
 
 
 def load_model(model_dir: Path, use_compile: bool = True, verbose: bool = True):
@@ -156,9 +131,12 @@ def translate(
     model_type: str = "encoder_decoder",
     max_length: int = 128,
     num_beams: int = 4,
-    task_prefix: str = "translate Sumerian to English: ",
+    task_prefix: str = None,
 ) -> str:
     """Translate Sumerian text to English."""
+    if task_prefix is None:
+        task_prefix = TrainingDefaults.MT5["task_prefix"]
+
     # Prepare input
     if model_type == "mt5":
         input_text = task_prefix + text
@@ -214,9 +192,12 @@ def translate_batch(
     model_type: str = "encoder_decoder",
     max_length: int = 128,
     num_beams: int = 4,
-    task_prefix: str = "translate Sumerian to English: ",
+    task_prefix: str = None,
 ) -> list:
     """Translate a batch of Sumerian texts to English."""
+    if task_prefix is None:
+        task_prefix = TrainingDefaults.MT5["task_prefix"]
+
     # Prepare inputs
     if model_type == "mt5":
         input_texts = [task_prefix + text for text in texts]
@@ -352,11 +333,12 @@ def main():
         nargs="?",
         help="Sumerian text to translate"
     )
+    default_model = get_model_checkpoint()
     parser.add_argument(
         "--model-dir",
         type=Path,
-        default=MODEL_DIR,
-        help=f"Model directory (default: {MODEL_DIR})"
+        default=default_model,
+        help=f"Model directory (default: {default_model})"
     )
     parser.add_argument(
         "--interactive", "-i",

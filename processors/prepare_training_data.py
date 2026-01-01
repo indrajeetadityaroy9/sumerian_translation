@@ -13,12 +13,12 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-# Add parent dirs for imports
-sys.path.insert(0, str(Path(__file__).parent.parent / "oracc_data"))
-sys.path.insert(0, str(Path(__file__).parent))
+# Add parent dir for imports when run as script
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from normalization_bridge import normalize_etcsl
-from oracc_extractor import process_oracc_file, is_mostly_broken
+from processors.normalization_bridge import normalize_etcsl
+from processors.oracc_core import ORACCParser
+from common.quality import is_mostly_broken
 
 
 def build_monolingual_corpus(
@@ -45,6 +45,7 @@ def build_monolingual_corpus(
     }
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
+    parser = ORACCParser(normalize=True)
 
     with open(output_path, "w", encoding="utf-8") as out:
         for corpus_dir in oracc_dirs:
@@ -63,14 +64,23 @@ def build_monolingual_corpus(
             json_files = list(corpus_dir.rglob("corpusjson/*.json"))
 
             for i, json_file in enumerate(json_files):
-                lines = process_oracc_file(json_file)
+                try:
+                    with open(json_file, encoding="utf-8") as f:
+                        data = json.load(f)
 
-                if lines:
-                    corpus_stats["files"] += 1
-                    for line in lines:
+                    file_lines = 0
+                    for line in parser.extract_lines(data):
+                        if is_mostly_broken(line):
+                            continue
                         out.write(line + "\n")
                         corpus_stats["lines"] += 1
                         corpus_stats["words"] += len(line.split())
+                        file_lines += 1
+
+                    if file_lines > 0:
+                        corpus_stats["files"] += 1
+                except (json.JSONDecodeError, Exception):
+                    pass
 
                 if verbose and (i + 1) % 500 == 0:
                     print(f"  {i + 1}/{len(json_files)} files...")
