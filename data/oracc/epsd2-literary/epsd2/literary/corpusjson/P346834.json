@@ -1,0 +1,315 @@
+{
+  "type": "cdl",
+  "project": "epsd2/literary",
+  "source": "http://oracc.org/epsd2/literary",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:45:08",
+  "textid": "P346834",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "P346834.U0",
+      "cdl": [
+        {
+          "node": "d",
+          "subtype": "tablet",
+          "type": "object",
+          "ref": "P346834.x414.1",
+          "label": "x414"
+        },
+        {
+          "node": "d",
+          "subtype": "obverse",
+          "type": "surface",
+          "ref": "P346834.o.2",
+          "label": "o"
+        },
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "P346834.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "P346834.U2",
+              "label": "o 1",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346834.3",
+                  "n": "1",
+                  "label": "o 1"
+                },
+                {
+                  "node": "l",
+                  "frag": "{d}nanna-kur-gal",
+                  "id": "P346834.l0810b",
+                  "ref": "P346834.3.1",
+                  "inst": "Nannakurgal[1]",
+                  "sig": "@epsd2/literary%sux:{d}nanna-kur-gal=Nannakurgal[1//1]PN'PN$Nannakurgal/{d}nanna-kur-gal#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}nanna-kur-gal",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "P346834.3.1.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "nanna",
+                        "id": "P346834.3.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "kur",
+                        "id": "P346834.3.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gal",
+                        "id": "P346834.3.1.3"
+                      }
+                    ],
+                    "cf": "Nannakurgal",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Nannakurgal",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "{d}nanna-kur-gal",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346834.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346834.3.1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346834.U4",
+              "label": "o 2",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346834.4",
+                  "n": "2",
+                  "label": "o 2"
+                },
+                {
+                  "node": "l",
+                  "frag": "{⸢d}nanna⸣-kur-gal-kalam-⸢ma⸣",
+                  "id": "P346834.l0810c",
+                  "ref": "P346834.4.1",
+                  "inst": "Nannakurgalkalamak[1]",
+                  "sig": "@epsd2/literary%sux:{d}nanna-kur-gal-kalam-ma=Nannakurgalkalamak[1//1]PN'PN$Nannakurgalkalamak/{d}nanna-kur-gal-kalam-ma#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}nanna-kur-gal-kalam-ma",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "P346834.4.1.0",
+                            "break": "damaged",
+                            "ho": "1"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "nanna",
+                        "id": "P346834.4.1.1",
+                        "break": "damaged",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "kur",
+                        "id": "P346834.4.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gal",
+                        "id": "P346834.4.1.3",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "kalam",
+                        "id": "P346834.4.1.4",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ma",
+                        "id": "P346834.4.1.5",
+                        "break": "damaged",
+                        "ho": "1",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "Nannakurgalkalamak",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Nannakurgalkalamak",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "{d}nanna-kur-gal-kalam-ma",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346834.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346834.4.1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346834.U6",
+              "label": "o 3",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346834.5",
+                  "n": "3",
+                  "label": "o 3"
+                },
+                {
+                  "node": "l",
+                  "frag": "{[d]}⸢nanna-mu⸣-zu",
+                  "id": "P346834.l0810d",
+                  "ref": "P346834.5.1",
+                  "inst": "Nannamuzu[1]",
+                  "sig": "@epsd2/literary%sux:{d}nanna-mu-zu=Nannamuzu[1//1]PN'PN$Nannamuzu/{d}nanna-mu-zu#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}nanna-mu-zu",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "P346834.5.1.0",
+                            "breakStart": "1",
+                            "o": "]",
+                            "break": "missing",
+                            "breakEnd": "P346834.5.1.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "nanna",
+                        "id": "P346834.5.1.1",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "mu",
+                        "id": "P346834.5.1.2",
+                        "break": "damaged",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "zu",
+                        "id": "P346834.5.1.3"
+                      }
+                    ],
+                    "cf": "Nannamuzu",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Nannamuzu",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "{d}nanna-mu-zu",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346834.5.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346834.5.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "subtype": "reverse",
+                  "type": "surface",
+                  "ref": "P346834.r.6",
+                  "label": "r"
+                },
+                {
+                  "node": "d",
+                  "type": "nonx",
+                  "ref": "P346834.7",
+                  "strict": "0",
+                  "extent": "0",
+                  "scope": "obverse",
+                  "state": "other"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

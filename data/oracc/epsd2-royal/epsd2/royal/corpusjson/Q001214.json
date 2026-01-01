@@ -1,0 +1,151 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:59:08",
+  "textid": "Q001214",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001214.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001214.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001214.U2",
+              "label": "1 - 2",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001214.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001214.l00933",
+                  "ref": "Q001214.1.1",
+                  "inst": "Ešara[1]TN",
+                  "sig": "@epsd2/royal%sux:e₂-sar=Ešara[1//1]TN'TN$Ešara/e₂-šar#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "e₂-sar",
+                    "gdl": [
+                      {
+                        "v": "e₂",
+                        "id": "Q001214.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "sar",
+                        "id": "Q001214.1.1.1",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "Q001214.1.1.1"
+                      }
+                    ],
+                    "cf": "Ešara",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Ešara",
+                    "pos": "TN",
+                    "epos": "TN",
+                    "base": "e₂-šar",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001214.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001214.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001214.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001214.l00934",
+                  "ref": "Q001214.2.1",
+                  "inst": "Barag.X[0]PN",
+                  "sig": "@epsd2/royal%sux:bara₂-x=Barag.X[0//0]PN'PN$Barag.X/bara₂-x#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "bara₂-x",
+                    "gdl": [
+                      {
+                        "v": "bara₂",
+                        "id": "Q001214.2.1.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "x": "ellipsis",
+                        "id": "Q001214.2.1.1",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "Q001214.2.1.1"
+                      }
+                    ],
+                    "cf": "Barag.X",
+                    "gw": "0",
+                    "sense": "0",
+                    "norm0": "Barag.X",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "bara₂-x",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001214.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001214.2.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

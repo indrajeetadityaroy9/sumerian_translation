@@ -1,0 +1,244 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:00:35",
+  "textid": "Q001612",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001612.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001612.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001612.U2",
+              "label": "1' - 3'",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001612.1",
+                  "n": "1'",
+                  "label": "1'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001612.l04c9b",
+                  "ref": "Q001612.1.1",
+                  "inst": "ensik[ruler]",
+                  "sig": "@epsd2/royal%sux:ensi₂=ensik[ruler//ruler]N'N$ensik/ensi₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ensi₂",
+                    "gdl": [
+                      {
+                        "v": "ensi₂",
+                        "id": "Q001612.1.1.0",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "Q001612.1.1.0"
+                      }
+                    ],
+                    "cf": "ensik",
+                    "gw": "ruler",
+                    "sense": "ruler",
+                    "norm0": "ensik",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ensi₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001612.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001612.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001612.2",
+                  "n": "2'",
+                  "label": "2'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001612.l04c9c",
+                  "ref": "Q001612.2.1",
+                  "inst": "Lagaš[1]",
+                  "sig": "@epsd2/royal%sux:lagaš{ki}-ka-še₃=Lagaš[1//1]SN'SN$Lagaš,ak.ak.eše/lagaš{ki}#~,ak.ak.eše",
+                  "f": {
+                    "lang": "sux",
+                    "form": "lagaš{ki}-ka-še₃",
+                    "gdl": [
+                      {
+                        "v": "lagaš",
+                        "id": "Q001612.2.1.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "hc": "1"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "post",
+                        "delim": "-",
+                        "seq": [
+                          {
+                            "v": "ki",
+                            "id": "Q001612.2.1.1"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "ka",
+                        "id": "Q001612.2.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "še₃",
+                        "id": "Q001612.2.1.3"
+                      }
+                    ],
+                    "cf": "Lagaš",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Lagaš,ak.ak.eše",
+                    "pos": "SN",
+                    "epos": "SN",
+                    "base": "lagaš{ki}",
+                    "morph": "~,ak.ak.eše"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001612.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001612.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001612.3",
+                  "n": "3'",
+                  "label": "3'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001612.l04c9d",
+                  "ref": "Q001612.3.1",
+                  "inst": "Uršulpaea[1]PN",
+                  "sig": "@epsd2/royal%sux:ur-{d}šul-pa-ed₂-a=Uršulpaea[1//1]PN'PN$Uršulpaea/ur-{d}šul-pa-ed₂-a#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ur-{d}šul-pa-ed₂-a",
+                    "gdl": [
+                      {
+                        "v": "ur",
+                        "id": "Q001612.3.1.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q001612.3.1.1"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "šul",
+                        "id": "Q001612.3.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "pa",
+                        "id": "Q001612.3.1.3",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ed₂",
+                        "id": "Q001612.3.1.4",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "a",
+                        "id": "Q001612.3.1.5",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "Q001612.3.1.5"
+                      }
+                    ],
+                    "cf": "Uršulpaea",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Uršulpaea",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "ur-{d}šul-pa-ed₂-a",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001612.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001612.3.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

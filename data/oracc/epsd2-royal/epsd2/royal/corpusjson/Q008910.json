@@ -1,0 +1,289 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:05:06",
+  "textid": "Q008910",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q008910.U0",
+      "cdl": [
+        {
+          "node": "d",
+          "type": "nonx",
+          "ref": "Q008910.1",
+          "strict": "1",
+          "extent": "n",
+          "scope": "line",
+          "state": "missing"
+        },
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q008910.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": ".",
+              "id": "Q008910.U2",
+              "label": "1' - 2'",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q008910.2",
+                  "n": "1'",
+                  "label": "1'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q008910.l09268",
+                  "ref": "Q008910.2.1",
+                  "inst": "nin[lady]",
+                  "sig": "@epsd2/royal%sux:nin-ŋu₁₀=nin[lady//lady]N'N$nin,ŋu/nin#~,ŋu",
+                  "f": {
+                    "lang": "sux",
+                    "form": "nin-ŋu₁₀",
+                    "gdl": [
+                      {
+                        "v": "nin",
+                        "id": "Q008910.2.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ŋu₁₀",
+                        "id": "Q008910.2.1.1"
+                      }
+                    ],
+                    "cf": "nin",
+                    "gw": "lady",
+                    "sense": "lady",
+                    "norm0": "nin,ŋu",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "nin",
+                    "morph": "~,ŋu"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q008910.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q008910.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q008910.3",
+                  "n": "2'",
+                  "label": "2'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q008910.l09269",
+                  "ref": "Q008910.3.1",
+                  "inst": "siškur[prayer]",
+                  "exosig": "@epsd2/royal%sux:siškur₂-ŋu₁₀=siškur[prayer//prayer, blessing]N'N$siškur/siškur₂#~",
+                  "exoprj": "epsd2",
+                  "exolng": "sux",
+                  "f": {
+                    "lang": "sux",
+                    "form": "sizkur₂-ŋu₁₀",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "sizkur₂",
+                        "id": "Q008910.3.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ŋu₁₀",
+                        "id": "Q008910.3.1.1"
+                      }
+                    ],
+                    "aform": "siškur₂-ŋu₁₀",
+                    "cf": "siškur",
+                    "gw": "prayer",
+                    "sense": "prayer, blessing",
+                    "norm0": "siškur",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "siškur₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q008910.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q008910.3.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q008910.l0926a",
+                  "ref": "Q008910.3.2",
+                  "inst": "e[speak] +.",
+                  "exosig": "@epsd2/royal%sux:he₂-na-ab-be₂=e[speak//to speak, perfect plural and imperfect stem of dug⟦to speak⟧]V/t'V/t$ha.V.na.b:e/b°e₂#ha.V.na.b:~",
+                  "exoprj": "epsd2",
+                  "exolng": "sux",
+                  "f": {
+                    "lang": "sux",
+                    "form": "he₂-na-ab-be₂",
+                    "gdl": [
+                      {
+                        "v": "he₂",
+                        "id": "Q008910.3.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "na",
+                        "id": "Q008910.3.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ab",
+                        "id": "Q008910.3.2.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "be₂",
+                        "id": "Q008910.3.2.3"
+                      }
+                    ],
+                    "cf": "e",
+                    "gw": "speak",
+                    "sense": "to speak, perfect plural and imperfect stem of dug⟦to speak⟧",
+                    "norm0": "ha.V.na.b:e",
+                    "pos": "V/t",
+                    "epos": "V/t",
+                    "base": "b°e₂",
+                    "morph": "ha.V.na.b:~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q008910.3.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q008910.3.2"
+                    }
+                  ],
+                  "para": [
+                    {
+                      "class": "boundary",
+                      "type": "sentence",
+                      "text": "+.",
+                      "val": "",
+                      "bracketing_level": "0"
+                    },
+                    {
+                      "class": "syntax",
+                      "type": "label",
+                      "text": ".",
+                      "val": "",
+                      "bracketing_level": "0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "Q008910.U4",
+              "label": "3'",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q008910.4",
+                  "n": "3'",
+                  "label": "3'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q008910.l0926b",
+                  "ref": "Q008910.4.1",
+                  "inst": "mu[name]",
+                  "sig": "@epsd2/royal%sux:mu-bi=mu[name//name]N'N$mu,bi/mu#~,bi",
+                  "f": {
+                    "lang": "sux",
+                    "form": "mu-bi",
+                    "gdl": [
+                      {
+                        "v": "mu",
+                        "id": "Q008910.4.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "bi",
+                        "id": "Q008910.4.1.1"
+                      }
+                    ],
+                    "cf": "mu",
+                    "gw": "name",
+                    "sense": "name",
+                    "norm0": "mu,bi",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "mu",
+                    "morph": "~,bi"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q008910.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q008910.4.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

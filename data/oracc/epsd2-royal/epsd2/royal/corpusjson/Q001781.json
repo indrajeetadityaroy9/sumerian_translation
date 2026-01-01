@@ -1,0 +1,309 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:01:11",
+  "textid": "Q001781",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001781.U0",
+      "cdl": [
+        {
+          "node": "d",
+          "type": "nonx",
+          "ref": "Q001781.1",
+          "strict": "1",
+          "extent": "n",
+          "scope": "line",
+          "state": "missing"
+        },
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001781.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001781.U2",
+              "label": "12' - 15'",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001781.2",
+                  "n": "12'",
+                  "label": "12'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001781.l0c297",
+                  "ref": "Q001781.2.1",
+                  "inst": "Ninlil[1]DN",
+                  "sig": "@epsd2/royal%sux:{d}nin-lil₂=Ninlil[1//1]DN'DN$Ninlil/{d}nin-lil₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}nin-lil₂",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q001781.2.1.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "nin",
+                        "id": "Q001781.2.1.1",
+                        "statusStart": "1",
+                        "o": "<",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "lil₂",
+                        "id": "Q001781.2.1.2",
+                        "o": ">",
+                        "statusStart": "Q001781.2.1.1"
+                      }
+                    ],
+                    "cf": "Ninlil",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Ninlil",
+                    "pos": "DN",
+                    "epos": "DN",
+                    "base": "{d}nin-lil₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001781.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001781.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001781.3",
+                  "n": "13'",
+                  "label": "13'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001781.l0c298",
+                  "ref": "Q001781.3.1",
+                  "inst": "nin[lady]+.*ra",
+                  "sig": "@epsd2/royal%sux:nin-a-ni=nin[lady//lady]N'N$nin,ani/nin#~,ani",
+                  "f": {
+                    "lang": "sux",
+                    "form": "nin-a-ni",
+                    "gdl": [
+                      {
+                        "v": "nin",
+                        "id": "Q001781.3.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "a",
+                        "id": "Q001781.3.1.1",
+                        "statusStart": "1",
+                        "o": "<",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ni",
+                        "id": "Q001781.3.1.2",
+                        "o": ">",
+                        "statusStart": "Q001781.3.1.1"
+                      }
+                    ],
+                    "cf": "nin",
+                    "gw": "lady",
+                    "sense": "lady",
+                    "norm0": "nin,ani",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "nin",
+                    "morph": "~,ani"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001781.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001781.3.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001781.4",
+                  "n": "14'",
+                  "label": "14'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001781.l0c299",
+                  "ref": "Q001781.4.1",
+                  "inst": "namtil[life]",
+                  "sig": "@epsd2/royal%sux:nam-ti-il=namtil[life//life]N'N$namtil/nam-ti-il#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "nam-ti-il",
+                    "gdl": [
+                      {
+                        "v": "nam",
+                        "id": "Q001781.4.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ti",
+                        "id": "Q001781.4.1.1",
+                        "statusStart": "1",
+                        "o": "<",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "il",
+                        "id": "Q001781.4.1.2",
+                        "o": ">",
+                        "statusStart": "Q001781.4.1.1"
+                      }
+                    ],
+                    "cf": "namtil",
+                    "gw": "life",
+                    "sense": "life",
+                    "norm0": "namtil",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "nam-ti-il",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001781.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001781.4.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001781.5",
+                  "n": "15'",
+                  "label": "15'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001781.l0c29a",
+                  "ref": "Q001781.5.1",
+                  "inst": "Šulgir[1]RN",
+                  "sig": "@epsd2/royal%sux:{d}šul-gi=Šulgir[1//1]RN'RN$Šulgir/{d}šul-gi#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}šul-gi",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q001781.5.1.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "šul",
+                        "id": "Q001781.5.1.1",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "gi",
+                        "id": "Q001781.5.1.2",
+                        "statusStart": "Q001781.5.1.2",
+                        "o": ">"
+                      }
+                    ],
+                    "cf": "Šulgir",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Šulgir",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "{d}šul-gi",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001781.5.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001781.5.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "nonx",
+                  "ref": "Q001781.6",
+                  "strict": "1",
+                  "extent": "n",
+                  "scope": "line",
+                  "state": "missing"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

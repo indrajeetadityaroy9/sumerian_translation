@@ -1,0 +1,244 @@
+{
+  "type": "cdl",
+  "project": "epsd2/literary",
+  "source": "http://oracc.org/epsd2/literary",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:44:27",
+  "textid": "P346398",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "P346398.U0",
+      "cdl": [
+        {
+          "node": "d",
+          "subtype": "tablet",
+          "type": "object",
+          "ref": "P346398.x256.1",
+          "label": "x256"
+        },
+        {
+          "node": "d",
+          "subtype": "obverse",
+          "type": "surface",
+          "ref": "P346398.o.2",
+          "label": "o"
+        },
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "P346398.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "P346398.U2",
+              "label": "o 1 - o 2",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346398.3",
+                  "n": "1",
+                  "label": "o 1"
+                },
+                {
+                  "node": "l",
+                  "frag": "{d}li-pi₂-it-iš₈-tar₂",
+                  "id": "P346398.l064af",
+                  "ref": "P346398.3.1",
+                  "inst": "Lipiteštar[1]",
+                  "sig": "@epsd2/literary%sux:{d}li-pi₂-it-iš₈-tar₂=Lipiteštar[1//1]RN'RN$Lipiteštar/{d}li-pi₂-it-eš₄-tar₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}li-pi₂-it-iš₈-tar₂",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "P346398.3.1.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "li",
+                        "id": "P346398.3.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "pi₂",
+                        "id": "P346398.3.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "it",
+                        "id": "P346398.3.1.3",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "iš₈",
+                        "id": "P346398.3.1.4",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "tar₂",
+                        "id": "P346398.3.1.5"
+                      }
+                    ],
+                    "cf": "Lipiteštar",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Lipiteštar",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "{d}li-pi₂-it-eš₄-tar₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346398.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346398.3.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346398.4",
+                  "n": "2",
+                  "label": "o 2"
+                },
+                {
+                  "node": "l",
+                  "frag": "hi-li",
+                  "id": "P346398.l064b0",
+                  "ref": "P346398.4.1",
+                  "inst": "hili[attractiveness]",
+                  "sig": "@epsd2/literary%sux:hi-li=hili[attractiveness//attractiveness, sex appeal]N'N$hili/hi-li#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "hi-li",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "hi",
+                        "id": "P346398.4.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "li",
+                        "id": "P346398.4.1.1"
+                      }
+                    ],
+                    "cf": "hili",
+                    "gw": "attractiveness",
+                    "sense": "attractiveness, sex appeal",
+                    "norm0": "hili",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "hi-li",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346398.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346398.4.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "šag₄-ga-na-me-en",
+                  "id": "P346398.l064b1",
+                  "ref": "P346398.4.2",
+                  "inst": "šag[heart]",
+                  "sig": "@epsd2/literary%sux:šag₄-ga-na-me-en=šag[heart//heart]N'N$šag,ani.ak.men/šag₄+-ga=g.a#~,ani.ak.men",
+                  "f": {
+                    "lang": "sux",
+                    "form": "šag₄-ga-na-me-en",
+                    "gdl": [
+                      {
+                        "v": "šag₄",
+                        "id": "P346398.4.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ga",
+                        "id": "P346398.4.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "na",
+                        "id": "P346398.4.2.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "me",
+                        "id": "P346398.4.2.3",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "en",
+                        "id": "P346398.4.2.4"
+                      }
+                    ],
+                    "cf": "šag",
+                    "gw": "heart",
+                    "sense": "heart",
+                    "norm0": "šag,ani.ak.men",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "šag₄",
+                    "cont": "-ga=g.a",
+                    "morph": "~,ani.ak.men"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346398.4.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346398.4.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

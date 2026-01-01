@@ -1,0 +1,2107 @@
+{
+  "type": "cdl",
+  "project": "epsd2/literary",
+  "source": "http://oracc.org/epsd2/literary",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:44:37",
+  "textid": "P346545",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "P346545.U0",
+      "cdl": [
+        {
+          "node": "d",
+          "subtype": "tablet",
+          "type": "object",
+          "ref": "P346545.x289.1",
+          "label": "x289"
+        },
+        {
+          "node": "d",
+          "subtype": "obverse",
+          "type": "surface",
+          "ref": "P346545.o.2",
+          "label": "o"
+        },
+        {
+          "node": "d",
+          "subtype": "column 1o",
+          "type": "column",
+          "ref": "P346545.o.i.3",
+          "n": "1",
+          "label": "o i"
+        },
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "P346545.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "P346545.U2",
+              "label": "o i 1",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346545.4",
+                  "n": "1",
+                  "label": "o i 1"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢saŋ-ki⸣",
+                  "id": "P346545.l06a45",
+                  "ref": "P346545.4.1",
+                  "inst": "saŋki[forehead]",
+                  "sig": "@epsd2/literary%sux:saŋ-ki=saŋki[forehead//forehead, brow]N'N$saŋki/saŋ-ki#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "saŋ-ki",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "saŋ",
+                        "id": "P346545.4.1.0",
+                        "break": "damaged",
+                        "queried": "1",
+                        "ho": "1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ki",
+                        "id": "P346545.4.1.1",
+                        "break": "damaged",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "saŋki",
+                    "gw": "forehead",
+                    "sense": "forehead, brow",
+                    "norm0": "saŋki",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "saŋ-ki",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.4.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "[...]-⸢x⸣",
+                  "id": "P346545.l06a46",
+                  "ref": "P346545.4.2",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "x-x",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.4.2.0",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.4.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "x",
+                        "id": "P346545.4.2.1",
+                        "break": "damaged",
+                        "ho": "1",
+                        "hc": "1"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.4.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.4.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "{d}en-lil₂-⸢la₂-kam⸣",
+                  "id": "P346545.l06a47",
+                  "ref": "P346545.4.3",
+                  "inst": "Enlil[1]",
+                  "sig": "@epsd2/literary%sux:{d}en-lil₂-la₂-kam=Enlil[1//1]DN'DN$Enlil,ak.am/{d}en-lil₂+-la₂=l.a#~,ak.am",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}en-lil₂-la₂-kam",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "P346545.4.3.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "en",
+                        "id": "P346545.4.3.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "lil₂",
+                        "id": "P346545.4.3.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "la₂",
+                        "id": "P346545.4.3.3",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "kam",
+                        "id": "P346545.4.3.4",
+                        "break": "damaged",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "Enlil",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Enlil,ak.am",
+                    "pos": "DN",
+                    "epos": "DN",
+                    "base": "{d}en-lil₂",
+                    "cont": "-la₂=l.a",
+                    "morph": "~,ak.am"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.4.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.4.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346545.U4",
+              "label": "o i 2",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346545.5",
+                  "n": "2",
+                  "label": "o i 2"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢kiš{ki⸣}",
+                  "id": "P346545.l06a48",
+                  "ref": "P346545.5.1",
+                  "inst": "Kiš[1]",
+                  "sig": "@epsd2/literary%sux:kiš{ki}=Kiš[1//1]SN'SN$Kiš/kiš{ki}#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "kiš{ki}",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "kiš",
+                        "id": "P346545.5.1.0",
+                        "break": "damaged",
+                        "ho": "1"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "post",
+                        "seq": [
+                          {
+                            "v": "ki",
+                            "id": "P346545.5.1.1",
+                            "break": "damaged",
+                            "hc": "1"
+                          }
+                        ]
+                      }
+                    ],
+                    "cf": "Kiš",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Kiš",
+                    "pos": "SN",
+                    "epos": "SN",
+                    "base": "kiš{ki}",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.5.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.5.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "[...]",
+                  "id": "P346545.l06a49",
+                  "ref": "P346545.5.2",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "x",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.5.2.0",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.5.2.0"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.5.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.5.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢an-na⸣-gin₇",
+                  "id": "P346545.l06a4a",
+                  "ref": "P346545.5.3",
+                  "inst": "an[sky]",
+                  "sig": "@epsd2/literary%sux:an-na-gin₇=an[sky//sky, heaven]N'N$an,ak.gin/an+-na=n.a#~,ak.gin",
+                  "f": {
+                    "lang": "sux",
+                    "form": "an-na-gin₇",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "an",
+                        "id": "P346545.5.3.0",
+                        "break": "damaged",
+                        "queried": "1",
+                        "ho": "1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "na",
+                        "id": "P346545.5.3.1",
+                        "break": "damaged",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "gin₇",
+                        "id": "P346545.5.3.2"
+                      }
+                    ],
+                    "cf": "an",
+                    "gw": "sky",
+                    "sense": "sky, heaven",
+                    "norm0": "an,ak.gin",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "an",
+                    "cont": "-na=n.a",
+                    "morph": "~,ak.gin"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.5.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.5.3"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢im⸣-[...]",
+                  "id": "P346545.l06a4b",
+                  "ref": "P346545.5.4",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "im-x",
+                    "gdl": [
+                      {
+                        "v": "im",
+                        "id": "P346545.5.4.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.5.4.1",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.5.4.1"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.5.4"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.5.4"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346545.U6",
+              "label": "o i 3",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346545.6",
+                  "n": "3",
+                  "label": "o i 3"
+                },
+                {
+                  "node": "l",
+                  "frag": "e₂",
+                  "id": "P346545.l06a4c",
+                  "ref": "P346545.6.1",
+                  "inst": "e[temple]",
+                  "sig": "@epsd2/literary%sux:e₂=e[house//temple]N'N$e/e₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "e₂",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "e₂",
+                        "id": "P346545.6.1.0"
+                      }
+                    ],
+                    "cf": "e",
+                    "gw": "house",
+                    "sense": "temple",
+                    "norm0": "e",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "e₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.6.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.6.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢ki",
+                  "id": "P346545.l06a4d",
+                  "ref": "P346545.6.2",
+                  "inst": "ki[place]",
+                  "sig": "@epsd2/literary%sux:ki=ki[place//place]N'N$ki/ki#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ki",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "ki",
+                        "id": "P346545.6.2.0",
+                        "break": "damaged",
+                        "ho": "1"
+                      }
+                    ],
+                    "cf": "ki",
+                    "gw": "place",
+                    "sense": "place",
+                    "norm0": "ki",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ki",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.6.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.6.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "unug{ki}ga",
+                  "id": "P346545.l06a4e",
+                  "ref": "P346545.6.3",
+                  "inst": "Unug[1]",
+                  "sig": "@epsd2/literary%sux:unug{ki}-ga=Unug[1//1]SN'SN$Unug,ak/unug{ki}+-ga=g.a#~,ak",
+                  "f": {
+                    "lang": "sux",
+                    "form": "unug{ki}-ga",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "unug",
+                        "id": "P346545.6.3.0",
+                        "break": "damaged"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "post",
+                        "delim": "-",
+                        "seq": [
+                          {
+                            "v": "ki",
+                            "id": "P346545.6.3.1",
+                            "break": "damaged"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "ga",
+                        "id": "P346545.6.3.2",
+                        "break": "damaged"
+                      }
+                    ],
+                    "cf": "Unug",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Unug,ak",
+                    "pos": "SN",
+                    "epos": "SN",
+                    "base": "unug{ki}",
+                    "cont": "-ga=g.a",
+                    "morph": "~,ak"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.6.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.6.3"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "gud⸣",
+                  "id": "P346545.l06a4f",
+                  "ref": "P346545.6.4",
+                  "inst": "gud[bull]",
+                  "sig": "@epsd2/literary%sux:gud=gud[ox//bull, ox]N'N$gud/gud#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "gud",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "gud",
+                        "id": "P346545.6.4.0",
+                        "break": "damaged",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "gud",
+                    "gw": "ox",
+                    "sense": "bull, ox",
+                    "norm0": "gud",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "gud",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.6.4"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.6.4"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "[...]",
+                  "id": "P346545.l06a50",
+                  "ref": "P346545.6.5",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "x",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.6.5.0",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.6.5.0"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.6.5"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.6.5"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢sahar-ra",
+                  "id": "P346545.l06a51",
+                  "ref": "P346545.6.6",
+                  "inst": "sahar[dust]",
+                  "sig": "@epsd2/literary%sux:sahar-ra=sahar[soil//dust, dirt]N'N$sahar,ak/sahar+-ra=r.a#~,ak",
+                  "f": {
+                    "lang": "sux",
+                    "form": "sahar-ra",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "sahar",
+                        "id": "P346545.6.6.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ra",
+                        "id": "P346545.6.6.1",
+                        "break": "damaged"
+                      }
+                    ],
+                    "cf": "sahar",
+                    "gw": "soil",
+                    "sense": "dust, dirt",
+                    "norm0": "sahar,ak",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "sahar",
+                    "cont": "-ra=r.a",
+                    "morph": "~,ak"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.6.6"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.6.6"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "mi-ni-ib⸣-[...]",
+                  "id": "P346545.l06a52",
+                  "ref": "P346545.6.7",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "mi-ni-ib-x",
+                    "gdl": [
+                      {
+                        "v": "mi",
+                        "id": "P346545.6.7.0",
+                        "break": "damaged",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ni",
+                        "id": "P346545.6.7.1",
+                        "break": "damaged",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ib",
+                        "id": "P346545.6.7.2",
+                        "break": "damaged",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.6.7.3",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.6.7.3"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.6.7"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.6.7"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346545.U8",
+              "label": "o i 4",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346545.7",
+                  "n": "4",
+                  "label": "o i 4"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢ki⸣",
+                  "id": "P346545.l06a53",
+                  "ref": "P346545.7.1",
+                  "inst": "ki[place]",
+                  "sig": "@epsd2/literary%sux:ki=ki[place//place]N'N$ki/ki#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ki",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "ki",
+                        "id": "P346545.7.1.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "ki",
+                    "gw": "place",
+                    "sense": "place",
+                    "norm0": "ki",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ki",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.7.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.7.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "ud-ba",
+                  "id": "P346545.l06a54",
+                  "ref": "P346545.7.2",
+                  "inst": "ud[sun]",
+                  "sig": "@epsd2/literary%sux:ud-ba=ud[sun//sun]N'N$ud,bi.a/ud#~,bi.a",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ud-ba",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "ud",
+                        "id": "P346545.7.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ba",
+                        "id": "P346545.7.2.1"
+                      }
+                    ],
+                    "cf": "ud",
+                    "gw": "sun",
+                    "sense": "sun",
+                    "norm0": "ud,bi.a",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ud",
+                    "morph": "~,bi.a"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.7.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.7.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "šar-ru-um-⸢ki⸣-[...]",
+                  "id": "P346545.l06a55",
+                  "ref": "P346545.7.3",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "šar-ru-um-ki-x",
+                    "gdl": [
+                      {
+                        "v": "šar",
+                        "id": "P346545.7.3.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ru",
+                        "id": "P346545.7.3.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "um",
+                        "id": "P346545.7.3.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ki",
+                        "id": "P346545.7.3.3",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.7.3.4",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.7.3.4"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.7.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.7.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346545.U10",
+              "label": "o i 5",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346545.8",
+                  "n": "5",
+                  "label": "o i 5"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢sig⸣-ta",
+                  "id": "P346545.l06a56",
+                  "ref": "P346545.8.1",
+                  "inst": "sig[weak]",
+                  "sig": "@epsd2/literary%sux:sig-ta=sig[weak//(to be) weak]V/i'V/i$sig;*a,ta/sig#~;*a,ta",
+                  "f": {
+                    "lang": "sux",
+                    "form": "sig-ta",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "sig",
+                        "id": "P346545.8.1.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "ta",
+                        "id": "P346545.8.1.1"
+                      }
+                    ],
+                    "cf": "sig",
+                    "gw": "weak",
+                    "sense": "(to be) weak",
+                    "norm0": "sig;*a,ta",
+                    "pos": "V/i",
+                    "epos": "V/i",
+                    "base": "sig",
+                    "morph": "~;*a,ta"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.8.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.8.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢igi⸣-[...]",
+                  "id": "P346545.l06a57",
+                  "ref": "P346545.8.2",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "igi-x",
+                    "gdl": [
+                      {
+                        "v": "igi",
+                        "id": "P346545.8.2.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.8.2.1",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.8.2.1"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.8.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.8.2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346545.U12",
+              "label": "o i 6",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346545.9",
+                  "n": "6",
+                  "label": "o i 6"
+                },
+                {
+                  "node": "l",
+                  "frag": "{[d]}⸢en⸣-lil₂-le",
+                  "id": "P346545.l06a58",
+                  "ref": "P346545.9.1",
+                  "inst": "Enlil[1]",
+                  "sig": "@epsd2/literary%sux:{d}en-lil₂-le=Enlil[1//1]DN'DN$Enlil,e/{d}en-lil₂+-le=l.e#~,e",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}en-lil₂-le",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "P346545.9.1.0",
+                            "breakStart": "1",
+                            "o": "]",
+                            "break": "missing",
+                            "breakEnd": "P346545.9.1.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "en",
+                        "id": "P346545.9.1.1",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "lil₂",
+                        "id": "P346545.9.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "le",
+                        "id": "P346545.9.1.3"
+                      }
+                    ],
+                    "cf": "Enlil",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Enlil,e",
+                    "pos": "DN",
+                    "epos": "DN",
+                    "base": "{d}en-lil₂",
+                    "cont": "-le=l.e",
+                    "morph": "~,e"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.9.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.9.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "nam-[...]",
+                  "id": "P346545.l06a59",
+                  "ref": "P346545.9.2",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "nam-x",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "nam",
+                        "id": "P346545.9.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.9.2.1",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.9.2.1"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.9.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.9.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "mu-⸢un⸣-[...]",
+                  "id": "P346545.l06a5a",
+                  "ref": "P346545.9.3",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "mu-un-x",
+                    "gdl": [
+                      {
+                        "v": "mu",
+                        "id": "P346545.9.3.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "un",
+                        "id": "P346545.9.3.1",
+                        "break": "damaged",
+                        "queried": "1",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.9.3.2",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.9.3.2"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.9.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.9.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346545.U14",
+              "label": "o i 7",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346545.10",
+                  "n": "7",
+                  "label": "o i 7"
+                },
+                {
+                  "node": "l",
+                  "frag": "[...]",
+                  "id": "P346545.l06a5b",
+                  "ref": "P346545.10.1",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "x",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.10.1.0",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.10.1.0"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.10.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.10.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢a-ga-de₃⸣{[ki}",
+                  "id": "P346545.l06a5c",
+                  "ref": "P346545.10.2",
+                  "inst": "Agade[1]",
+                  "sig": "@epsd2/literary%sux:a-ga-de₃{ki}=Agade[1//1]SN'SN$Agade/a-ga-de₃{ki}#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "a-ga-de₃{ki}",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "a",
+                        "id": "P346545.10.2.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ga",
+                        "id": "P346545.10.2.1",
+                        "break": "damaged",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "de₃",
+                        "id": "P346545.10.2.2",
+                        "break": "damaged",
+                        "hc": "1"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "post",
+                        "seq": [
+                          {
+                            "v": "ki",
+                            "id": "P346545.10.2.3",
+                            "breakStart": "1",
+                            "o": "[",
+                            "break": "missing"
+                          }
+                        ]
+                      }
+                    ],
+                    "cf": "Agade",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Agade",
+                    "pos": "SN",
+                    "epos": "SN",
+                    "base": "a-ga-de₃{ki}",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.10.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.10.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "...]",
+                  "id": "P346545.l06a5d",
+                  "ref": "P346545.10.3",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "x",
+                    "gdl": [
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.10.3.0",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.10.2.3"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.10.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.10.3"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "nonx",
+                  "ref": "P346545.11",
+                  "strict": "1",
+                  "extent": "rest",
+                  "scope": "line",
+                  "state": "missing"
+                },
+                {
+                  "node": "d",
+                  "subtype": "column 2o",
+                  "type": "column",
+                  "ref": "P346545.o.ii.12",
+                  "n": "2",
+                  "label": "o ii"
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346545.U16",
+              "label": "o ii 1",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346545.13",
+                  "n": "1",
+                  "label": "o ii 1"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢x",
+                  "id": "P346545.l06a5e",
+                  "ref": "P346545.13.1",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "x",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "x",
+                        "id": "P346545.13.1.0",
+                        "break": "damaged",
+                        "ho": "1"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.13.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.13.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "x⸣",
+                  "id": "P346545.l06a5f",
+                  "ref": "P346545.13.2",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "x",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "x",
+                        "id": "P346545.13.2.0",
+                        "break": "damaged",
+                        "hc": "1"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.13.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.13.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "[...]",
+                  "id": "P346545.l06a60",
+                  "ref": "P346545.13.3",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "x",
+                    "gdl": [
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.13.3.0",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.13.3.0"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.13.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.13.3"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "nonx",
+                  "ref": "P346545.14",
+                  "strict": "1",
+                  "extent": "rest",
+                  "scope": "line",
+                  "state": "missing"
+                },
+                {
+                  "node": "d",
+                  "subtype": "reverse",
+                  "type": "surface",
+                  "ref": "P346545.r.15",
+                  "label": "r"
+                },
+                {
+                  "node": "d",
+                  "subtype": "column 1r '",
+                  "type": "column",
+                  "ref": "P346545.r.i_.16",
+                  "n": "1",
+                  "label": "r i'"
+                },
+                {
+                  "node": "d",
+                  "type": "nonx",
+                  "ref": "P346545.17",
+                  "strict": "1",
+                  "extent": "beginning",
+                  "scope": "line",
+                  "state": "missing"
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346545.U18",
+              "label": "r i' 1'",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346545.18",
+                  "n": "1'",
+                  "label": "r i' 1'"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢e₂-gal",
+                  "id": "P346545.l06a61",
+                  "ref": "P346545.18.1",
+                  "inst": "egal[palace]",
+                  "sig": "@epsd2/literary%sux:e₂-gal=egal[palace//palace]N'N$egal/e₂-gal#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "e₂-gal",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "e₂",
+                        "id": "P346545.18.1.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gal",
+                        "id": "P346545.18.1.1",
+                        "break": "damaged"
+                      }
+                    ],
+                    "cf": "egal",
+                    "gw": "palace",
+                    "sense": "palace",
+                    "norm0": "egal",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "e₂-gal",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.18.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.18.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "šag₄",
+                  "id": "P346545.l06a62",
+                  "ref": "P346545.18.2",
+                  "inst": "šag[heart]",
+                  "sig": "@epsd2/literary%sux:šag₄=šag[heart//heart]N'N$šag/šag₄#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "šag₄",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "šag₄",
+                        "id": "P346545.18.2.0",
+                        "break": "damaged",
+                        "queried": "1"
+                      }
+                    ],
+                    "cf": "šag",
+                    "gw": "heart",
+                    "sense": "heart",
+                    "norm0": "šag",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "šag₄",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.18.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.18.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "hul₂⸣-[...]",
+                  "id": "P346545.l06a63",
+                  "ref": "P346545.18.3",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "hul₂-x",
+                    "gdl": [
+                      {
+                        "v": "hul₂",
+                        "id": "P346545.18.3.0",
+                        "break": "damaged",
+                        "queried": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.18.3.1",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.18.3.1"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.18.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.18.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346545.U20",
+              "label": "r i' 2'",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346545.19",
+                  "n": "2'",
+                  "label": "r i' 2'"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢lu₂-hul-ŋal₂",
+                  "id": "P346545.l06a64",
+                  "ref": "P346545.19.1",
+                  "inst": "luhulŋal[evildoer]",
+                  "sig": "@epsd2/literary%sux:lu₂-hul-ŋal₂=luhulŋal[evildoer//evildoer]N'N$luhulŋal/lu₂-hul-ŋal₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "lu₂-hul-ŋal₂",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "lu₂",
+                        "id": "P346545.19.1.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "hul",
+                        "id": "P346545.19.1.1",
+                        "break": "damaged",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ŋal₂",
+                        "id": "P346545.19.1.2",
+                        "break": "damaged"
+                      }
+                    ],
+                    "cf": "luhulŋal",
+                    "gw": "evildoer",
+                    "sense": "evildoer",
+                    "norm0": "luhulŋal",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "lu₂-hul-ŋal₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.19.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.19.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "x⸣",
+                  "id": "P346545.l06a65",
+                  "ref": "P346545.19.2",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "x",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "x",
+                        "id": "P346545.19.2.0",
+                        "break": "damaged",
+                        "hc": "1"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.19.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.19.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "[...]",
+                  "id": "P346545.l06a66",
+                  "ref": "P346545.19.3",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "x",
+                    "gdl": [
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.19.3.0",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.19.3.0"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.19.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.19.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346545.U22",
+              "label": "r i' 3'",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346545.20",
+                  "n": "3'",
+                  "label": "r i' 3'"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢ki",
+                  "id": "P346545.l06a67",
+                  "ref": "P346545.20.1",
+                  "inst": "ki[place]",
+                  "sig": "@epsd2/literary%sux:ki=ki[place//place]N'N$ki/ki#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ki",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "ki",
+                        "id": "P346545.20.1.0",
+                        "break": "damaged",
+                        "ho": "1"
+                      }
+                    ],
+                    "cf": "ki",
+                    "gw": "place",
+                    "sense": "place",
+                    "norm0": "ki",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ki",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.20.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.20.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "uz⸣-[...]",
+                  "id": "P346545.l06a68",
+                  "ref": "P346545.20.2",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "uz-x",
+                    "gdl": [
+                      {
+                        "v": "uz",
+                        "id": "P346545.20.2.0",
+                        "break": "damaged",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.20.2.1",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.20.2.1"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.20.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.20.2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346545.U24",
+              "label": "r i' 4'",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346545.21",
+                  "n": "4'",
+                  "label": "r i' 4'"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢ka₅⸣",
+                  "id": "P346545.l06a69",
+                  "ref": "P346545.21.1",
+                  "inst": "kaʾa[fox]",
+                  "sig": "@epsd2/literary%sux:ka₅=kaʾa[fox//fox]N'N$kaʾa/ka₅#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ka₅",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "ka₅",
+                        "id": "P346545.21.1.0",
+                        "break": "damaged",
+                        "queried": "1",
+                        "ho": "1",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "kaʾa",
+                    "gw": "fox",
+                    "sense": "fox",
+                    "norm0": "kaʾa",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ka₅",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.21.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.21.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "[...]",
+                  "id": "P346545.l06a6a",
+                  "ref": "P346545.21.2",
+                  "inst": "u",
+                  "f": {
+                    "lang": "sux",
+                    "form": "x",
+                    "gdl": [
+                      {
+                        "x": "ellipsis",
+                        "id": "P346545.21.2.0",
+                        "breakStart": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "P346545.21.2.0"
+                      }
+                    ],
+                    "pos": "u"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346545.21.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346545.21.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

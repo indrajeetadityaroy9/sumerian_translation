@@ -1,0 +1,342 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:04:14",
+  "textid": "Q004809",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q004809.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q004809.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q004809.U2",
+              "label": "1 - 2",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q004809.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q004809.l05b95",
+                  "ref": "Q004809.1.1",
+                  "inst": "n",
+                  "f": {
+                    "lang": "sux",
+                    "form": "1/2(diš)",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "n": "n",
+                        "form": "1/2(diš)",
+                        "id": "Q004809.1.1.0",
+                        "seq": [
+                          {
+                            "r": "1/2"
+                          },
+                          {
+                            "v": "diš"
+                          }
+                        ]
+                      }
+                    ],
+                    "pos": "n"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004809.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004809.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q004809.l05b96",
+                  "ref": "Q004809.1.2",
+                  "inst": "mana[a unit of weight]",
+                  "sig": "@epsd2/royal%sux:ma-na=mana[unit//a unit of weight]N'N$mana/ma-na#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ma-na",
+                    "gdl": [
+                      {
+                        "v": "ma",
+                        "id": "Q004809.1.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "na",
+                        "id": "Q004809.1.2.1"
+                      }
+                    ],
+                    "cf": "mana",
+                    "gw": "unit",
+                    "sense": "a unit of weight",
+                    "norm0": "mana",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ma-na",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004809.1.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004809.1.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q004809.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q004809.l05b97",
+                  "ref": "Q004809.2.1",
+                  "inst": "dug[(clay) pot]",
+                  "sig": "@epsd2/royal%sux:dug=dug[pot//(clay) pot]N'N$dug/dug#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "dug",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "dug",
+                        "id": "Q004809.2.1.0"
+                      }
+                    ],
+                    "cf": "dug",
+                    "gw": "pot",
+                    "sense": "(clay) pot",
+                    "norm0": "dug",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "dug",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004809.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004809.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q004809.l05b98",
+                  "ref": "Q004809.2.2",
+                  "inst": "ŋa[house]",
+                  "sig": "@epsd2/royal%sux:ŋa₂=ŋa[house//house]N'N$ŋa/ŋa₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ga₂",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "ga₂",
+                        "id": "Q004809.2.2.0"
+                      }
+                    ],
+                    "aform": "ŋa₂",
+                    "cf": "ŋa",
+                    "gw": "house",
+                    "sense": "house",
+                    "norm0": "ŋa",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ŋa₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004809.2.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004809.2.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q004809.l05b99",
+                  "ref": "Q004809.2.3",
+                  "inst": "tug[textile]",
+                  "sig": "@epsd2/royal%sux:tug₂=tug[textile//textile, garment]N'N$tug/tug₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "tug₂",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "tug₂",
+                        "id": "Q004809.2.3.0"
+                      }
+                    ],
+                    "cf": "tug",
+                    "gw": "textile",
+                    "sense": "textile, garment",
+                    "norm0": "tug",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "tug₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004809.2.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004809.2.3"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q004809.l05b9a",
+                  "ref": "Q004809.2.4",
+                  "inst": "kid[a reed mat or woven object]",
+                  "sig": "@epsd2/royal%sux:kid=kid[mat//a reed mat or woven object]N'N$kid/kid#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "kid",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "kid",
+                        "id": "Q004809.2.4.0"
+                      }
+                    ],
+                    "cf": "kid",
+                    "gw": "mat",
+                    "sense": "a reed mat or woven object",
+                    "norm0": "kid",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "kid",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004809.2.4"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004809.2.4"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q004809.l05b9b",
+                  "ref": "Q004809.2.5",
+                  "inst": "diŋir[deity]",
+                  "sig": "@epsd2/royal%sux:dingir=diŋir[deity//deity, god, goddess]N'N$diŋir/diŋir#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "dingir",
+                    "gdl": [
+                      {
+                        "v": "dingir",
+                        "id": "Q004809.2.5.0"
+                      }
+                    ],
+                    "cf": "diŋir",
+                    "gw": "deity",
+                    "sense": "deity, god, goddess",
+                    "norm0": "diŋir",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "diŋir",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004809.2.5"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004809.2.5"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

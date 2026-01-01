@@ -1,0 +1,401 @@
+{
+  "type": "cdl",
+  "project": "epsd2/literary",
+  "source": "http://oracc.org/epsd2/literary",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:45:11",
+  "textid": "P346848",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "P346848.U0",
+      "cdl": [
+        {
+          "node": "d",
+          "subtype": "tablet",
+          "type": "object",
+          "ref": "P346848.x428.1",
+          "label": "x428"
+        },
+        {
+          "node": "d",
+          "subtype": "obverse",
+          "type": "surface",
+          "ref": "P346848.o.2",
+          "label": "o"
+        },
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "P346848.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "P346848.U2",
+              "label": "o 1",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346848.3",
+                  "n": "1",
+                  "label": "o 1"
+                },
+                {
+                  "node": "l",
+                  "frag": "[ur-{d]}⸢nin-sa⸣-dara₃",
+                  "id": "P346848.l0813f",
+                  "ref": "P346848.3.1",
+                  "inst": "Urninsadarak[1]",
+                  "sig": "@epsd2/literary%sux:ur-{d}nin-sa-dara₃=Urninsadarak[1//1]PN'PN$Urninsadarak/ur-{d}nin-sa-dara₃#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ur-{d}nin-sa-dara₃",
+                    "gdl": [
+                      {
+                        "v": "ur",
+                        "id": "P346848.3.1.0",
+                        "breakStart": "1",
+                        "o": "[",
+                        "break": "missing",
+                        "delim": "-"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "P346848.3.1.1",
+                            "break": "missing",
+                            "o": "]",
+                            "breakEnd": "P346848.3.1.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "nin",
+                        "id": "P346848.3.1.2",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "sa",
+                        "id": "P346848.3.1.3",
+                        "break": "damaged",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "dara₃",
+                        "id": "P346848.3.1.4",
+                        "queried": "1"
+                      }
+                    ],
+                    "cf": "Urninsadarak",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Urninsadarak",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "ur-{d}nin-sa-dara₃",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346848.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346848.3.1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346848.U4",
+              "label": "o 2",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346848.4",
+                  "n": "2",
+                  "label": "o 2"
+                },
+                {
+                  "node": "l",
+                  "frag": "[ur]-{d}nin-ma-⸢da⸣",
+                  "id": "P346848.l08140",
+                  "ref": "P346848.4.1",
+                  "inst": "Urninmadak[1]",
+                  "sig": "@epsd2/literary%sux:ur-{d}nin-ma-da=Urninmadak[1//1]PN'PN$Urninmadak/ur-{d}nin-ma-da#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ur-{d}nin-ma-da",
+                    "gdl": [
+                      {
+                        "v": "ur",
+                        "id": "P346848.4.1.0",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "P346848.4.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "P346848.4.1.1"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "nin",
+                        "id": "P346848.4.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ma",
+                        "id": "P346848.4.1.3",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "da",
+                        "id": "P346848.4.1.4",
+                        "break": "damaged",
+                        "ho": "1",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "Urninmadak",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Urninmadak",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "ur-{d}nin-ma-da",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346848.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346848.4.1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346848.U6",
+              "label": "o 3",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346848.5",
+                  "n": "3",
+                  "label": "o 3"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢ur⸣-{d}nin-nesaŋ-ŋa₂",
+                  "id": "P346848.l08141",
+                  "ref": "P346848.5.1",
+                  "inst": "Urninnesaŋak[1]",
+                  "sig": "@epsd2/literary%sux:ur-{d}nin-nesaŋ-ŋa₂=Urninnesaŋak[1//1]PN'PN$Urninnesaŋak/ur-{d}nin-nesaŋ-ŋa₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ur-{d}nin-nesaŋ-ŋa₂",
+                    "gdl": [
+                      {
+                        "v": "ur",
+                        "id": "P346848.5.1.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "P346848.5.1.1"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "nin",
+                        "id": "P346848.5.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "nesaŋ",
+                        "id": "P346848.5.1.3",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ŋa₂",
+                        "id": "P346848.5.1.4"
+                      }
+                    ],
+                    "cf": "Urninnesaŋak",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Urninnesaŋak",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "ur-{d}nin-nesaŋ-ŋa₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346848.5.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346848.5.1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346848.U8",
+              "label": "o 4",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346848.6",
+                  "n": "4",
+                  "label": "o 4"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢ur⸣-{d}nin-{d}imma₃",
+                  "id": "P346848.l08142",
+                  "ref": "P346848.6.1",
+                  "inst": "Urninimmak[1]",
+                  "sig": "@epsd2/literary%sux:ur-{d}nin-{d}imma₃=Urninimmak[1//1]PN'PN$Urninimmak/ur-{d}nin-{d}imma₃#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ur-{d}nin-{d}imma₃",
+                    "gdl": [
+                      {
+                        "v": "ur",
+                        "id": "P346848.6.1.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "P346848.6.1.1"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "nin",
+                        "id": "P346848.6.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "P346848.6.1.3"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "imma₃",
+                        "id": "P346848.6.1.4"
+                      }
+                    ],
+                    "cf": "Urninimmak",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Urninimmak",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "ur-{d}nin-{d}imma₃",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346848.6.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346848.6.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

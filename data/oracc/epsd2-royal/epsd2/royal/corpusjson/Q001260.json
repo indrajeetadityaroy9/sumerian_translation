@@ -1,0 +1,581 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:59:18",
+  "textid": "Q001260",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001260.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001260.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001260.U2",
+              "label": "1' - r 4'",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001260.1",
+                  "n": "1'",
+                  "label": "1'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001260.l00a05",
+                  "ref": "Q001260.1.1",
+                  "inst": "namtil[life]",
+                  "sig": "@epsd2/royal%sux:nam-til₃=namtil[life//life]N'N$namtil/nam-til₃#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "nam-til₃",
+                    "gdl": [
+                      {
+                        "v": "nam",
+                        "id": "Q001260.1.1.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "til₃",
+                        "id": "Q001260.1.1.1",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "Q001260.1.1.1"
+                      }
+                    ],
+                    "cf": "namtil",
+                    "gw": "life",
+                    "sense": "life",
+                    "norm0": "namtil",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "nam-til₃",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001260.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001260.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001260.2",
+                  "n": "2'",
+                  "label": "2'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001260.l00a06",
+                  "ref": "Q001260.2.1",
+                  "inst": "dam[spouse]",
+                  "sig": "@epsd2/royal%sux:dam=dam[spouse//spouse]N'N$dam/dam#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "dam",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "dam",
+                        "id": "Q001260.2.1.0"
+                      }
+                    ],
+                    "cf": "dam",
+                    "gw": "spouse",
+                    "sense": "spouse",
+                    "norm0": "dam",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "dam",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001260.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001260.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q001260.l00a07",
+                  "ref": "Q001260.2.2",
+                  "inst": "dumu[child]",
+                  "sig": "@epsd2/royal%sux:dumu-na-še₃=dumu[child//child, son, daughter]N'N$dumu,ani.ak.eše/dumu#~,ani.ak.eše",
+                  "f": {
+                    "lang": "sux",
+                    "form": "dumu-na-še₃",
+                    "gdl": [
+                      {
+                        "v": "dumu",
+                        "id": "Q001260.2.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "na",
+                        "id": "Q001260.2.2.1",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "še₃",
+                        "id": "Q001260.2.2.2",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "Q001260.2.2.2"
+                      }
+                    ],
+                    "cf": "dumu",
+                    "gw": "child",
+                    "sense": "child, son, daughter",
+                    "norm0": "dumu,ani.ak.eše",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "dumu",
+                    "morph": "~,ani.ak.eše"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001260.2.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001260.2.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001260.3",
+                  "n": "3'",
+                  "label": "3'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001260.l00a08",
+                  "ref": "Q001260.3.1",
+                  "inst": "a[water]",
+                  "sig": "@epsd2/royal%sux:a=a[water//water]N'N$a/a#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "a",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "a",
+                        "id": "Q001260.3.1.0"
+                      }
+                    ],
+                    "cf": "a",
+                    "gw": "water",
+                    "sense": "water",
+                    "norm0": "a",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "a",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001260.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001260.3.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q001260.l00a09",
+                  "ref": "Q001260.3.2",
+                  "inst": "ru[cvve]",
+                  "sig": "@epsd2/royal%sux:mu-ru=ru[cvve//(compound verb verbal element)]V/t'V/t$mu:ru/ru#mu:~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "mu-ru",
+                    "gdl": [
+                      {
+                        "v": "mu",
+                        "id": "Q001260.3.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ru",
+                        "id": "Q001260.3.2.1"
+                      }
+                    ],
+                    "cf": "ru",
+                    "gw": "cvve",
+                    "sense": "(compound verb verbal element)",
+                    "norm0": "mu:ru",
+                    "pos": "V/t",
+                    "epos": "V/t",
+                    "base": "ru",
+                    "morph": "mu:~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001260.3.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001260.3.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001260.4",
+                  "n": "1'",
+                  "label": "r 1'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001260.l00a0a",
+                  "ref": "Q001260.4.1",
+                  "inst": "Ayabaraganak[1]PN",
+                  "sig": "@epsd2/royal%sux:a-bara₂-an-na=Ayabaraganak[1//1]PN'PN$Ayabaraganak/a-bara₂-an-na#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "a-bara₂-an-na",
+                    "gdl": [
+                      {
+                        "v": "a",
+                        "id": "Q001260.4.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "bara₂",
+                        "id": "Q001260.4.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "an",
+                        "id": "Q001260.4.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "na",
+                        "id": "Q001260.4.1.3"
+                      }
+                    ],
+                    "cf": "Ayabaraganak",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Ayabaraganak",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "a-bara₂-an-na",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001260.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001260.4.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001260.5",
+                  "n": "2'",
+                  "label": "r 2'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001260.l00a0b",
+                  "ref": "Q001260.5.1",
+                  "inst": "dam[spouse]",
+                  "sig": "@epsd2/royal%sux:dam-ni=dam[spouse//spouse]N'N$dam,ani/dam#~,ani",
+                  "f": {
+                    "lang": "sux",
+                    "form": "dam-ni",
+                    "gdl": [
+                      {
+                        "v": "dam",
+                        "id": "Q001260.5.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ni",
+                        "id": "Q001260.5.1.1"
+                      }
+                    ],
+                    "cf": "dam",
+                    "gw": "spouse",
+                    "sense": "spouse",
+                    "norm0": "dam,ani",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "dam",
+                    "morph": "~,ani"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001260.5.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001260.5.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001260.6",
+                  "n": "3'",
+                  "label": "r 3'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001260.l00a0c",
+                  "ref": "Q001260.6.1",
+                  "inst": "hetila[vow]",
+                  "sig": "@epsd2/royal%sux:he₂-til₃-la-še₃=hetila[vow//vow]N'N$hetila,eše/he₂-til₃-la#~,eše",
+                  "f": {
+                    "lang": "sux",
+                    "form": "he₂-til₃-la-še₃",
+                    "gdl": [
+                      {
+                        "v": "he₂",
+                        "id": "Q001260.6.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "til₃",
+                        "id": "Q001260.6.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "la",
+                        "id": "Q001260.6.1.2",
+                        "break": "damaged",
+                        "gdl_remarked": "1",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "še₃",
+                        "id": "Q001260.6.1.3",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "Q001260.6.1.3"
+                      }
+                    ],
+                    "cf": "hetila",
+                    "gw": "vow",
+                    "sense": "vow",
+                    "norm0": "hetila,eše",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "he₂-til₃-la",
+                    "morph": "~,eše"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001260.6.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001260.6.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001260.7",
+                  "n": "4'",
+                  "label": "r 4'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001260.l00a0d",
+                  "ref": "Q001260.7.1",
+                  "inst": "a[water]",
+                  "sig": "@epsd2/royal%sux:a=a[water//water]N'N$a/a#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "a",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "a",
+                        "id": "Q001260.7.1.0",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "Q001260.7.1.0"
+                      }
+                    ],
+                    "cf": "a",
+                    "gw": "water",
+                    "sense": "water",
+                    "norm0": "a",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "a",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001260.7.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001260.7.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q001260.l00a0e",
+                  "ref": "Q001260.7.2",
+                  "inst": "ru[cvve]",
+                  "sig": "@epsd2/royal%sux:mu-ru=ru[cvve//(compound verb verbal element)]V/t'V/t$mu:ru/ru#mu:~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "mu-ru",
+                    "gdl": [
+                      {
+                        "v": "mu",
+                        "id": "Q001260.7.2.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "ru",
+                        "id": "Q001260.7.2.1",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "Q001260.7.2.1"
+                      }
+                    ],
+                    "cf": "ru",
+                    "gw": "cvve",
+                    "sense": "(compound verb verbal element)",
+                    "norm0": "mu:ru",
+                    "pos": "V/t",
+                    "epos": "V/t",
+                    "base": "ru",
+                    "morph": "mu:~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001260.7.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001260.7.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

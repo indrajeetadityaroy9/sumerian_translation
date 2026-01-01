@@ -1,0 +1,199 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:59:14",
+  "textid": "Q001242",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001242.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001242.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001242.U2",
+              "label": "1 - 3",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001242.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001242.l0525f",
+                  "ref": "Q001242.1.1",
+                  "inst": "Enmebaragesi[1]RN",
+                  "sig": "@epsd2/royal%sux:me-bara₂-si=Enmebaragesi[1//1]RN'RN$Enmebaragesi/me-bara₂-si#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "me-bara₂-si",
+                    "gdl": [
+                      {
+                        "v": "me",
+                        "id": "Q001242.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "bara₂",
+                        "id": "Q001242.1.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "si",
+                        "id": "Q001242.1.1.2"
+                      }
+                    ],
+                    "cf": "Enmebaragesi",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Enmebaragesi",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "me-bara₂-si",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001242.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001242.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001242.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001242.l05260",
+                  "ref": "Q001242.2.1",
+                  "inst": "lugal[king]",
+                  "sig": "@epsd2/royal%sux:lugal=lugal[king//king]N'N$lugal/lugal#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "lugal",
+                    "gdl": [
+                      {
+                        "v": "lugal",
+                        "id": "Q001242.2.1.0"
+                      }
+                    ],
+                    "cf": "lugal",
+                    "gw": "king",
+                    "sense": "king",
+                    "norm0": "lugal",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "lugal",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001242.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001242.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001242.3",
+                  "n": "3",
+                  "label": "3"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001242.l05261",
+                  "ref": "Q001242.3.1",
+                  "inst": "Kiš[1]",
+                  "sig": "@epsd2/royal%sux:kiš=Kiš[1//1]SN'SN$Kiš/kiš#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "kiš",
+                    "gdl": [
+                      {
+                        "v": "kiš",
+                        "id": "Q001242.3.1.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "Kiš",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Kiš",
+                    "pos": "SN",
+                    "epos": "SN",
+                    "base": "kiš",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001242.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001242.3.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "nonx",
+                  "ref": "Q001242.4",
+                  "strict": "1",
+                  "extent": "n",
+                  "scope": "line",
+                  "state": "missing"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

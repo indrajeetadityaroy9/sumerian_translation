@@ -1,0 +1,93 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:59:24",
+  "textid": "Q001286",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001286.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001286.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001286.U2",
+              "label": "1",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001286.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001286.l00a4a",
+                  "ref": "Q001286.1.1",
+                  "inst": "Munuskigal[1]PN",
+                  "sig": "@epsd2/royal%sux:SAL-ki-gal=Munuskigal[1//1]PN'PN$Munuskigal/SAL-ki-gal#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "SAL-ki-gal",
+                    "gdl": [
+                      {
+                        "s": "SAL",
+                        "id": "Q001286.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ki",
+                        "id": "Q001286.1.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gal",
+                        "id": "Q001286.1.1.2"
+                      }
+                    ],
+                    "cf": "Munuskigal",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Munuskigal",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "SAL-ki-gal",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001286.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001286.1.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

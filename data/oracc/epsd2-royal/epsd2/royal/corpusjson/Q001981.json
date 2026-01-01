@@ -1,0 +1,201 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:01:56",
+  "textid": "Q001981",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001981.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001981.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001981.U2",
+              "label": "1 - 2",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001981.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001981.l00df1",
+                  "ref": "Q001981.1.1",
+                  "inst": "Ilumahu[1]PN",
+                  "sig": "@epsd2/royal%sux:DINGIR-a-hu-u₂=Ilumahu[1//1]PN'PN$Ilumahu/DINGIR-a-hu-u₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "DINGIR-a-hu-u₂",
+                    "gdl": [
+                      {
+                        "s": "DINGIR",
+                        "id": "Q001981.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "a",
+                        "id": "Q001981.1.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "hu",
+                        "id": "Q001981.1.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "u₂",
+                        "id": "Q001981.1.1.3"
+                      }
+                    ],
+                    "cf": "Ilumahu",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Ilumahu",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "DINGIR-a-hu-u₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001981.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001981.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001981.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001981.l00df2",
+                  "ref": "Q001981.2.1",
+                  "inst": "arad[slave]",
+                  "sig": "@epsd2/royal%sux:arad=arad[slave//slave]N'N$arad/arad#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "arad",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "arad",
+                        "id": "Q001981.2.1.0"
+                      }
+                    ],
+                    "cf": "arad",
+                    "gw": "slave",
+                    "sense": "slave",
+                    "norm0": "arad",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "arad",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001981.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001981.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q001981.l00df3",
+                  "ref": "Q001981.2.2",
+                  "inst": "Bursin[0]RN",
+                  "sig": "@epsd2/royal%sux:bur-{d}sin=Bursin[0//0]RN'RN$Bursin/bur-{d}sin#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "bur-{d}sin",
+                    "gdl": [
+                      {
+                        "v": "bur",
+                        "id": "Q001981.2.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q001981.2.2.1"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "sin",
+                        "id": "Q001981.2.2.2"
+                      }
+                    ],
+                    "cf": "Bursin",
+                    "gw": "0",
+                    "sense": "0",
+                    "norm0": "Bursin",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "bur-{d}sin",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001981.2.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001981.2.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

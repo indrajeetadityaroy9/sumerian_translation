@@ -1,0 +1,670 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:03:22",
+  "textid": "Q004142",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q004142.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q004142.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q004142.U2",
+              "label": "i 1 - ii 3",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q004142.1",
+                  "n": "1",
+                  "label": "i 1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q004142.l00382",
+                  "ref": "Q004142.1.1",
+                  "inst": "Amarsuenak[1]RN",
+                  "sig": "@epsd2/royal%sux:{d}amar-{d}suen=Amarsuenak[1//1]RN'RN$Amarsuenak/{d}amar-{d}suen#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}amar-{d}suen",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q004142.1.1.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "amar",
+                        "id": "Q004142.1.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q004142.1.1.2"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "suen",
+                        "id": "Q004142.1.1.3"
+                      }
+                    ],
+                    "cf": "Amarsuenak",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Amarsuenak",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "{d}amar-{d}suen",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004142.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004142.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q004142.2",
+                  "n": "2",
+                  "label": "i 2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q004142.l00383",
+                  "ref": "Q004142.2.1",
+                  "inst": "nita[male]",
+                  "sig": "@epsd2/royal%sux:nita=nita[male//male]N'N$nita/nita#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "nita",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "nita",
+                        "id": "Q004142.2.1.0"
+                      }
+                    ],
+                    "cf": "nita",
+                    "gw": "male",
+                    "sense": "male",
+                    "norm0": "nita",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "nita",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004142.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004142.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q004142.l00384",
+                  "ref": "Q004142.2.2",
+                  "inst": "kalag[strong]",
+                  "sig": "@epsd2/royal%sux:kalag-ga=kalag[strong//(to be) strong, powerful, mighty]V/i'V/i$kalag/kalag+-ga=g.a#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "kalag-ga",
+                    "gdl": [
+                      {
+                        "v": "kalag",
+                        "id": "Q004142.2.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ga",
+                        "id": "Q004142.2.2.1"
+                      }
+                    ],
+                    "cf": "kalag",
+                    "gw": "strong",
+                    "sense": "(to be) strong, powerful, mighty",
+                    "norm0": "kalag",
+                    "pos": "V/i",
+                    "epos": "V/i",
+                    "base": "kalag",
+                    "cont": "-ga=g.a",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004142.2.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004142.2.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q004142.3",
+                  "n": "3",
+                  "label": "i 3"
+                },
+                {
+                  "node": "l",
+                  "id": "Q004142.l00385",
+                  "ref": "Q004142.3.1",
+                  "inst": "lugal[king]",
+                  "sig": "@epsd2/royal%sux:lugal=lugal[king//king]N'N$lugal/lugal#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "lugal",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "lugal",
+                        "id": "Q004142.3.1.0"
+                      }
+                    ],
+                    "cf": "lugal",
+                    "gw": "king",
+                    "sense": "king",
+                    "norm0": "lugal",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "lugal",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004142.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004142.3.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q004142.l00386",
+                  "ref": "Q004142.3.2",
+                  "inst": "Urim[1]SN",
+                  "sig": "@epsd2/royal%sux:urim₅{ki}-ma=Urim[1//1]SN'SN$Urim,ak/urim₅{ki}+-ma=m.a#~,ak",
+                  "f": {
+                    "lang": "sux",
+                    "form": "urim₅{ki}-ma",
+                    "gdl": [
+                      {
+                        "v": "urim₅",
+                        "id": "Q004142.3.2.0"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "post",
+                        "delim": "-",
+                        "seq": [
+                          {
+                            "v": "ki",
+                            "id": "Q004142.3.2.1"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "ma",
+                        "id": "Q004142.3.2.2"
+                      }
+                    ],
+                    "cf": "Urim",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Urim,ak",
+                    "pos": "SN",
+                    "epos": "SN",
+                    "base": "urim₅{ki}",
+                    "cont": "-ma=m.a",
+                    "morph": "~,ak"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004142.3.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004142.3.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q004142.4",
+                  "n": "4",
+                  "label": "i 4"
+                },
+                {
+                  "node": "l",
+                  "id": "Q004142.l00387",
+                  "ref": "Q004142.4.1",
+                  "inst": "lugal[king]",
+                  "sig": "@epsd2/royal%sux:lugal=lugal[king//king]N'N$lugal/lugal#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "lugal",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "lugal",
+                        "id": "Q004142.4.1.0"
+                      }
+                    ],
+                    "cf": "lugal",
+                    "gw": "king",
+                    "sense": "king",
+                    "norm0": "lugal",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "lugal",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004142.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004142.4.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q004142.l00388",
+                  "ref": "Q004142.4.2",
+                  "inst": "anubda[quarter]",
+                  "sig": "@epsd2/royal%sux:an-ub-da=anubda[quarter//a cosmographic or geographic term, quarter (of the universe)]N'N$anubda/an-ub-da#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "an-ub-da",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "an",
+                        "id": "Q004142.4.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ub",
+                        "id": "Q004142.4.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "da",
+                        "id": "Q004142.4.2.2"
+                      }
+                    ],
+                    "cf": "anubda",
+                    "gw": "quarter",
+                    "sense": "a cosmographic or geographic term, quarter (of the universe)",
+                    "norm0": "anubda",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "an-ub-da",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004142.4.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004142.4.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q004142.l00389",
+                  "ref": "Q004142.4.3",
+                  "inst": "limmu[four]",
+                  "sig": "@epsd2/royal%sux:limmu₂-ba=limmu[four//four]NU'NU$limmu,bi.ak/limmu₂#~,bi.ak",
+                  "f": {
+                    "lang": "sux",
+                    "form": "limmu₂-ba",
+                    "gdl": [
+                      {
+                        "v": "limmu₂",
+                        "id": "Q004142.4.3.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ba",
+                        "id": "Q004142.4.3.1"
+                      }
+                    ],
+                    "cf": "limmu",
+                    "gw": "four",
+                    "sense": "four",
+                    "norm0": "limmu,bi.ak",
+                    "pos": "NU",
+                    "epos": "NU",
+                    "base": "limmu₂",
+                    "morph": "~,bi.ak"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004142.4.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004142.4.3"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q004142.5",
+                  "n": "1",
+                  "label": "ii 1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q004142.l0038a",
+                  "ref": "Q004142.5.1",
+                  "inst": "Naramili[1]PN",
+                  "exosig": "@epsd2/royal%sux:na-ra-am-i₃-li₂=Naramili[1//1]PN'PN$Naramili/na-ra-am-i₃-li₂#~",
+                  "exoprj": "epsd2/names",
+                  "exolng": "sux",
+                  "f": {
+                    "lang": "sux",
+                    "form": "na-ra-am-i₃-li₂",
+                    "gdl": [
+                      {
+                        "v": "na",
+                        "id": "Q004142.5.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ra",
+                        "id": "Q004142.5.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "am",
+                        "id": "Q004142.5.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "i₃",
+                        "id": "Q004142.5.1.3",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "li₂",
+                        "id": "Q004142.5.1.4"
+                      }
+                    ],
+                    "cf": "Naramili",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Naramili",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "na-ra-am-i₃-li₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004142.5.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004142.5.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q004142.6",
+                  "n": "2",
+                  "label": "ii 2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q004142.l0038b",
+                  "ref": "Q004142.6.1",
+                  "inst": "sukkal[envoy]",
+                  "exosig": "@epsd2/royal%sux:sukkal=sukkal[secretary//diplomat, envoy]N'N$sukkal/sukkal#~",
+                  "exoprj": "epsd2",
+                  "exolng": "sux",
+                  "f": {
+                    "lang": "sux",
+                    "form": "sukkal",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "sukkal",
+                        "id": "Q004142.6.1.0"
+                      }
+                    ],
+                    "cf": "sukkal",
+                    "gw": "secretary",
+                    "sense": "diplomat, envoy",
+                    "norm0": "sukkal",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "sukkal",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004142.6.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004142.6.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q004142.l0038c",
+                  "ref": "Q004142.6.2",
+                  "inst": "idu[doorkeeper]",
+                  "sig": "@epsd2/royal%sux:i₃-du₈=idu[doorkeeper//doorkeeper]N'N$idu/i₃-du₈#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "i₃-du₈",
+                    "gdl": [
+                      {
+                        "v": "i₃",
+                        "id": "Q004142.6.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "du₈",
+                        "id": "Q004142.6.2.1",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "Q004142.6.2.1"
+                      }
+                    ],
+                    "cf": "idu",
+                    "gw": "doorkeeper",
+                    "sense": "doorkeeper",
+                    "norm0": "idu",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "i₃-du₈",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004142.6.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004142.6.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q004142.7",
+                  "n": "3",
+                  "label": "ii 3"
+                },
+                {
+                  "node": "l",
+                  "id": "Q004142.l0038d",
+                  "ref": "Q004142.7.1",
+                  "inst": "arad[slave]",
+                  "sig": "@epsd2/royal%sux:arad₂-zu=arad[slave//slave]N'N$arad,zu/arad₂#~,zu",
+                  "f": {
+                    "lang": "sux",
+                    "form": "arad₂-zu",
+                    "gdl": [
+                      {
+                        "v": "arad₂",
+                        "id": "Q004142.7.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "zu",
+                        "id": "Q004142.7.1.1"
+                      }
+                    ],
+                    "cf": "arad",
+                    "gw": "slave",
+                    "sense": "slave",
+                    "norm0": "arad,zu",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "arad₂",
+                    "morph": "~,zu"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004142.7.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004142.7.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

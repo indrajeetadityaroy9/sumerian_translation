@@ -1,0 +1,544 @@
+{
+  "type": "cdl",
+  "project": "epsd2/literary",
+  "source": "http://oracc.org/epsd2/literary",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:44:24",
+  "textid": "P346382",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "P346382.U0",
+      "cdl": [
+        {
+          "node": "d",
+          "subtype": "tablet",
+          "type": "object",
+          "ref": "P346382.x240.1",
+          "label": "x240"
+        },
+        {
+          "node": "d",
+          "subtype": "obverse",
+          "type": "surface",
+          "ref": "P346382.o.2",
+          "label": "o"
+        },
+        {
+          "node": "d",
+          "type": "nonx",
+          "ref": "P346382.3",
+          "strict": "1",
+          "extent": "1",
+          "scope": "line",
+          "state": "ruling"
+        },
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "P346382.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "P346382.U2",
+              "label": "o 1 - o 4",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346382.4",
+                  "n": "1",
+                  "label": "o 1"
+                },
+                {
+                  "node": "l",
+                  "frag": "zig₃-ga-ŋu₁₀",
+                  "id": "P346382.l06280",
+                  "ref": "P346382.4.1",
+                  "inst": "ziga[expenditure]",
+                  "sig": "@epsd2/literary%sux:zig₃-ga-ŋu₁₀=ziga[expenditure//expenditure]N'N$ziga,ŋu/zi-ga#~,ŋu",
+                  "f": {
+                    "lang": "sux",
+                    "form": "zig₃-ga-ŋu₁₀",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "zig₃",
+                        "id": "P346382.4.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ga",
+                        "id": "P346382.4.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ŋu₁₀",
+                        "id": "P346382.4.1.2"
+                      }
+                    ],
+                    "cf": "ziga",
+                    "gw": "expenditure",
+                    "sense": "expenditure",
+                    "norm0": "ziga,ŋu",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "zi-ga",
+                    "morph": "~,ŋu"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346382.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346382.4.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "dug₄-ga",
+                  "id": "P346382.l06281",
+                  "ref": "P346382.4.2",
+                  "inst": "dug[speak]",
+                  "sig": "@epsd2/literary%sux:dug₄-ga=dug[speak//to speak, talk, say]V/t'V/t$dug;a/dug₄+-ga=g.a#~;a",
+                  "f": {
+                    "lang": "sux",
+                    "form": "dug₄-ga",
+                    "gdl": [
+                      {
+                        "v": "dug₄",
+                        "id": "P346382.4.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ga",
+                        "id": "P346382.4.2.1"
+                      }
+                    ],
+                    "cf": "dug",
+                    "gw": "speak",
+                    "sense": "to speak, talk, say",
+                    "norm0": "dug;a",
+                    "pos": "V/t",
+                    "epos": "V/t",
+                    "base": "dug₄",
+                    "cont": "-ga=g.a",
+                    "morph": "~;a"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346382.4.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346382.4.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346382.5",
+                  "n": "2",
+                  "label": "o 2"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢ma⸣-la-ga-a-ni",
+                  "id": "P346382.l06282",
+                  "ref": "P346382.5.1",
+                  "inst": "malag[female neighbor]",
+                  "sig": "@epsd2/literary%sux:ma-la-ga-a-ni=malag[neighbor//female neighbor]N'N$malag,ani/ma-la+-ga=g+a#~,ani",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ma-la-ga-a-ni",
+                    "gdl": [
+                      {
+                        "v": "ma",
+                        "id": "P346382.5.1.0",
+                        "break": "damaged",
+                        "queried": "1",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "la",
+                        "id": "P346382.5.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ga",
+                        "id": "P346382.5.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "a",
+                        "id": "P346382.5.1.3",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ni",
+                        "id": "P346382.5.1.4"
+                      }
+                    ],
+                    "cf": "malag",
+                    "gw": "neighbor",
+                    "sense": "female neighbor",
+                    "norm0": "malag,ani",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ma-la",
+                    "cont": "-ga=g+a",
+                    "morph": "~,ani"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346382.5.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346382.5.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346382.6",
+                  "n": "3",
+                  "label": "o 3"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢usar⸣",
+                  "id": "P346382.l06283",
+                  "ref": "P346382.6.1",
+                  "inst": "usar[(female) neighbor]",
+                  "sig": "@epsd2/literary%sux:usar=usar[neighbor//(female) neighbor]N'N$usar/usar#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "usar",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "usar",
+                        "id": "P346382.6.1.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "usar",
+                    "gw": "neighbor",
+                    "sense": "(female) neighbor",
+                    "norm0": "usar",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "usar",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346382.6.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346382.6.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "c",
+                  "type": "phrase",
+                  "tag": "phr",
+                  "id": "P346382.U4",
+                  "ref": "P346382.ls00000",
+                  "cdl": [
+                    {
+                      "node": "l",
+                      "frag": "na",
+                      "id": "P346382.l06284",
+                      "ref": "P346382.6.2",
+                      "inst": "na[cvne]",
+                      "sig": "@epsd2/literary%sux:na=na[cvne//(compound verb nominal element)]N'N$na/na#~",
+                      "f": {
+                        "lang": "sux",
+                        "form": "na",
+                        "delim": "",
+                        "gdl": [
+                          {
+                            "v": "na",
+                            "id": "P346382.6.2.0"
+                          }
+                        ],
+                        "cf": "na",
+                        "gw": "cvne",
+                        "sense": "(compound verb nominal element)",
+                        "norm0": "na",
+                        "pos": "N",
+                        "epos": "N",
+                        "base": "na",
+                        "morph": "~"
+                      },
+                      "props": [
+                        {
+                          "name": "field",
+                          "group": "env",
+                          "ngram": "-1",
+                          "ref": "P346382.6.2"
+                        },
+                        {
+                          "name": "discourse",
+                          "group": "env",
+                          "value": "body",
+                          "ngram": "-1",
+                          "ref": "P346382.6.2"
+                        }
+                      ]
+                    },
+                    {
+                      "node": "l",
+                      "frag": "de₅-ga",
+                      "id": "P346382.l06285",
+                      "ref": "P346382.6.3",
+                      "inst": "deg[gather up]",
+                      "sig": "@epsd2/literary%sux:de₅-ga=deg[collect//to gather up, glean, collect, pick up]V/t'V/t$deg;a/degₓ(RI)+-ga=g.a#~;a",
+                      "f": {
+                        "lang": "sux",
+                        "form": "de₅-ga",
+                        "gdl": [
+                          {
+                            "v": "de₅",
+                            "id": "P346382.6.3.0",
+                            "delim": "-"
+                          },
+                          {
+                            "v": "ga",
+                            "id": "P346382.6.3.1"
+                          }
+                        ],
+                        "cf": "deg",
+                        "gw": "collect",
+                        "sense": "to gather up, glean, collect, pick up",
+                        "norm0": "deg;a",
+                        "pos": "V/t",
+                        "epos": "V/t",
+                        "base": "degₓ(RI)",
+                        "cont": "-ga=g.a",
+                        "morph": "~;a"
+                      },
+                      "props": [
+                        {
+                          "name": "field",
+                          "group": "env",
+                          "ngram": "-1",
+                          "ref": "P346382.6.3"
+                        },
+                        {
+                          "name": "discourse",
+                          "group": "env",
+                          "value": "body",
+                          "ngram": "-1",
+                          "ref": "P346382.6.3"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346382.7",
+                  "n": "4",
+                  "label": "o 4"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢lu₂⸣",
+                  "id": "P346382.l06286",
+                  "ref": "P346382.7.1",
+                  "inst": "lu[(s)he who]",
+                  "sig": "@epsd2/literary%sux:lu₂=lu[person//(s)he who, that which]N'N$lu/lu₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "lu₂",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "lu₂",
+                        "id": "P346382.7.1.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "lu",
+                    "gw": "person",
+                    "sense": "(s)he who, that which",
+                    "norm0": "lu",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "lu₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346382.7.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346382.7.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "du₁₄-da-ka-a-ni",
+                  "id": "P346382.l06287",
+                  "ref": "P346382.7.2",
+                  "inst": "dud[combat]",
+                  "sig": "@epsd2/literary%sux:du₁₄-da-ka-a-ni=dud[combat//combat, strife, discord, quarrel]N'N$dud,ak.ani/du₁₄+-da=d.a#~,ak.ani",
+                  "f": {
+                    "lang": "sux",
+                    "form": "du₁₄-da-ka-a-ni",
+                    "gdl": [
+                      {
+                        "v": "du₁₄",
+                        "id": "P346382.7.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "da",
+                        "id": "P346382.7.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ka",
+                        "id": "P346382.7.2.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "a",
+                        "id": "P346382.7.2.3",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ni",
+                        "id": "P346382.7.2.4"
+                      }
+                    ],
+                    "cf": "dud",
+                    "gw": "combat",
+                    "sense": "combat, strife, discord, quarrel",
+                    "norm0": "dud,ak.ani",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "du₁₄",
+                    "cont": "-da=d.a",
+                    "morph": "~,ak.ani"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346382.7.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346382.7.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "nonw",
+                  "ref": ""
+                },
+                {
+                  "node": "d",
+                  "type": "nonx",
+                  "ref": "P346382.8",
+                  "strict": "1",
+                  "extent": "1",
+                  "scope": "line",
+                  "state": "ruling"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkbase": [
+        {
+          "type": "linkset",
+          "xlink_title": "na deg[clear//to make clear, explain]V/t'V/t",
+          "id": "P346382.ls00000",
+          "xlink_type": "extended",
+          "xlink_role": "psu",
+          "sig": "{na de₅-ga = na[cvne]N deg[collect]V/t += na deg[clear//to make clear, explain]V/t'V/t}::@epsd2/literary%sux:na=na[cvne//(compound verb nominal element)]N'N$na/na#~++@epsd2/literary%sux:de₅-ga=deg[collect//to gather up, glean, collect, pick up]V/t'V/t$deg;a/degₓ(RI)+-ga=g.a#~;a",
+          "links": [
+            {
+              "type": "link",
+              "xlink_title": "na",
+              "xlink_type": "locator",
+              "xlink_href": "#P346382.l06284",
+              "xlink_role": "elt"
+            },
+            {
+              "type": "link",
+              "xlink_title": "deg",
+              "xlink_type": "locator",
+              "xlink_href": "#P346382.l06285",
+              "xlink_role": "elt"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

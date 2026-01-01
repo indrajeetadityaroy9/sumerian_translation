@@ -1,0 +1,442 @@
+{
+  "type": "cdl",
+  "project": "epsd2/literary",
+  "source": "http://oracc.org/epsd2/literary",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:43:17",
+  "textid": "P254881",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "P254881.U0",
+      "cdl": [
+        {
+          "node": "d",
+          "subtype": "tablet",
+          "type": "object",
+          "ref": "P254881.x31.1",
+          "label": "x31"
+        },
+        {
+          "node": "d",
+          "subtype": "obverse",
+          "type": "surface",
+          "ref": "P254881.o.2",
+          "label": "o"
+        },
+        {
+          "node": "d",
+          "type": "nonx",
+          "ref": "P254881.3",
+          "strict": "1",
+          "extent": "1",
+          "scope": "line",
+          "state": "ruling"
+        },
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "P254881.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "P254881.U2",
+              "label": "o 1 - o 3",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P254881.4",
+                  "n": "1",
+                  "label": "o 1"
+                },
+                {
+                  "node": "l",
+                  "frag": "šah₂",
+                  "id": "P254881.l00b8e",
+                  "ref": "P254881.4.1",
+                  "inst": "šah[pig]",
+                  "sig": "@epsd2/literary%sux:šah₂=šah[pig//pig]N'N$šah/šah₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "šah₂",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "šah₂",
+                        "id": "P254881.4.1.0"
+                      }
+                    ],
+                    "cf": "šah",
+                    "gw": "pig",
+                    "sense": "pig",
+                    "norm0": "šah",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "šah₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P254881.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P254881.4.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "lu-hu-um-ma",
+                  "id": "P254881.l00b8f",
+                  "ref": "P254881.4.2",
+                  "inst": "luhum[mud]",
+                  "sig": "@epsd2/literary%sux:lu-hu-um-ma=luhum[mud//mud]N'N$luhum,ak/lu-hu-um+-ma=m.a#~,ak",
+                  "f": {
+                    "lang": "sux",
+                    "form": "lu-hu-um-ma",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "lu",
+                        "id": "P254881.4.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "hu",
+                        "id": "P254881.4.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "um",
+                        "id": "P254881.4.2.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ma",
+                        "id": "P254881.4.2.3"
+                      }
+                    ],
+                    "cf": "luhum",
+                    "gw": "mud",
+                    "sense": "mud",
+                    "norm0": "luhum,ak",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "lu-hu-um",
+                    "cont": "-ma=m.a",
+                    "morph": "~,ak"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P254881.4.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P254881.4.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "su-a",
+                  "id": "P254881.l00b90",
+                  "ref": "P254881.4.3",
+                  "inst": "su[sprinkle]",
+                  "sig": "@epsd2/literary%sux:su-a=su[sprinkle//to sprinkle, strew]V/t'V/t$su;a/su#~;a",
+                  "f": {
+                    "lang": "sux",
+                    "form": "su-a",
+                    "gdl": [
+                      {
+                        "v": "su",
+                        "id": "P254881.4.3.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "a",
+                        "id": "P254881.4.3.1"
+                      }
+                    ],
+                    "cf": "su",
+                    "gw": "sprinkle",
+                    "sense": "to sprinkle, strew",
+                    "norm0": "su;a",
+                    "pos": "V/t",
+                    "epos": "V/t",
+                    "base": "su",
+                    "morph": "~;a"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P254881.4.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P254881.4.3"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "nonw",
+                  "ref": ""
+                },
+                {
+                  "node": "d",
+                  "type": "nonx",
+                  "ref": "P254881.5",
+                  "strict": "1",
+                  "extent": "1",
+                  "scope": "line",
+                  "state": "ruling"
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P254881.6",
+                  "n": "2",
+                  "label": "o 2"
+                },
+                {
+                  "node": "l",
+                  "frag": "šah₂",
+                  "id": "P254881.l00b91",
+                  "ref": "P254881.6.1",
+                  "inst": "šah[pig]",
+                  "sig": "@epsd2/literary%sux:šah₂=šah[pig//pig]N'N$šah/šah₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "šah₂",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "šah₂",
+                        "id": "P254881.6.1.0"
+                      }
+                    ],
+                    "cf": "šah",
+                    "gw": "pig",
+                    "sense": "pig",
+                    "norm0": "šah",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "šah₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P254881.6.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P254881.6.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "ninda",
+                  "id": "P254881.l00b92",
+                  "ref": "P254881.6.2",
+                  "inst": "ninda[food]",
+                  "sig": "@epsd2/literary%sux:ninda=ninda[bread//food]N'N$ninda/ninda#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ninda",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "ninda",
+                        "id": "P254881.6.2.0"
+                      }
+                    ],
+                    "cf": "ninda",
+                    "gw": "bread",
+                    "sense": "food",
+                    "norm0": "ninda",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ninda",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P254881.6.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P254881.6.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "pad-ra₂",
+                  "id": "P254881.l00b93",
+                  "ref": "P254881.6.3",
+                  "inst": "pad[break (into bits)]",
+                  "sig": "@epsd2/literary%sux:pad-ra₂=pad[break//to break (into bits)]V/t'V/t$pad;a/pad+-ra₂=r.a#~;a",
+                  "f": {
+                    "lang": "sux",
+                    "form": "pad-ra₂",
+                    "gdl": [
+                      {
+                        "v": "pad",
+                        "id": "P254881.6.3.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ra₂",
+                        "id": "P254881.6.3.1"
+                      }
+                    ],
+                    "cf": "pad",
+                    "gw": "break",
+                    "sense": "to break (into bits)",
+                    "norm0": "pad;a",
+                    "pos": "V/t",
+                    "epos": "V/t",
+                    "base": "pad",
+                    "cont": "-ra₂=r.a",
+                    "morph": "~;a"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P254881.6.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P254881.6.3"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P254881.7",
+                  "n": "3",
+                  "label": "o 3"
+                },
+                {
+                  "node": "l",
+                  "frag": "i-ib₂-il₂-⸢i/e⸣",
+                  "id": "P254881.l00b94",
+                  "ref": "P254881.7.1",
+                  "inst": "il[raise]",
+                  "sig": "@epsd2/literary%sux:i-ib₂-il₂-i=il[raise//to raise, carry]V/t'V/t$V.b:il;e/il₂#V.b:~;e",
+                  "f": {
+                    "lang": "sux",
+                    "form": "i-ib₂-il₂-i",
+                    "gdl": [
+                      {
+                        "v": "i",
+                        "id": "P254881.7.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ib₂",
+                        "id": "P254881.7.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "il₂",
+                        "id": "P254881.7.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "gg": "alternation",
+                        "gdl_type": "alternation",
+                        "group": [
+                          {
+                            "v": "i",
+                            "id": "P254881.7.1.3",
+                            "break": "damaged",
+                            "ho": "1",
+                            "delim": "/"
+                          },
+                          {
+                            "v": "e",
+                            "id": "P254881.7.1.4",
+                            "break": "damaged",
+                            "hc": "1"
+                          }
+                        ]
+                      }
+                    ],
+                    "cf": "il",
+                    "gw": "raise",
+                    "sense": "to raise, carry",
+                    "norm0": "V.b:il;e",
+                    "pos": "V/t",
+                    "epos": "V/t",
+                    "base": "il₂",
+                    "morph": "V.b:~;e"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P254881.7.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P254881.7.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

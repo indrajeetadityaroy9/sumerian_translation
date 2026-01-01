@@ -1,0 +1,229 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:03:08",
+  "textid": "Q003648",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q003648.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q003648.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q003648.U2",
+              "label": "1 - 2",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q003648.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q003648.l02220",
+                  "ref": "Q003648.1.1",
+                  "inst": "mana[unit]",
+                  "sig": "@epsd2/royal%sux:ma-na=mana[unit//a unit of weight]N'N$mana/ma-na#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ma-na",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "ma",
+                        "id": "Q003648.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "na",
+                        "id": "Q003648.1.1.1"
+                      }
+                    ],
+                    "cf": "mana",
+                    "gw": "unit",
+                    "sense": "a unit of weight",
+                    "norm0": "mana",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ma-na",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q003648.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q003648.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q003648.l02221",
+                  "ref": "Q003648.1.2",
+                  "inst": "sikiba[ration]",
+                  "exosig": "@epsd2/royal%sux:siki-ba=sikiba[ration//wool ration]N'N$sikiba/siki-ba#~",
+                  "exoprj": "epsd2",
+                  "exolng": "sux",
+                  "f": {
+                    "lang": "sux",
+                    "form": "siki-ba",
+                    "gdl": [
+                      {
+                        "v": "siki",
+                        "id": "Q003648.1.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ba",
+                        "id": "Q003648.1.2.1"
+                      }
+                    ],
+                    "cf": "sikiba",
+                    "gw": "ration",
+                    "sense": "wool ration",
+                    "norm0": "sikiba",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "siki-ba",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q003648.1.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q003648.1.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q003648.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q003648.l02222",
+                  "ref": "Q003648.2.1",
+                  "inst": "Dudu[1]PN",
+                  "sig": "@epsd2/royal%sux:du-du=Dudu[1//1]PN'PN$Dudu/du-du#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "du-du",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "du",
+                        "id": "Q003648.2.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "du",
+                        "id": "Q003648.2.1.1"
+                      }
+                    ],
+                    "cf": "Dudu",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Dudu",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "du-du",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q003648.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q003648.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q003648.l02223",
+                  "ref": "Q003648.2.2",
+                  "inst": "saŋŋa[official]",
+                  "sig": "@epsd2/royal%sux:saŋŋa=saŋŋa[official//an official, the chief administrator of a temple household]N'N$saŋŋa/saŋŋa#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "saŋŋa",
+                    "gdl": [
+                      {
+                        "v": "saŋŋa",
+                        "id": "Q003648.2.2.0"
+                      }
+                    ],
+                    "cf": "saŋŋa",
+                    "gw": "official",
+                    "sense": "an official, the chief administrator of a temple household",
+                    "norm0": "saŋŋa",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "saŋŋa",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q003648.2.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q003648.2.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

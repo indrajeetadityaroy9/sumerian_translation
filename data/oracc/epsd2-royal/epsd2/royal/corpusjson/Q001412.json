@@ -1,0 +1,180 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:59:49",
+  "textid": "Q001412",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001412.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001412.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001412.U2",
+              "label": "a",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001412.1",
+                  "n": "a",
+                  "label": "a"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001412.l068ec",
+                  "ref": "Q001412.1.1",
+                  "inst": "mu[year]",
+                  "sig": "@epsd2/royal%sux:mu=mu[year//year]N'N$mu/mu#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "mu",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "mu",
+                        "id": "Q001412.1.1.0"
+                      }
+                    ],
+                    "cf": "mu",
+                    "gw": "year",
+                    "sense": "year",
+                    "norm0": "mu",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "mu",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001412.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001412.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q001412.l068ed",
+                  "ref": "Q001412.1.2",
+                  "inst": "Adab[1]",
+                  "sig": "@epsd2/royal%sux:adab{ki}=Adab[1//1]SN'SN$Adab/adab{ki}#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "adab{ki}",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "adab",
+                        "id": "Q001412.1.2.0"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "post",
+                        "seq": [
+                          {
+                            "v": "ki",
+                            "id": "Q001412.1.2.1"
+                          }
+                        ]
+                      }
+                    ],
+                    "cf": "Adab",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Adab",
+                    "pos": "SN",
+                    "epos": "SN",
+                    "base": "adab{ki}",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001412.1.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001412.1.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q001412.l068ee",
+                  "ref": "Q001412.1.3",
+                  "inst": "hulu[raid]",
+                  "sig": "@epsd2/royal%sux:hul-a=hulu[bad//to raid]V/i'V/t$hulu;a/hul#~;a",
+                  "f": {
+                    "lang": "sux",
+                    "form": "hul-a",
+                    "gdl": [
+                      {
+                        "v": "hul",
+                        "id": "Q001412.1.3.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "a",
+                        "id": "Q001412.1.3.1"
+                      }
+                    ],
+                    "cf": "hulu",
+                    "gw": "bad",
+                    "sense": "to raid",
+                    "norm0": "hulu;a",
+                    "pos": "V/i",
+                    "epos": "V/t",
+                    "base": "hul",
+                    "morph": "~;a"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001412.1.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001412.1.3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:59:01",
+  "textid": "Q001178",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001178.U0",
+      "cdl": [
+        {
+          "node": "d",
+          "type": "nonx",
+          "ref": "Q001178.1",
+          "strict": "1",
+          "extent": "n",
+          "scope": "line",
+          "state": "missing"
+        },
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001178.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": ".",
+              "id": "Q001178.U2",
+              "label": "1' - 3'",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001178.2",
+                  "n": "1'",
+                  "label": "1'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001178.l00cdd",
+                  "ref": "Q001178.2.1",
+                  "inst": "Lugalurubak[1]DN",
+                  "sig": "@epsd2/royal%sux:{d}lugal-urub{ki}-ra=Lugalurubak[1//1]DN'DN$Lugalurubak,ra/{d}lugal-urub{ki}#~,ra",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}lugal-urub{ki}-ra",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q001178.2.1.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "lugal",
+                        "id": "Q001178.2.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "urub",
+                        "id": "Q001178.2.1.2"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "post",
+                        "delim": "-",
+                        "seq": [
+                          {
+                            "v": "ki",
+                            "id": "Q001178.2.1.3"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "ra",
+                        "id": "Q001178.2.1.4"
+                      }
+                    ],
+                    "cf": "Lugalurubak",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Lugalurubak,ra",
+                    "pos": "DN",
+                    "epos": "DN",
+                    "base": "{d}lugal-urub{ki}",
+                    "morph": "~,ra"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001178.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001178.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001178.3",
+                  "n": "2'",
+                  "label": "2'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001178.l00cde",
+                  "ref": "Q001178.3.1",
+                  "inst": "Lugalmudakuš[1]PN",
+                  "exosig": "@epsd2/royal%sux:lugal-mu-da-kuš₂=Lugalmudakuš[1//1]PN'PN$Lugalmudakuš/lugal-mu-da-kuš₂#~",
+                  "exoprj": "epsd2/names",
+                  "exolng": "sux",
+                  "f": {
+                    "lang": "sux",
+                    "form": "lugal-mu-da-kuš₂",
+                    "gdl": [
+                      {
+                        "v": "lugal",
+                        "id": "Q001178.3.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "mu",
+                        "id": "Q001178.3.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "da",
+                        "id": "Q001178.3.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "kuš₂",
+                        "id": "Q001178.3.1.3",
+                        "queried": "1"
+                      }
+                    ],
+                    "cf": "Lugalmudakuš",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Lugalmudakuš",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "lugal-mu-da-kuš₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001178.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001178.3.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001178.4",
+                  "n": "3'",
+                  "label": "3'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001178.l00cdf",
+                  "ref": "Q001178.4.1",
+                  "inst": "dim[create] +.",
+                  "sig": "@epsd2/royal%sux:mu-na-dim₂=dim[create//to create, fashion, make, manufacture]V/t'V/t$mu.na:dim/dim₂#mu.na:~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "mu-na-dim₂",
+                    "gdl": [
+                      {
+                        "v": "mu",
+                        "id": "Q001178.4.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "na",
+                        "id": "Q001178.4.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "dim₂",
+                        "id": "Q001178.4.1.2"
+                      }
+                    ],
+                    "cf": "dim",
+                    "gw": "create",
+                    "sense": "to create, fashion, make, manufacture",
+                    "norm0": "mu.na:dim",
+                    "pos": "V/t",
+                    "epos": "V/t",
+                    "base": "dim₂",
+                    "morph": "mu.na:~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001178.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001178.4.1"
+                    }
+                  ],
+                  "para": [
+                    {
+                      "class": "boundary",
+                      "type": "sentence",
+                      "text": "+.",
+                      "val": "",
+                      "bracketing_level": "0"
+                    },
+                    {
+                      "class": "syntax",
+                      "type": "label",
+                      "text": ".",
+                      "val": "",
+                      "bracketing_level": "0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "d",
+              "type": "nonx",
+              "ref": "Q001178.5",
+              "strict": "1",
+              "extent": "n",
+              "scope": "line",
+              "state": "missing"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

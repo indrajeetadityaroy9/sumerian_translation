@@ -1,0 +1,316 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:05:06",
+  "textid": "Q008906",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q008906.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q008906.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q008906.U2",
+              "label": "1 - 3",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q008906.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q008906.l02d70",
+                  "ref": "Q008906.1.1",
+                  "inst": "Ludumuzid[1]PN",
+                  "exosig": "@epsd2/royal%sux:lu₂-{d}dumu-zid=Ludumuzid[1//1]PN'PN$Ludumuzid/lu₂-{d}dumu-zid#~",
+                  "exoprj": "epsd2/names",
+                  "exolng": "sux",
+                  "f": {
+                    "lang": "sux",
+                    "form": "lu₂-{d}dumu-zid",
+                    "gdl": [
+                      {
+                        "v": "lu₂",
+                        "id": "Q008906.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q008906.1.1.1"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "dumu",
+                        "id": "Q008906.1.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "zid",
+                        "id": "Q008906.1.1.3"
+                      }
+                    ],
+                    "cf": "Ludumuzid",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Ludumuzid",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "lu₂-{d}dumu-zid",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q008906.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q008906.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q008906.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q008906.l02d71",
+                  "ref": "Q008906.2.1",
+                  "inst": "dumu[child]",
+                  "sig": "@epsd2/royal%sux:dumu=dumu[child//child, son, daughter]N'N$dumu/dumu#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "dumu",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "dumu",
+                        "id": "Q008906.2.1.0"
+                      }
+                    ],
+                    "cf": "dumu",
+                    "gw": "child",
+                    "sense": "child, son, daughter",
+                    "norm0": "dumu",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "dumu",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q008906.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q008906.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q008906.l02d72",
+                  "ref": "Q008906.2.2",
+                  "inst": "Urlamma[5]PN",
+                  "sig": "@epsd2/royal%sux:ur-{d}lamma=Urlamma[5//5]PN'PN$Urlamma/ur-{d}lamma#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ur-{d}lamma",
+                    "gdl": [
+                      {
+                        "v": "ur",
+                        "id": "Q008906.2.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q008906.2.2.1"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "lamma",
+                        "id": "Q008906.2.2.2"
+                      }
+                    ],
+                    "cf": "Urlamma",
+                    "gw": "5",
+                    "sense": "5",
+                    "norm0": "Urlamma",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "ur-{d}lamma",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q008906.2.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q008906.2.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q008906.3",
+                  "n": "3",
+                  "label": "3"
+                },
+                {
+                  "node": "l",
+                  "id": "Q008906.l02d73",
+                  "ref": "Q008906.3.1",
+                  "inst": "šagia[cup-bearer]",
+                  "sig": "@epsd2/royal%sux:sagi=šagia[cup-bearer//cup-bearer]N'N$šagia/šagia#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "sagi",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "sagi",
+                        "id": "Q008906.3.1.0"
+                      }
+                    ],
+                    "cf": "šagia",
+                    "gw": "cup-bearer",
+                    "sense": "cup-bearer",
+                    "norm0": "šagia",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "šagia",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q008906.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q008906.3.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q008906.l02d74",
+                  "ref": "Q008906.3.2",
+                  "inst": "Gudea[1]RN",
+                  "sig": "@epsd2/royal%sux:{d}gu₃-de₂-a=Gudea[1//1]RN'RN$Gudea/{d}gu₃-de₂-a#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}gu₃-de₂-a",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q008906.3.2.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "gu₃",
+                        "id": "Q008906.3.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "de₂",
+                        "id": "Q008906.3.2.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "a",
+                        "id": "Q008906.3.2.3"
+                      }
+                    ],
+                    "cf": "Gudea",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Gudea",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "{d}gu₃-de₂-a",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q008906.3.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q008906.3.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

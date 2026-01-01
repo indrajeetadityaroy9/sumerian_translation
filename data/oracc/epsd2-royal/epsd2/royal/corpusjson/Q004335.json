@@ -1,0 +1,385 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:03:48",
+  "textid": "Q004335",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q004335.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q004335.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q004335.U2",
+              "label": "1 - 3",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q004335.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q004335.l0c523",
+                  "ref": "Q004335.1.1",
+                  "inst": "Urane[1]PN",
+                  "exosig": "@epsd2/royal%sux:ur-an-ne₂=Urane[1//1]PN'PN$Urane/ur-an-ne₂#~",
+                  "exoprj": "epsd2/names",
+                  "exolng": "sux",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ur-an-ne₂",
+                    "gdl": [
+                      {
+                        "v": "ur",
+                        "id": "Q004335.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "an",
+                        "id": "Q004335.1.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ne₂",
+                        "id": "Q004335.1.1.2"
+                      }
+                    ],
+                    "cf": "Urane",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Urane",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "ur-an-ne₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004335.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004335.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q004335.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q004335.l0c524",
+                  "ref": "Q004335.2.1",
+                  "inst": "gudug[priest]",
+                  "sig": "@epsd2/royal%sux:gudu₄=gudug[priest//a priest]N'N$gudug/gudug#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "gudu₄",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "gudu₄",
+                        "id": "Q004335.2.1.0"
+                      }
+                    ],
+                    "cf": "gudug",
+                    "gw": "priest",
+                    "sense": "a priest",
+                    "norm0": "gudug",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "gudug",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004335.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004335.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q004335.l0c525",
+                  "ref": "Q004335.2.2",
+                  "inst": "Šulgir[1]RN",
+                  "sig": "@epsd2/royal%sux:{d}šul-gi=Šulgir[1//1]RN'RN$Šulgir/{d}šul-gi#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}šul-gi",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q004335.2.2.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "šul",
+                        "id": "Q004335.2.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gi",
+                        "id": "Q004335.2.2.2"
+                      }
+                    ],
+                    "cf": "Šulgir",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Šulgir",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "{d}šul-gi",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004335.2.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004335.2.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q004335.3",
+                  "n": "3",
+                  "label": "3"
+                },
+                {
+                  "node": "l",
+                  "id": "Q004335.l0c526",
+                  "ref": "Q004335.3.1",
+                  "inst": "dumu[child]",
+                  "sig": "@epsd2/royal%sux:dumu=dumu[child//child, son, daughter]N'N$dumu/dumu#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "dumu",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "dumu",
+                        "id": "Q004335.3.1.0"
+                      }
+                    ],
+                    "cf": "dumu",
+                    "gw": "child",
+                    "sense": "child, son, daughter",
+                    "norm0": "dumu",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "dumu",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004335.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004335.3.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q004335.l0c527",
+                  "ref": "Q004335.3.2",
+                  "inst": "Lalu[1]PN",
+                  "exosig": "@epsd2/royal%sux:la-lu₅=Lalu[1//1]PN'PN$Lalu/la-lu₅#~",
+                  "exoprj": "epsd2/names",
+                  "exolng": "sux",
+                  "f": {
+                    "lang": "sux",
+                    "form": "la-lu₅",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "la",
+                        "id": "Q004335.3.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "lu₅",
+                        "id": "Q004335.3.2.1"
+                      }
+                    ],
+                    "cf": "Lalu",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Lalu",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "la-lu₅",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004335.3.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004335.3.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q004335.l0c528",
+                  "ref": "Q004335.3.3",
+                  "inst": "išib[priest]",
+                  "sig": "@epsd2/royal%sux:išib=išib[priest//purification priest, exorcist]N'N$išib/išib#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "išib",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "išib",
+                        "id": "Q004335.3.3.0"
+                      }
+                    ],
+                    "cf": "išib",
+                    "gw": "priest",
+                    "sense": "purification priest, exorcist",
+                    "norm0": "išib",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "išib",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004335.3.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004335.3.3"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q004335.l0c529",
+                  "ref": "Q004335.3.4",
+                  "inst": "Šara[1]DN",
+                  "sig": "@epsd2/royal%sux:{d}šara₂=Šara[1//1]DN'DN$Šara/{d}šara₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}šara₂",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q004335.3.4.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "šara₂",
+                        "id": "Q004335.3.4.1"
+                      }
+                    ],
+                    "cf": "Šara",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Šara",
+                    "pos": "DN",
+                    "epos": "DN",
+                    "base": "{d}šara₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q004335.3.4"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q004335.3.4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

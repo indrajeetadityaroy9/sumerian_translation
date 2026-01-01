@@ -1,0 +1,150 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:59:37",
+  "textid": "Q001347",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001347.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001347.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001347.U2",
+              "label": "1 - 2",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001347.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001347.l00b9f",
+                  "ref": "Q001347.1.1",
+                  "inst": "En.X[1]DN",
+                  "sig": "@epsd2/royal%sux:{d}en-x=En.X[1//1]DN'DN$En.X/{d}en-X#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}en-x",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q001347.1.1.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "en",
+                        "id": "Q001347.1.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "x": "ellipsis",
+                        "id": "Q001347.1.1.2"
+                      }
+                    ],
+                    "cf": "En.X",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "En.X",
+                    "pos": "DN",
+                    "epos": "DN",
+                    "base": "{d}en-X",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001347.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001347.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001347.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001347.l00ba0",
+                  "ref": "Q001347.2.1",
+                  "inst": "Ki-X[1]PN",
+                  "sig": "@epsd2/royal%sux:ki-x=Ki-X[1//1]PN'PN$Ki-X/ki-x#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ki-x",
+                    "gdl": [
+                      {
+                        "v": "ki",
+                        "id": "Q001347.2.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "x": "ellipsis",
+                        "id": "Q001347.2.1.1"
+                      }
+                    ],
+                    "cf": "Ki-X",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Ki-X",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "ki-x",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001347.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001347.2.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

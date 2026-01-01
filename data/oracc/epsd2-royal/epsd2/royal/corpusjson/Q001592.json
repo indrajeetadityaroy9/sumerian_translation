@@ -1,0 +1,206 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:00:30",
+  "textid": "Q001592",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001592.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001592.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001592.U2",
+              "label": "1 - 2",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001592.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001592.l04c23",
+                  "ref": "Q001592.1.1",
+                  "inst": "Inanak[1]DN",
+                  "sig": "@epsd2/royal%sux:{d}inana=Inanak[1//1]DN'DN$Inanak/{d}inana#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}inana",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q001592.1.1.0",
+                            "break": "damaged",
+                            "ho": "1"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "inana",
+                        "id": "Q001592.1.1.1",
+                        "break": "damaged",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "Inanak",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Inanak",
+                    "pos": "DN",
+                    "epos": "DN",
+                    "base": "{d}inana",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001592.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001592.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001592.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001592.l04c24",
+                  "ref": "Q001592.2.1",
+                  "inst": "nin[lady]",
+                  "sig": "@epsd2/royal%sux:nin=nin[lady//lady]N'N$nin/nin#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "nin",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "nin",
+                        "id": "Q001592.2.1.0",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "Q001592.2.1.0"
+                      }
+                    ],
+                    "cf": "nin",
+                    "gw": "lady",
+                    "sense": "lady",
+                    "norm0": "nin",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "nin",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001592.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001592.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q001592.l04c25",
+                  "ref": "Q001592.2.2",
+                  "inst": "Eanak[1]TN",
+                  "sig": "@epsd2/royal%sux:e₂-an-na=Eanak[1//1]TN'TN$Eanak/e₂-an-na#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "e₂-an-na",
+                    "gdl": [
+                      {
+                        "v": "e₂",
+                        "id": "Q001592.2.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "an",
+                        "id": "Q001592.2.2.1",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "na",
+                        "id": "Q001592.2.2.2",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "Q001592.2.2.2"
+                      }
+                    ],
+                    "cf": "Eanak",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Eanak",
+                    "pos": "TN",
+                    "epos": "TN",
+                    "base": "e₂-an-na",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001592.2.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001592.2.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

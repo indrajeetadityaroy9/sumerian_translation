@@ -1,0 +1,299 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:01:55",
+  "textid": "Q001978",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001978.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001978.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001978.U2",
+              "label": "1 - 3",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001978.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001978.l00ddb",
+                  "ref": "Q001978.1.1",
+                  "inst": "Waradšamaš[1]PN",
+                  "sig": "@epsd2/royal%sux:ARAD-{d}šamaš=Waradšamaš[1//1]PN'PN$Waradšamaš/ARAD-{d}šamaš#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ARAD-{d}šamaš",
+                    "gdl": [
+                      {
+                        "s": "ARAD",
+                        "id": "Q001978.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q001978.1.1.1"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "šamaš",
+                        "id": "Q001978.1.1.2"
+                      }
+                    ],
+                    "cf": "Waradšamaš",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Waradšamaš",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "ARAD-{d}šamaš",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001978.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001978.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001978.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001978.l00ddc",
+                  "ref": "Q001978.2.1",
+                  "inst": "dumu[child]",
+                  "sig": "@epsd2/royal%sux:dumu=dumu[child//child, son, daughter]N'N$dumu/dumu#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "dumu",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "dumu",
+                        "id": "Q001978.2.1.0"
+                      }
+                    ],
+                    "cf": "dumu",
+                    "gw": "child",
+                    "sense": "child, son, daughter",
+                    "norm0": "dumu",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "dumu",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001978.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001978.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q001978.l00ddd",
+                  "ref": "Q001978.2.2",
+                  "inst": "Ziyatum[1]PN",
+                  "sig": "@epsd2/royal%sux:zid-ya-tum=Ziyatum[1//1]PN'PN$Ziyatum/zid-ya-tum#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "zid-ya-tum",
+                    "gdl": [
+                      {
+                        "v": "zid",
+                        "id": "Q001978.2.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ya",
+                        "id": "Q001978.2.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "tum",
+                        "id": "Q001978.2.2.2"
+                      }
+                    ],
+                    "cf": "Ziyatum",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Ziyatum",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "zid-ya-tum",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001978.2.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001978.2.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001978.3",
+                  "n": "3",
+                  "label": "3"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001978.l00dde",
+                  "ref": "Q001978.3.1",
+                  "inst": "arad[slave]",
+                  "sig": "@epsd2/royal%sux:arad=arad[slave//slave]N'N$arad/arad#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "arad",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "arad",
+                        "id": "Q001978.3.1.0"
+                      }
+                    ],
+                    "cf": "arad",
+                    "gw": "slave",
+                    "sense": "slave",
+                    "norm0": "arad",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "arad",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001978.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001978.3.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q001978.l00ddf",
+                  "ref": "Q001978.3.2",
+                  "inst": "Bursin[0]RN",
+                  "sig": "@epsd2/royal%sux:bur-{d}sin=Bursin[0//0]RN'RN$Bursin/bur-{d}sin#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "bur-{d}sin",
+                    "gdl": [
+                      {
+                        "v": "bur",
+                        "id": "Q001978.3.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q001978.3.2.1"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "sin",
+                        "id": "Q001978.3.2.2"
+                      }
+                    ],
+                    "cf": "Bursin",
+                    "gw": "0",
+                    "sense": "0",
+                    "norm0": "Bursin",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "bur-{d}sin",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001978.3.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001978.3.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

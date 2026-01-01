@@ -1,0 +1,283 @@
+{
+  "type": "cdl",
+  "project": "epsd2/literary",
+  "source": "http://oracc.org/epsd2/literary",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:44:18",
+  "textid": "P346356",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "P346356.U0",
+      "cdl": [
+        {
+          "node": "d",
+          "subtype": "tablet",
+          "type": "object",
+          "ref": "P346356.x215.1",
+          "label": "x215"
+        },
+        {
+          "node": "d",
+          "subtype": "obverse",
+          "type": "surface",
+          "ref": "P346356.o.2",
+          "label": "o"
+        },
+        {
+          "node": "d",
+          "type": "nonx",
+          "ref": "P346356.3",
+          "strict": "1",
+          "extent": "1",
+          "scope": "line",
+          "state": "ruling"
+        },
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "P346356.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "P346356.U2",
+              "label": "o 1 - o 2",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346356.4",
+                  "n": "1",
+                  "label": "o 1"
+                },
+                {
+                  "node": "l",
+                  "frag": "kir₄-gin₇",
+                  "id": "P346356.l0614a",
+                  "ref": "P346356.4.1",
+                  "inst": "kir[hyena]",
+                  "sig": "@epsd2/literary%sux:kir₄-gin₇=kir[hyena//hyena]N'N$kir,gin/kir₄#~,gin",
+                  "f": {
+                    "lang": "sux",
+                    "form": "kir₄-gin₇",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "kir₄",
+                        "id": "P346356.4.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gin₇",
+                        "id": "P346356.4.1.1"
+                      }
+                    ],
+                    "cf": "kir",
+                    "gw": "hyena",
+                    "sense": "hyena",
+                    "norm0": "kir,gin",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "kir₄",
+                    "morph": "~,gin"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346356.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346356.4.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "en-na",
+                  "id": "P346356.l0614b",
+                  "ref": "P346356.4.2",
+                  "inst": "enna[until]",
+                  "sig": "@epsd2/literary%sux:en-na=enna[until//until, up to]CNJ'CNJ$enna/en-na#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "en-na",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "en",
+                        "id": "P346356.4.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "na",
+                        "id": "P346356.4.2.1"
+                      }
+                    ],
+                    "cf": "enna",
+                    "gw": "until",
+                    "sense": "until, up to",
+                    "norm0": "enna",
+                    "pos": "CNJ",
+                    "epos": "CNJ",
+                    "base": "en-na",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346356.4.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346356.4.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "nu-ni-hab₂-a",
+                  "id": "P346356.l0614c",
+                  "ref": "P346356.4.3",
+                  "inst": "hab[malodorous]",
+                  "sig": "@epsd2/literary%sux:nu-ni-hab₂-a=hab[malodorous//(to be) malodorous, fetid]V/i'V/i$nu.ni:hab;a/hab₂#nu.ni:~;a",
+                  "f": {
+                    "lang": "sux",
+                    "form": "nu-ni-hab₂-a",
+                    "gdl": [
+                      {
+                        "v": "nu",
+                        "id": "P346356.4.3.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ni",
+                        "id": "P346356.4.3.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "hab₂",
+                        "id": "P346356.4.3.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "a",
+                        "id": "P346356.4.3.3"
+                      }
+                    ],
+                    "cf": "hab",
+                    "gw": "malodorous",
+                    "sense": "(to be) malodorous, fetid",
+                    "norm0": "nu.ni:hab;a",
+                    "pos": "V/i",
+                    "epos": "V/i",
+                    "base": "hab₂",
+                    "morph": "nu.ni:~;a"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346356.4.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346356.4.3"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346356.5",
+                  "n": "2",
+                  "label": "o 2"
+                },
+                {
+                  "node": "l",
+                  "frag": "nu-gu₇-e",
+                  "id": "P346356.l0614d",
+                  "ref": "P346356.5.1",
+                  "inst": "gu[eat]",
+                  "sig": "@epsd2/literary%sux:nu-gu₇-e=gu[eat//to eat, consume]V/t'V/t$nu:gu;e/gu₇#nu:~;e",
+                  "f": {
+                    "lang": "sux",
+                    "form": "nu-gu₇-e",
+                    "gdl": [
+                      {
+                        "v": "nu",
+                        "id": "P346356.5.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gu₇",
+                        "id": "P346356.5.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "e",
+                        "id": "P346356.5.1.2"
+                      }
+                    ],
+                    "cf": "gu",
+                    "gw": "eat",
+                    "sense": "to eat, consume",
+                    "norm0": "nu:gu;e",
+                    "pos": "V/t",
+                    "epos": "V/t",
+                    "base": "gu₇",
+                    "morph": "nu:~;e"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346356.5.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346356.5.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "nonx",
+                  "ref": "P346356.6",
+                  "strict": "1",
+                  "extent": "1",
+                  "scope": "line",
+                  "state": "ruling"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

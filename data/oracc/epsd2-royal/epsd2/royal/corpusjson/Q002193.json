@@ -1,0 +1,149 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:02:48",
+  "textid": "Q002193",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q002193.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q002193.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q002193.U2",
+              "label": "1",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q002193.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q002193.l04071",
+                  "ref": "Q002193.1.1",
+                  "inst": "egal[palace]",
+                  "sig": "@epsd2/royal%sux:e₂-gal=egal[palace//palace]N'N$egal/e₂-gal#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "e₂-gal",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "e₂",
+                        "id": "Q002193.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gal",
+                        "id": "Q002193.1.1.1"
+                      }
+                    ],
+                    "cf": "egal",
+                    "gw": "palace",
+                    "sense": "palace",
+                    "norm0": "egal",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "e₂-gal",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q002193.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q002193.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q002193.l04072",
+                  "ref": "Q002193.1.2",
+                  "inst": "Hammurabi[1]RN",
+                  "sig": "@epsd2/royal%sux:ha-am-mu-ra-bi=Hammurabi[1//1]RN'RN$Hammurabi/ha-am-mu-ra-bi#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ha-am-mu-ra-bi",
+                    "gdl": [
+                      {
+                        "v": "ha",
+                        "id": "Q002193.1.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "am",
+                        "id": "Q002193.1.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "mu",
+                        "id": "Q002193.1.2.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ra",
+                        "id": "Q002193.1.2.3",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "bi",
+                        "id": "Q002193.1.2.4"
+                      }
+                    ],
+                    "cf": "Hammurabi",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Hammurabi",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "ha-am-mu-ra-bi",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q002193.1.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q002193.1.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

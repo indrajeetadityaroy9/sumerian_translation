@@ -1,0 +1,96 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:59:35",
+  "textid": "Q001340",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001340.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001340.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001340.U2",
+              "label": "1",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001340.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001340.l00b72",
+                  "ref": "Q001340.1.1",
+                  "inst": "Ayaulgal[1]PN",
+                  "exosig": "@epsd2/royal%sux:aya₂-ul₄-gal=Ayaulgal[1//1]PN'PN$Ayaulgal/aya₂-ul₄-gal#~",
+                  "exoprj": "epsd2/names",
+                  "exolng": "sux",
+                  "f": {
+                    "lang": "sux",
+                    "form": "a-ul₄-gal",
+                    "gdl": [
+                      {
+                        "v": "a",
+                        "id": "Q001340.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ul₄",
+                        "id": "Q001340.1.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gal",
+                        "id": "Q001340.1.1.2"
+                      }
+                    ],
+                    "aform": "aya₂-ul₄-gal",
+                    "cf": "Ayaulgal",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Ayaulgal",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "aya₂-ul₄-gal",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001340.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001340.1.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

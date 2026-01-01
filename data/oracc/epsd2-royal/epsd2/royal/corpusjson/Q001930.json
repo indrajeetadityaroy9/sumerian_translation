@@ -1,0 +1,278 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:01:44",
+  "textid": "Q001930",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001930.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001930.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001930.U2",
+              "label": "1 - 3",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001930.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001930.l04a05",
+                  "ref": "Q001930.1.1",
+                  "inst": "KAL.baba[0]PN",
+                  "sig": "@epsd2/royal%sux:KAL-ba-ba=KAL.baba[0//0]PN'PN$KAL.baba/KAL-ba-ba#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "KAL-ba-ba",
+                    "gdl": [
+                      {
+                        "s": "KAL",
+                        "id": "Q001930.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ba",
+                        "id": "Q001930.1.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ba",
+                        "id": "Q001930.1.1.2"
+                      }
+                    ],
+                    "cf": "KAL.baba",
+                    "gw": "0",
+                    "sense": "0",
+                    "norm0": "KAL.baba",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "KAL-ba-ba",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001930.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001930.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001930.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001930.l04a06",
+                  "ref": "Q001930.2.1",
+                  "inst": "panadim[bow maker]",
+                  "sig": "@epsd2/royal%sux:{geš}ban-dim₂=panadim[bow maker//bow maker]N'N$panadim/{ŋeš}pana-dim₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{geš}ban-dim₂",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "geš",
+                            "id": "Q001930.2.1.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "ban",
+                        "id": "Q001930.2.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "dim₂",
+                        "id": "Q001930.2.1.2",
+                        "break": "damaged",
+                        "ho": "1",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "panadim",
+                    "gw": "bow maker",
+                    "sense": "bow maker",
+                    "norm0": "panadim",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "{ŋeš}pana-dim₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001930.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001930.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001930.3",
+                  "n": "3",
+                  "label": "3"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001930.l04a07",
+                  "ref": "Q001930.3.1",
+                  "inst": "arad[slave]",
+                  "sig": "@epsd2/royal%sux:arad=arad[slave//slave]N'N$arad/arad#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "arad",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "arad",
+                        "id": "Q001930.3.1.0"
+                      }
+                    ],
+                    "cf": "arad",
+                    "gw": "slave",
+                    "sense": "slave",
+                    "norm0": "arad",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "arad",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001930.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001930.3.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q001930.l04a08",
+                  "ref": "Q001930.3.2",
+                  "inst": "Išbierra[1]RN",
+                  "sig": "@epsd2/royal%sux:{d}iš-bi-er₃-ra=Išbierra[1//1]RN'RN$Išbierra/{d}iš-bi-er₃-ra#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}iš-bi-er₃-ra",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q001930.3.2.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "iš",
+                        "id": "Q001930.3.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "bi",
+                        "id": "Q001930.3.2.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "er₃",
+                        "id": "Q001930.3.2.3",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "Q001930.3.2.3",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ra",
+                        "id": "Q001930.3.2.4",
+                        "break": "damaged",
+                        "ho": "1",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "Išbierra",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Išbierra",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "{d}iš-bi-er₃-ra",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001930.3.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001930.3.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

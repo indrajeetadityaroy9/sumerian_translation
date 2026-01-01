@@ -1,0 +1,228 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:59:00",
+  "textid": "Q001175",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001175.U0",
+      "cdl": [
+        {
+          "node": "d",
+          "type": "nonx",
+          "ref": "Q001175.1",
+          "strict": "1",
+          "extent": "n",
+          "scope": "line",
+          "state": "missing"
+        },
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001175.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": ".",
+              "id": "Q001175.U2",
+              "label": "1' - 2'",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001175.2",
+                  "n": "1'",
+                  "label": "1'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001175.l01aa4",
+                  "ref": "Q001175.2.1",
+                  "inst": "Lagaš[1]",
+                  "sig": "@epsd2/royal%sux:lagaš{ki}=Lagaš[1//1]SN'SN$Lagaš/lagaš{ki}#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "lagaš{ki}",
+                    "gdl": [
+                      {
+                        "v": "lagaš",
+                        "id": "Q001175.2.1.0"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "post",
+                        "seq": [
+                          {
+                            "v": "ki",
+                            "id": "Q001175.2.1.1"
+                          }
+                        ]
+                      }
+                    ],
+                    "cf": "Lagaš",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Lagaš",
+                    "pos": "SN",
+                    "epos": "SN",
+                    "base": "lagaš{ki}",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001175.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001175.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001175.3",
+                  "n": "2'",
+                  "label": "2'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001175.l01aa5",
+                  "ref": "Q001175.3.1",
+                  "inst": "dumu[child]",
+                  "sig": "@epsd2/royal%sux:dumu=dumu[child//child, son, daughter]N'N$dumu/dumu#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "dumu",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "dumu",
+                        "id": "Q001175.3.1.0"
+                      }
+                    ],
+                    "cf": "dumu",
+                    "gw": "child",
+                    "sense": "child, son, daughter",
+                    "norm0": "dumu",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "dumu",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001175.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001175.3.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q001175.l01aa6",
+                  "ref": "Q001175.3.2",
+                  "inst": "Ayakurgal[1] +.",
+                  "exosig": "@epsd2/royal%sux:aya₂-kur-gal=Ayakurgal[1//1]RN'RN$Ayakurgal/aya₂-kur-gal#~",
+                  "exoprj": "epsd2/names",
+                  "exolng": "sux",
+                  "f": {
+                    "lang": "sux",
+                    "form": "aya₂-kur-gal",
+                    "gdl": [
+                      {
+                        "v": "aya₂",
+                        "id": "Q001175.3.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "kur",
+                        "id": "Q001175.3.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gal",
+                        "id": "Q001175.3.2.2"
+                      }
+                    ],
+                    "cf": "Ayakurgal",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Ayakurgal",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "aya₂-kur-gal",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001175.3.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001175.3.2"
+                    }
+                  ],
+                  "para": [
+                    {
+                      "class": "boundary",
+                      "type": "sentence",
+                      "text": "+.",
+                      "val": "",
+                      "bracketing_level": "0"
+                    },
+                    {
+                      "class": "syntax",
+                      "type": "label",
+                      "text": ".",
+                      "val": "",
+                      "bracketing_level": "0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "d",
+              "type": "nonx",
+              "ref": "Q001175.4",
+              "strict": "1",
+              "extent": "n",
+              "scope": "line",
+              "state": "missing"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

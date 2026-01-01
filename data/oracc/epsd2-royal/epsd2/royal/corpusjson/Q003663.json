@@ -1,0 +1,139 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:03:12",
+  "textid": "Q003663",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q003663.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q003663.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q003663.U2",
+              "label": "1 - 2",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q003663.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q003663.l052ae",
+                  "ref": "Q003663.1.1",
+                  "inst": "Puabum[1]RN",
+                  "exosig": "@epsd2/royal%sux:pu₃-AD=Puabum[1//1]RN'RN$Puabum/pu₃-AD#~",
+                  "exoprj": "epsd2/names",
+                  "exolng": "sux",
+                  "f": {
+                    "lang": "sux",
+                    "form": "pu₃-AD",
+                    "gdl": [
+                      {
+                        "v": "pu₃",
+                        "id": "Q003663.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "s": "AD",
+                        "id": "Q003663.1.1.1"
+                      }
+                    ],
+                    "cf": "Puabum",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Puabum",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "pu₃-AD",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q003663.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q003663.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q003663.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q003663.l052af",
+                  "ref": "Q003663.2.1",
+                  "inst": "ereš[lady]",
+                  "exosig": "@epsd2/royal%sux:ereš=ereš[lady//lady, queen]N'N$ereš/ereš#~",
+                  "exoprj": "epsd2",
+                  "exolng": "sux",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ereš",
+                    "gdl": [
+                      {
+                        "v": "ereš",
+                        "id": "Q003663.2.1.0"
+                      }
+                    ],
+                    "cf": "ereš",
+                    "gw": "lady",
+                    "sense": "lady, queen",
+                    "norm0": "ereš",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ereš",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q003663.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q003663.2.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

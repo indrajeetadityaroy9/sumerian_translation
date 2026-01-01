@@ -1,0 +1,194 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:59:02",
+  "textid": "Q001187",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001187.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001187.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": ".",
+              "id": "Q001187.U2",
+              "label": "1 - 2",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001187.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001187.l00cff",
+                  "ref": "Q001187.1.1",
+                  "inst": "Ninŋirsuk[1]DN",
+                  "sig": "@epsd2/royal%sux:{d}nin-ŋir₂-su₂=Ninŋirsuk[1//1]DN'DN$Ninŋirsuk/{d}nin-ŋir₂-su₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}nin-ŋir₂-su₂",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q001187.1.1.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "nin",
+                        "id": "Q001187.1.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ŋir₂",
+                        "id": "Q001187.1.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "su₂",
+                        "id": "Q001187.1.1.3",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "Q001187.1.1.3"
+                      }
+                    ],
+                    "cf": "Ninŋirsuk",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Ninŋirsuk",
+                    "pos": "DN",
+                    "epos": "DN",
+                    "base": "{d}nin-ŋir₂-su₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001187.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001187.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001187.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001187.l00d00",
+                  "ref": "Q001187.2.1",
+                  "inst": "Bagara[1]TN +.",
+                  "sig": "@epsd2/royal%sux:ba-gara₂-ra=Bagara[1//1]TN'TN$Bagara,ra/ba-gara₂#~,ra",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ba-gara₂-ra",
+                    "gdl": [
+                      {
+                        "v": "ba",
+                        "id": "Q001187.2.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gara₂",
+                        "id": "Q001187.2.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ra",
+                        "id": "Q001187.2.1.2",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "Q001187.2.1.2"
+                      }
+                    ],
+                    "cf": "Bagara",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Bagara,ra",
+                    "pos": "TN",
+                    "epos": "TN",
+                    "base": "ba-gara₂",
+                    "morph": "~,ra"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001187.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001187.2.1"
+                    }
+                  ],
+                  "para": [
+                    {
+                      "class": "boundary",
+                      "type": "sentence",
+                      "text": "+.",
+                      "val": "",
+                      "bracketing_level": "0"
+                    },
+                    {
+                      "class": "syntax",
+                      "type": "label",
+                      "text": ".",
+                      "val": "",
+                      "bracketing_level": "0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "d",
+              "type": "nonx",
+              "ref": "Q001187.3",
+              "strict": "1",
+              "extent": "n",
+              "scope": "line",
+              "state": "missing"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

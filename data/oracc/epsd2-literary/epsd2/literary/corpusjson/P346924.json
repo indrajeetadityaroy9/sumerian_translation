@@ -1,0 +1,289 @@
+{
+  "type": "cdl",
+  "project": "epsd2/literary",
+  "source": "http://oracc.org/epsd2/literary",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:45:17",
+  "textid": "P346924",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "P346924.U0",
+      "cdl": [
+        {
+          "node": "d",
+          "subtype": "tablet",
+          "type": "object",
+          "ref": "P346924.x452.1",
+          "label": "x452"
+        },
+        {
+          "node": "d",
+          "subtype": "obverse",
+          "type": "surface",
+          "ref": "P346924.o.2",
+          "label": "o"
+        },
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "P346924.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "P346924.U2",
+              "label": "o 1",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346924.3",
+                  "n": "1",
+                  "label": "o 1"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢ur⸣-saŋ",
+                  "id": "P346924.l08274",
+                  "ref": "P346924.3.1",
+                  "inst": "ursaŋ[warrior]",
+                  "sig": "@epsd2/literary%sux:ur-saŋ=ursaŋ[hero//warrior, hero]N'N$ursaŋ/ur-saŋ#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ur-saŋ",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "ur",
+                        "id": "P346924.3.1.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "saŋ",
+                        "id": "P346924.3.1.1"
+                      }
+                    ],
+                    "cf": "ursaŋ",
+                    "gw": "hero",
+                    "sense": "warrior, hero",
+                    "norm0": "ursaŋ",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ur-saŋ",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346924.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346924.3.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "{d}⸢nin⸣-[urta]",
+                  "id": "P346924.l08275",
+                  "ref": "P346924.3.2",
+                  "inst": "Ninurtak[1]",
+                  "sig": "@epsd2/literary%sux:{d}nin-urta=Ninurtak[1//1]DN'DN$Ninurtak/{d}nin-urta#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}nin-urta",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "P346924.3.2.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "nin",
+                        "id": "P346924.3.2.1",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "urta",
+                        "id": "P346924.3.2.2",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "P346924.3.2.2"
+                      }
+                    ],
+                    "cf": "Ninurtak",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Ninurtak",
+                    "pos": "DN",
+                    "epos": "DN",
+                    "base": "{d}nin-urta",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346924.3.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346924.3.2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346924.U4",
+              "label": "o 2",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346924.4",
+                  "n": "2",
+                  "label": "o 2"
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢maškim⸣",
+                  "id": "P346924.l08276",
+                  "ref": "P346924.4.1",
+                  "inst": "maškim[an administrator]",
+                  "sig": "@epsd2/literary%sux:maškim=maškim[administrator//an administrator, an administrative position, bailiff]N'N$maškim/maškim#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "maškim",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "maškim",
+                        "id": "P346924.4.1.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "maškim",
+                    "gw": "administrator",
+                    "sense": "an administrator, an administrative position, bailiff",
+                    "norm0": "maškim",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "maškim",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346924.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346924.4.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "kalag-ga-a-zu",
+                  "id": "P346924.l08277",
+                  "ref": "P346924.4.2",
+                  "inst": "kalag[strong]",
+                  "sig": "@epsd2/literary%sux:kalag-ga-a-zu=kalag[strong//(to be) strong, powerful, mighty]V/i'V/i$kalag;a.zu/kalag+-ga=g.a#~;a.zu",
+                  "f": {
+                    "lang": "sux",
+                    "form": "kalag-ga-a-zu",
+                    "gdl": [
+                      {
+                        "v": "kalag",
+                        "id": "P346924.4.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ga",
+                        "id": "P346924.4.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "a",
+                        "id": "P346924.4.2.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "zu",
+                        "id": "P346924.4.2.3"
+                      }
+                    ],
+                    "cf": "kalag",
+                    "gw": "strong",
+                    "sense": "(to be) strong, powerful, mighty",
+                    "norm0": "kalag;a.zu",
+                    "pos": "V/i",
+                    "epos": "V/i",
+                    "base": "kalag",
+                    "cont": "-ga=g.a",
+                    "morph": "~;a.zu"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346924.4.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346924.4.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "type": "cdl",
+  "project": "epsd2/literary",
+  "source": "http://oracc.org/epsd2/literary",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:45:15",
+  "textid": "P346916",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "P346916.U0",
+      "cdl": [
+        {
+          "node": "d",
+          "subtype": "tablet",
+          "type": "object",
+          "ref": "P346916.x446.1",
+          "label": "x446"
+        },
+        {
+          "node": "d",
+          "subtype": "obverse",
+          "type": "surface",
+          "ref": "P346916.o.2",
+          "label": "o"
+        },
+        {
+          "node": "d",
+          "type": "nonx",
+          "ref": "P346916.3",
+          "strict": "1",
+          "extent": "1",
+          "scope": "line",
+          "state": "ruling"
+        },
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "P346916.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "P346916.U2",
+              "label": "o 1",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346916.4",
+                  "n": "1",
+                  "label": "o 1"
+                },
+                {
+                  "node": "l",
+                  "frag": "en-e",
+                  "id": "P346916.l081d3",
+                  "ref": "P346916.4.1",
+                  "inst": "en[priest]",
+                  "sig": "@epsd2/literary%sux:en-e=en[priest//a priest, priestess]N'N$en,e/en#~,e",
+                  "f": {
+                    "lang": "sux",
+                    "form": "en-e",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "en",
+                        "id": "P346916.4.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "e",
+                        "id": "P346916.4.1.1"
+                      }
+                    ],
+                    "cf": "en",
+                    "gw": "priest",
+                    "sense": "a priest, priestess",
+                    "norm0": "en,e",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "en",
+                    "morph": "~,e"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346916.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346916.4.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "am₃-gig",
+                  "id": "P346916.l081d4",
+                  "ref": "P346916.4.2",
+                  "inst": "gig[sick]",
+                  "sig": "@epsd2/literary%sux:am₃-gig=gig[sick//(to be) sick, to hurt, (to be) pained]V/i'V/i$V.m:gig/gig#V.m:~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "am₃-gig",
+                    "gdl": [
+                      {
+                        "v": "am₃",
+                        "id": "P346916.4.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gig",
+                        "id": "P346916.4.2.1"
+                      }
+                    ],
+                    "cf": "gig",
+                    "gw": "sick",
+                    "sense": "(to be) sick, to hurt, (to be) pained",
+                    "norm0": "V.m:gig",
+                    "pos": "V/i",
+                    "epos": "V/i",
+                    "base": "gig",
+                    "morph": "V.m:~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346916.4.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346916.4.2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346916.U4",
+              "label": "o 2",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346916.5",
+                  "n": "2",
+                  "label": "o 2"
+                },
+                {
+                  "node": "l",
+                  "frag": "ga-raš",
+                  "id": "P346916.l081d5",
+                  "ref": "P346916.5.1",
+                  "inst": "garaš[leek]",
+                  "sig": "@epsd2/literary%sux:ga-raš=garaš[leek//leek]N'N$garaš/ga-raš#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ga-raš",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "ga",
+                        "id": "P346916.5.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "raš",
+                        "id": "P346916.5.1.1"
+                      }
+                    ],
+                    "cf": "garaš",
+                    "gw": "leek",
+                    "sense": "leek",
+                    "norm0": "garaš",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ga-raš",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346916.5.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346916.5.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢am₃⸣-gig",
+                  "id": "P346916.l081d6",
+                  "ref": "P346916.5.2",
+                  "inst": "gig[sick]",
+                  "sig": "@epsd2/literary%sux:am₃-gig=gig[sick//(to be) sick, to hurt, (to be) pained]V/i'V/i$V.m:gig/gig#V.m:~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "am₃-gig",
+                    "gdl": [
+                      {
+                        "v": "am₃",
+                        "id": "P346916.5.2.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "gig",
+                        "id": "P346916.5.2.1"
+                      }
+                    ],
+                    "cf": "gig",
+                    "gw": "sick",
+                    "sense": "(to be) sick, to hurt, (to be) pained",
+                    "norm0": "V.m:gig",
+                    "pos": "V/i",
+                    "epos": "V/i",
+                    "base": "gig",
+                    "morph": "V.m:~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346916.5.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346916.5.2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "tag": "#auto",
+              "id": "P346916.U6",
+              "label": "o 3",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346916.6",
+                  "n": "3",
+                  "label": "o 3"
+                },
+                {
+                  "node": "l",
+                  "frag": "u₃",
+                  "id": "P346916.l081d7",
+                  "ref": "P346916.6.1",
+                  "inst": "u[and]",
+                  "sig": "@epsd2/literary%sux:u₃=u[and//and]CNJ'CNJ$u/u₃#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "u₃",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "u₃",
+                        "id": "P346916.6.1.0"
+                      }
+                    ],
+                    "cf": "u",
+                    "gw": "and",
+                    "sense": "and",
+                    "norm0": "u",
+                    "pos": "CNJ",
+                    "epos": "CNJ",
+                    "base": "u₃",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346916.6.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346916.6.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "za₃-hi-<li>",
+                  "id": "P346916.l081d8",
+                  "ref": "P346916.6.2",
+                  "inst": "zahili[plant]",
+                  "sig": "@epsd2/literary%sux:za₃-hi-li=zahili[plant//a plant, cress]N'N$zahili/za₃-hi-li#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "za₃-hi-li",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "za₃",
+                        "id": "P346916.6.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "hi",
+                        "id": "P346916.6.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "li",
+                        "id": "P346916.6.2.2",
+                        "statusStart": "P346916.6.2.2",
+                        "o": ">"
+                      }
+                    ],
+                    "cf": "zahili",
+                    "gw": "plant",
+                    "sense": "a plant, cress",
+                    "norm0": "zahili",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "za₃-hi-li",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346916.6.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346916.6.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "⸢am₃⸣-gig",
+                  "id": "P346916.l081d9",
+                  "ref": "P346916.6.3",
+                  "inst": "gig[sick]",
+                  "sig": "@epsd2/literary%sux:am₃-gig=gig[sick//(to be) sick, to hurt, (to be) pained]V/i'V/i$V.m:gig/gig#V.m:~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "am₃-gig",
+                    "gdl": [
+                      {
+                        "v": "am₃",
+                        "id": "P346916.6.3.0",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "gig",
+                        "id": "P346916.6.3.1"
+                      }
+                    ],
+                    "cf": "gig",
+                    "gw": "sick",
+                    "sense": "(to be) sick, to hurt, (to be) pained",
+                    "norm0": "V.m:gig",
+                    "pos": "V/i",
+                    "epos": "V/i",
+                    "base": "gig",
+                    "morph": "V.m:~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346916.6.3"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346916.6.3"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "nonx",
+                  "ref": "P346916.7",
+                  "strict": "1",
+                  "extent": "1",
+                  "scope": "line",
+                  "state": "ruling"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

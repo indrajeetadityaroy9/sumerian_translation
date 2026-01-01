@@ -1,0 +1,306 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:01:50",
+  "textid": "Q001956",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001956.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001956.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001956.U2",
+              "label": "1 - 3",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001956.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001956.l04a99",
+                  "ref": "Q001956.1.1",
+                  "inst": "Aaba[1]PN",
+                  "sig": "@epsd2/royal%sux:a-ab-ba=Aaba[1//1]PN'PN$Aaba/a-ab-ba#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "a-ab-ba",
+                    "gdl": [
+                      {
+                        "v": "a",
+                        "id": "Q001956.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ab",
+                        "id": "Q001956.1.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ba",
+                        "id": "Q001956.1.1.2"
+                      }
+                    ],
+                    "cf": "Aaba",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Aaba",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "a-ab-ba",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001956.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001956.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001956.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001956.l04a9a",
+                  "ref": "Q001956.2.1",
+                  "inst": "dumu[child]",
+                  "sig": "@epsd2/royal%sux:dumu=dumu[child//child, son, daughter]N'N$dumu/dumu#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "dumu",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "dumu",
+                        "id": "Q001956.2.1.0"
+                      }
+                    ],
+                    "cf": "dumu",
+                    "gw": "child",
+                    "sense": "child, son, daughter",
+                    "norm0": "dumu",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "dumu",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001956.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001956.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q001956.l04a9b",
+                  "ref": "Q001956.2.2",
+                  "inst": "Enanatuma[1]PN",
+                  "sig": "@epsd2/royal%sux:en-an-na-tum₂-ma=Enanatuma[1//1]PN'PN$Enanatuma/en-an-na-tum₂-ma#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "en-an-na-tum₂-ma",
+                    "gdl": [
+                      {
+                        "v": "en",
+                        "id": "Q001956.2.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "an",
+                        "id": "Q001956.2.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "na",
+                        "id": "Q001956.2.2.2",
+                        "breakStart": "1",
+                        "o": "]",
+                        "break": "missing",
+                        "breakEnd": "Q001956.2.2.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "tum₂",
+                        "id": "Q001956.2.2.3",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "ma",
+                        "id": "Q001956.2.2.4"
+                      }
+                    ],
+                    "cf": "Enanatuma",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Enanatuma",
+                    "pos": "PN",
+                    "epos": "PN",
+                    "base": "en-an-na-tum₂-ma",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001956.2.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001956.2.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001956.3",
+                  "n": "3",
+                  "label": "3"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001956.l04a9c",
+                  "ref": "Q001956.3.1",
+                  "inst": "en[priest]",
+                  "sig": "@epsd2/royal%sux:en=en[priest//a priest, priestess]N'N$en/en#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "en",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "en",
+                        "id": "Q001956.3.1.0"
+                      }
+                    ],
+                    "cf": "en",
+                    "gw": "priest",
+                    "sense": "a priest, priestess",
+                    "norm0": "en",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "en",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001956.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001956.3.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q001956.l04a9d",
+                  "ref": "Q001956.3.2",
+                  "inst": "Nanna[1]DN",
+                  "sig": "@epsd2/royal%sux:{d}nanna=Nanna[1//1]DN'DN$Nanna/{d}nanna#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}nanna",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q001956.3.2.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "nanna",
+                        "id": "Q001956.3.2.1"
+                      }
+                    ],
+                    "cf": "Nanna",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Nanna",
+                    "pos": "DN",
+                    "epos": "DN",
+                    "base": "{d}nanna",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001956.3.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001956.3.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

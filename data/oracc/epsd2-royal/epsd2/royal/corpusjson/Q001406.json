@@ -1,0 +1,150 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:59:47",
+  "textid": "Q001406",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001406.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001406.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001406.U2",
+              "label": "colophon  1",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001406.1",
+                  "n": "1",
+                  "label": "colophon  1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001406.l06f6e",
+                  "ref": "Q001406.1.1",
+                  "inst": "musara[inscription]",
+                  "sig": "@epsd2/royal%sux:mu-sar-ra=musara[inscription//inscription]N'N$musara/mu-sar-ra#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "mu-sar-ra",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "mu",
+                        "id": "Q001406.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "sar",
+                        "id": "Q001406.1.1.1",
+                        "break": "damaged",
+                        "ho": "1",
+                        "delim": "-",
+                        "hc": "1"
+                      },
+                      {
+                        "v": "ra",
+                        "id": "Q001406.1.1.2"
+                      }
+                    ],
+                    "cf": "musara",
+                    "gw": "inscription",
+                    "sense": "inscription",
+                    "norm0": "musara",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "mu-sar-ra",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001406.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001406.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q001406.l06f6f",
+                  "ref": "Q001406.1.2",
+                  "inst": "kigal[platform]",
+                  "sig": "@epsd2/royal%sux:ki-gal-ba=kigal[platform//platform, pedestal]N'N$kigal,bi.ak/ki-gal#~,bi.ak",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ki-gal-ba",
+                    "gdl": [
+                      {
+                        "v": "ki",
+                        "id": "Q001406.1.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gal",
+                        "id": "Q001406.1.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ba",
+                        "id": "Q001406.1.2.2",
+                        "break": "damaged",
+                        "ho": "1",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "kigal",
+                    "gw": "platform",
+                    "sense": "platform, pedestal",
+                    "norm0": "kigal,bi.ak",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ki-gal",
+                    "morph": "~,bi.ak"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001406.1.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001406.1.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

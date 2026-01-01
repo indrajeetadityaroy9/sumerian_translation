@@ -1,0 +1,104 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:59:11",
+  "textid": "Q001225",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001225.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001225.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001225.U2",
+              "label": "1",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001225.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001225.l0095e",
+                  "ref": "Q001225.1.1",
+                  "inst": "X",
+                  "f": {
+                    "lang": "sux",
+                    "form": "|E₂.DU₁₀.EZEN.NIN.ZA₃|",
+                    "gdl": [
+                      {
+                        "c": "|E₂.DU₁₀.EZEN.NIN.ZA₃|",
+                        "id": "Q001225.1.1.0",
+                        "seq": [
+                          {
+                            "s": "E₂"
+                          },
+                          {
+                            "o": "beside"
+                          },
+                          {
+                            "s": "DU₁₀"
+                          },
+                          {
+                            "o": "beside"
+                          },
+                          {
+                            "s": "EZEN"
+                          },
+                          {
+                            "o": "beside"
+                          },
+                          {
+                            "s": "NIN"
+                          },
+                          {
+                            "o": "beside"
+                          },
+                          {
+                            "s": "ZA₃"
+                          }
+                        ]
+                      }
+                    ],
+                    "pos": "X"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001225.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001225.1.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:03:14",
+  "textid": "Q003672",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q003672.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q003672.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q003672.U2",
+              "label": "1 - 3",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q003672.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q003672.l05b77",
+                  "ref": "Q003672.1.1",
+                  "inst": "Lugaltarsi[1]RN",
+                  "sig": "@epsd2/royal%sux:lugal-tar-si=Lugaltarsi[1//1]RN'RN$Lugaltarsi/lugal-tar-si#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "lugal-tar-si",
+                    "gdl": [
+                      {
+                        "v": "lugal",
+                        "id": "Q003672.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "tar",
+                        "id": "Q003672.1.1.1",
+                        "breakStart": "1",
+                        "o": "[",
+                        "break": "missing",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "si",
+                        "id": "Q003672.1.1.2",
+                        "queried": "1",
+                        "break": "missing",
+                        "o": "]",
+                        "breakEnd": "Q003672.1.1.1"
+                      }
+                    ],
+                    "cf": "Lugaltarsi",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Lugaltarsi",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "lugal-tar-si",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q003672.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q003672.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q003672.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q003672.l05b78",
+                  "ref": "Q003672.2.1",
+                  "inst": "ensik[ruler]",
+                  "sig": "@epsd2/royal%sux:ensi₂=ensik[ruler//ruler]N'N$ensik/ensi₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ensi₂",
+                    "gdl": [
+                      {
+                        "v": "ensi₂",
+                        "id": "Q003672.2.1.0"
+                      }
+                    ],
+                    "cf": "ensik",
+                    "gw": "ruler",
+                    "sense": "ruler",
+                    "norm0": "ensik",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ensi₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q003672.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q003672.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q003672.3",
+                  "n": "3",
+                  "label": "3"
+                },
+                {
+                  "node": "l",
+                  "id": "Q003672.l05b79",
+                  "ref": "Q003672.3.1",
+                  "inst": "unu[dwelling]",
+                  "exosig": "@epsd2/royal%sux:unu=unu[dwelling//dwelling, domicile, abode]N'N$unu/unu#~",
+                  "exoprj": "epsd2",
+                  "exolng": "sux",
+                  "f": {
+                    "lang": "sux",
+                    "form": "unu",
+                    "gdl": [
+                      {
+                        "v": "unu",
+                        "id": "Q003672.3.1.0",
+                        "queried": "1"
+                      }
+                    ],
+                    "cf": "unu",
+                    "gw": "dwelling",
+                    "sense": "dwelling, domicile, abode",
+                    "norm0": "unu",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "unu",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q003672.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q003672.3.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T03:02:01",
+  "textid": "Q002003",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q002003.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q002003.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q002003.U2",
+              "label": "1 - 4",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q002003.1",
+                  "n": "1",
+                  "label": "1"
+                },
+                {
+                  "node": "l",
+                  "id": "Q002003.l07d61",
+                  "ref": "Q002003.1.1",
+                  "inst": "Imgursin[1]RN",
+                  "sig": "@epsd2/royal%sux:im-gur-{d}sin=Imgursin[1//1]RN'RN$Imgursin/im-gur-{d}suen#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "im-gur-{d}sin",
+                    "gdl": [
+                      {
+                        "v": "im",
+                        "id": "Q002003.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gur",
+                        "id": "Q002003.1.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q002003.1.1.2"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "sin",
+                        "id": "Q002003.1.1.3"
+                      }
+                    ],
+                    "cf": "Imgursin",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Imgursin",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "im-gur-{d}suen",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q002003.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q002003.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q002003.2",
+                  "n": "2",
+                  "label": "2"
+                },
+                {
+                  "node": "l",
+                  "id": "Q002003.l07d62",
+                  "ref": "Q002003.2.1",
+                  "inst": "šabra[administrator]",
+                  "sig": "@epsd2/royal%sux:šabra=šabra[administrator//chief administrator of a temple or other household]N'N$šabra/šabra#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "šabra",
+                    "gdl": [
+                      {
+                        "v": "šabra",
+                        "id": "Q002003.2.1.0"
+                      }
+                    ],
+                    "cf": "šabra",
+                    "gw": "administrator",
+                    "sense": "chief administrator of a temple or other household",
+                    "norm0": "šabra",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "šabra",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q002003.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q002003.2.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q002003.3",
+                  "n": "3",
+                  "label": "3"
+                },
+                {
+                  "node": "l",
+                  "id": "Q002003.l07d63",
+                  "ref": "Q002003.3.1",
+                  "inst": "dumu[child]",
+                  "sig": "@epsd2/royal%sux:dumu=dumu[child//child, son, daughter]N'N$dumu/dumu#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "dumu",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "dumu",
+                        "id": "Q002003.3.1.0"
+                      }
+                    ],
+                    "cf": "dumu",
+                    "gw": "child",
+                    "sense": "child, son, daughter",
+                    "norm0": "dumu",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "dumu",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q002003.3.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q002003.3.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q002003.l07d64",
+                  "ref": "Q002003.3.2",
+                  "inst": "Siniddinam[1]RN",
+                  "sig": "@epsd2/royal%sux:{d}sin-i-di₂-na-am=Siniddinam[1//1]RN'RN$Siniddinam/{d}sin-i-din-na-am#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}sin-i-di₂-na-am",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q002003.3.2.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "sin",
+                        "id": "Q002003.3.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "i",
+                        "id": "Q002003.3.2.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "di₂",
+                        "id": "Q002003.3.2.3",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "na",
+                        "id": "Q002003.3.2.4",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "am",
+                        "id": "Q002003.3.2.5"
+                      }
+                    ],
+                    "cf": "Siniddinam",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Siniddinam",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "{d}sin-i-din-na-am",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q002003.3.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q002003.3.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q002003.4",
+                  "n": "4",
+                  "label": "4"
+                },
+                {
+                  "node": "l",
+                  "id": "Q002003.l07d65",
+                  "ref": "Q002003.4.1",
+                  "inst": "arad[slave]",
+                  "sig": "@epsd2/royal%sux:arad=arad[slave//slave]N'N$arad/arad#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "arad",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "arad",
+                        "id": "Q002003.4.1.0"
+                      }
+                    ],
+                    "cf": "arad",
+                    "gw": "slave",
+                    "sense": "slave",
+                    "norm0": "arad",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "arad",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q002003.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q002003.4.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "id": "Q002003.l07d66",
+                  "ref": "Q002003.4.2",
+                  "inst": "Sinmagir[1]RN",
+                  "sig": "@epsd2/royal%sux:{d}sin-ma-gir=Sinmagir[1//1]RN'RN$Sinmagir/{d}sin-ma-gir#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "{d}sin-ma-gir",
+                    "gdl": [
+                      {
+                        "det": "semantic",
+                        "pos": "pre",
+                        "seq": [
+                          {
+                            "v": "d",
+                            "id": "Q002003.4.2.0"
+                          }
+                        ]
+                      },
+                      {
+                        "v": "sin",
+                        "id": "Q002003.4.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ma",
+                        "id": "Q002003.4.2.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gir",
+                        "id": "Q002003.4.2.3"
+                      }
+                    ],
+                    "cf": "Sinmagir",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Sinmagir",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "{d}sin-ma-gir",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q002003.4.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q002003.4.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

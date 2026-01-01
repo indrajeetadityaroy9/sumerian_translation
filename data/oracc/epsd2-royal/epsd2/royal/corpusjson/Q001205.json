@@ -1,0 +1,166 @@
+{
+  "type": "cdl",
+  "project": "epsd2/royal",
+  "source": "http://oracc.org/epsd2/royal",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:59:06",
+  "textid": "Q001205",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "Q001205.U0",
+      "cdl": [
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "Q001205.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "Q001205.U2",
+              "label": "1' - 2'",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001205.1",
+                  "n": "1'",
+                  "label": "1'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001205.l0524e",
+                  "ref": "Q001205.1.1",
+                  "inst": "Luma[1]RN",
+                  "sig": "@epsd2/royal%sux:lum-ma=Luma[1//1]RN'RN$Luma/lum-ma#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "lum-ma",
+                    "gdl": [
+                      {
+                        "v": "lum",
+                        "id": "Q001205.1.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ma",
+                        "id": "Q001205.1.1.1"
+                      }
+                    ],
+                    "cf": "Luma",
+                    "gw": "1",
+                    "sense": "1",
+                    "norm0": "Luma",
+                    "pos": "RN",
+                    "epos": "RN",
+                    "base": "lum-ma",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001205.1.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001205.1.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "Q001205.2",
+                  "n": "2'",
+                  "label": "2'"
+                },
+                {
+                  "node": "l",
+                  "id": "Q001205.l0524f",
+                  "ref": "Q001205.2.1",
+                  "inst": "ensik[ruler]",
+                  "sig": "@epsd2/royal%sux:ensiₓ(|PA.TE.SI.GAR|)=ensik[ruler//ruler]N'N$ensik/ensiₓ(|PA.TE.SI.GAR|)#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ensiₓ(|PA.TE.SI.GAR|)",
+                    "gdl": [
+                      {
+                        "q": "ensiₓ(|PA.TE.SI.GAR|)",
+                        "id": "Q001205.2.1.0",
+                        "qualified": [
+                          {
+                            "v": "ensiₓ"
+                          },
+                          {
+                            "c": "|PA.TE.SI.GAR|",
+                            "seq": [
+                              {
+                                "s": "PA"
+                              },
+                              {
+                                "o": "beside"
+                              },
+                              {
+                                "s": "TE"
+                              },
+                              {
+                                "o": "beside"
+                              },
+                              {
+                                "s": "SI"
+                              },
+                              {
+                                "o": "beside"
+                              },
+                              {
+                                "s": "GAR"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "cf": "ensik",
+                    "gw": "ruler",
+                    "sense": "ruler",
+                    "norm0": "ensik",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ensiₓ(|PA.TE.SI.GAR|)",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "Q001205.2.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "Q001205.2.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

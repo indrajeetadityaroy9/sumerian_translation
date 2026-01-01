@@ -1,0 +1,429 @@
+{
+  "type": "cdl",
+  "project": "epsd2/literary",
+  "source": "http://oracc.org/epsd2/literary",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:44:06",
+  "textid": "P346305",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "P346305.U0",
+      "cdl": [
+        {
+          "node": "d",
+          "subtype": "tablet",
+          "type": "object",
+          "ref": "P346305.x165.1",
+          "label": "x165"
+        },
+        {
+          "node": "d",
+          "subtype": "obverse",
+          "type": "surface",
+          "ref": "P346305.o.2",
+          "label": "o"
+        },
+        {
+          "node": "d",
+          "type": "nonx",
+          "ref": "P346305.3",
+          "strict": "1",
+          "extent": "1",
+          "scope": "line",
+          "state": "ruling"
+        },
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "P346305.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "P346305.U2",
+              "label": "o 1 - o 3",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346305.4",
+                  "n": "1",
+                  "label": "o 1"
+                },
+                {
+                  "node": "l",
+                  "frag": "ur-gir₁₅-re",
+                  "id": "P346305.l05f60",
+                  "ref": "P346305.4.1",
+                  "inst": "urgir[(domestic) dog]",
+                  "sig": "@epsd2/literary%sux:ur-gir₁₅-re=urgir[dog//(domestic) dog]N'N$urgir,e/ur-gir₁₅+-re=r.e#~,e",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ur-gir₁₅-re",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "ur",
+                        "id": "P346305.4.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "gir₁₅",
+                        "id": "P346305.4.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "re",
+                        "id": "P346305.4.1.2"
+                      }
+                    ],
+                    "cf": "urgir",
+                    "gw": "dog",
+                    "sense": "(domestic) dog",
+                    "norm0": "urgir,e",
+                    "pos": "N",
+                    "epos": "N",
+                    "base": "ur-gir₁₅",
+                    "cont": "-re=r.e",
+                    "morph": "~,e"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346305.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346305.4.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "c",
+                  "type": "phrase",
+                  "tag": "phr",
+                  "id": "P346305.U4",
+                  "ref": "P346305.ls00000",
+                  "cdl": [
+                    {
+                      "node": "l",
+                      "frag": "šu",
+                      "id": "P346305.l05f61",
+                      "ref": "P346305.4.2",
+                      "inst": "šu[hand]",
+                      "sig": "@epsd2/literary%sux:šu=šu[hand//hand]N'N$šu/šu#~",
+                      "f": {
+                        "lang": "sux",
+                        "form": "šu",
+                        "delim": "",
+                        "gdl": [
+                          {
+                            "v": "šu",
+                            "id": "P346305.4.2.0"
+                          }
+                        ],
+                        "cf": "šu",
+                        "gw": "hand",
+                        "sense": "hand",
+                        "norm0": "šu",
+                        "pos": "N",
+                        "epos": "N",
+                        "base": "šu",
+                        "morph": "~"
+                      },
+                      "props": [
+                        {
+                          "name": "field",
+                          "group": "env",
+                          "ngram": "-1",
+                          "ref": "P346305.4.2"
+                        },
+                        {
+                          "name": "discourse",
+                          "group": "env",
+                          "value": "body",
+                          "ngram": "-1",
+                          "ref": "P346305.4.2"
+                        }
+                      ]
+                    },
+                    {
+                      "node": "l",
+                      "frag": "teŋ₃-ba-ab",
+                      "id": "P346305.l05f62",
+                      "ref": "P346305.4.3",
+                      "inst": "teŋ[approach]",
+                      "sig": "@epsd2/literary%sux:teŋ₃-ba-ab=teŋ[near//to approach]V/i'V/t$teŋ!ba.b/teŋ₃#~!ba.b",
+                      "f": {
+                        "lang": "sux",
+                        "form": "teŋ₃-ba-ab",
+                        "gdl": [
+                          {
+                            "v": "teŋ₃",
+                            "id": "P346305.4.3.0",
+                            "delim": "-"
+                          },
+                          {
+                            "v": "ba",
+                            "id": "P346305.4.3.1",
+                            "delim": "-"
+                          },
+                          {
+                            "v": "ab",
+                            "id": "P346305.4.3.2"
+                          }
+                        ],
+                        "cf": "teŋ",
+                        "gw": "near",
+                        "sense": "to approach",
+                        "norm0": "teŋ!ba.b",
+                        "pos": "V/i",
+                        "epos": "V/t",
+                        "base": "teŋ₃",
+                        "morph": "~!ba.b"
+                      },
+                      "props": [
+                        {
+                          "name": "field",
+                          "group": "env",
+                          "ngram": "-1",
+                          "ref": "P346305.4.3"
+                        },
+                        {
+                          "name": "discourse",
+                          "group": "env",
+                          "value": "body",
+                          "ngram": "-1",
+                          "ref": "P346305.4.3"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346305.5",
+                  "n": "2",
+                  "label": "o 2"
+                },
+                {
+                  "node": "l",
+                  "frag": "mu-un-zu",
+                  "id": "P346305.l05f63",
+                  "ref": "P346305.5.1",
+                  "inst": "zu[know]",
+                  "sig": "@epsd2/literary%sux:mu-un-zu=zu[know//to know, learn]V/t'V/t$mu.n:zu/zu#mu.n:~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "mu-un-zu",
+                    "gdl": [
+                      {
+                        "v": "mu",
+                        "id": "P346305.5.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "un",
+                        "id": "P346305.5.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "zu",
+                        "id": "P346305.5.1.2"
+                      }
+                    ],
+                    "cf": "zu",
+                    "gw": "know",
+                    "sense": "to know, learn",
+                    "norm0": "mu.n:zu",
+                    "pos": "V/t",
+                    "epos": "V/t",
+                    "base": "zu",
+                    "morph": "mu.n:~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346305.5.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346305.5.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346305.6",
+                  "n": "3",
+                  "label": "o 3"
+                },
+                {
+                  "node": "l",
+                  "frag": "ŋa₂-ŋa₂",
+                  "id": "P346305.l05f64",
+                  "ref": "P346305.6.1",
+                  "inst": "ŋar[put]",
+                  "sig": "@epsd2/literary%sux:ŋa₂-ŋa₂=ŋar[place//to put, place, lay down]V/t'V/t$ŋar/ŋa₂-ŋa₂#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "ŋa₂-ŋa₂",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "ŋa₂",
+                        "id": "P346305.6.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ŋa₂",
+                        "id": "P346305.6.1.1"
+                      }
+                    ],
+                    "cf": "ŋar",
+                    "gw": "place",
+                    "sense": "to put, place, lay down",
+                    "norm0": "ŋar",
+                    "pos": "V/t",
+                    "epos": "V/t",
+                    "base": "ŋa₂-ŋa₂",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346305.6.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346305.6.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "nu-ub-zu-⸢am₃⸣",
+                  "id": "P346305.l05f65",
+                  "ref": "P346305.6.2",
+                  "inst": "zu[know]",
+                  "sig": "@epsd2/literary%sux:nu-ub-zu-am₃=zu[know//to know, learn]V/t'V/t$nu.V.b:zu;am/zu#nu.V.b:~;am",
+                  "f": {
+                    "lang": "sux",
+                    "form": "nu-ub-zu-am₃",
+                    "gdl": [
+                      {
+                        "v": "nu",
+                        "id": "P346305.6.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ub",
+                        "id": "P346305.6.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "zu",
+                        "id": "P346305.6.2.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "am₃",
+                        "id": "P346305.6.2.3",
+                        "break": "damaged",
+                        "ho": "1",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "zu",
+                    "gw": "know",
+                    "sense": "to know, learn",
+                    "norm0": "nu.V.b:zu;am",
+                    "pos": "V/t",
+                    "epos": "V/t",
+                    "base": "zu",
+                    "morph": "nu.V.b:~;am"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346305.6.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346305.6.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "nonx",
+                  "ref": "P346305.7",
+                  "strict": "1",
+                  "extent": "1",
+                  "scope": "line",
+                  "state": "ruling"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkbase": [
+        {
+          "type": "linkset",
+          "xlink_title": "šu teŋ[accept//to accept]V/t'V/t",
+          "id": "P346305.ls00000",
+          "xlink_type": "extended",
+          "xlink_role": "psu",
+          "sig": "{šu teŋ₃-ba-ab = šu[hand]N teŋ[near]V/i += šu teŋ[accept//to accept]V/t'V/t}::@epsd2/literary%sux:šu=šu[hand//hand]N'N$šu/šu#~++@epsd2/literary%sux:teŋ₃-ba-ab=teŋ[near//to approach]V/i'V/t$teŋ!ba.b/teŋ₃#~!ba.b",
+          "links": [
+            {
+              "type": "link",
+              "xlink_title": "šu",
+              "xlink_type": "locator",
+              "xlink_href": "#P346305.l05f61",
+              "xlink_role": "elt"
+            },
+            {
+              "type": "link",
+              "xlink_title": "teŋ",
+              "xlink_type": "locator",
+              "xlink_href": "#P346305.l05f62",
+              "xlink_role": "elt"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

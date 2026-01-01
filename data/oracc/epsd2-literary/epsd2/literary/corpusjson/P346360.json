@@ -1,0 +1,442 @@
+{
+  "type": "cdl",
+  "project": "epsd2/literary",
+  "source": "http://oracc.org/epsd2/literary",
+  "license": "This data is released under the CC0 license",
+  "license-url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "more-info": "http://oracc.org/doc/opendata/",
+  "UTC-timestamp": "2021-12-21T02:44:19",
+  "textid": "P346360",
+  "cdl": [
+    {
+      "node": "c",
+      "type": "text",
+      "id": "P346360.U0",
+      "cdl": [
+        {
+          "node": "d",
+          "subtype": "tablet",
+          "type": "object",
+          "ref": "P346360.x219.1",
+          "label": "x219"
+        },
+        {
+          "node": "d",
+          "subtype": "obverse",
+          "type": "surface",
+          "ref": "P346360.o.2",
+          "label": "o"
+        },
+        {
+          "node": "d",
+          "type": "nonx",
+          "ref": "P346360.3",
+          "strict": "1",
+          "extent": "1",
+          "scope": "line",
+          "state": "ruling"
+        },
+        {
+          "node": "c",
+          "type": "discourse",
+          "subtype": "body",
+          "id": "P346360.U1",
+          "cdl": [
+            {
+              "node": "c",
+              "type": "sentence",
+              "implicit": "yes",
+              "id": "P346360.U2",
+              "label": "o 1 - o 4",
+              "cdl": [
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346360.4",
+                  "n": "1",
+                  "label": "o 1"
+                },
+                {
+                  "node": "l",
+                  "frag": "tur₅-ra",
+                  "id": "P346360.l06176",
+                  "ref": "P346360.4.1",
+                  "inst": "tur[ill]",
+                  "sig": "@epsd2/literary%sux:tur₅-ra=tur[ill//(to be) ill, sick]V/i'V/i$tur,ak/tur₅+-ra=r.a#~,ak",
+                  "f": {
+                    "lang": "sux",
+                    "form": "tur₅-ra",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "tur₅",
+                        "id": "P346360.4.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ra",
+                        "id": "P346360.4.1.1"
+                      }
+                    ],
+                    "cf": "tur",
+                    "gw": "ill",
+                    "sense": "(to be) ill, sick",
+                    "norm0": "tur,ak",
+                    "pos": "V/i",
+                    "epos": "V/i",
+                    "base": "tur₅",
+                    "cont": "-ra=r.a",
+                    "morph": "~,ak"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346360.4.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346360.4.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "dug₃-ga-am₃",
+                  "id": "P346360.l06177",
+                  "ref": "P346360.4.2",
+                  "inst": "dug[good]",
+                  "sig": "@epsd2/literary%sux:dug₃-ga-am₃=dug[good//(to be) good]V/i'V/i$dug;a,am/dug₃#~;a,am",
+                  "f": {
+                    "lang": "sux",
+                    "form": "dug₃-ga-am₃",
+                    "gdl": [
+                      {
+                        "v": "dug₃",
+                        "id": "P346360.4.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ga",
+                        "id": "P346360.4.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "am₃",
+                        "id": "P346360.4.2.2"
+                      }
+                    ],
+                    "cf": "dug",
+                    "gw": "good",
+                    "sense": "(to be) good",
+                    "norm0": "dug;a,am",
+                    "pos": "V/i",
+                    "epos": "V/i",
+                    "base": "dug₃",
+                    "morph": "~;a,am"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346360.4.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346360.4.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346360.5",
+                  "n": "2",
+                  "label": "o 2"
+                },
+                {
+                  "node": "l",
+                  "frag": "peš₁₃",
+                  "id": "P346360.l06178",
+                  "ref": "P346360.5.1",
+                  "inst": "peš[pregnant]",
+                  "sig": "@epsd2/literary%sux:peš₁₃=peš[thick//(to be) pregnant]V/i'V/i$peš/peš₁₃#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "peš₁₃",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "peš₁₃",
+                        "id": "P346360.5.1.0",
+                        "queried": "1"
+                      }
+                    ],
+                    "cf": "peš",
+                    "gw": "thick",
+                    "sense": "(to be) pregnant",
+                    "norm0": "peš",
+                    "pos": "V/i",
+                    "epos": "V/i",
+                    "base": "peš₁₃",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346360.5.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346360.5.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "gig-ga-am₃",
+                  "id": "P346360.l06179",
+                  "ref": "P346360.5.2",
+                  "inst": "gig[sick]",
+                  "sig": "@epsd2/literary%sux:gig-ga-am₃=gig[sick//(to be) sick, to hurt, (to be) pained]V/i'V/i$gig;am/gig-ga#~;am",
+                  "f": {
+                    "lang": "sux",
+                    "form": "gig-ga-am₃",
+                    "gdl": [
+                      {
+                        "v": "gig",
+                        "id": "P346360.5.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ga",
+                        "id": "P346360.5.2.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "am₃",
+                        "id": "P346360.5.2.2"
+                      }
+                    ],
+                    "cf": "gig",
+                    "gw": "sick",
+                    "sense": "(to be) sick, to hurt, (to be) pained",
+                    "norm0": "gig;am",
+                    "pos": "V/i",
+                    "epos": "V/i",
+                    "base": "gig-ga",
+                    "morph": "~;am"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346360.5.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346360.5.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346360.6",
+                  "n": "3",
+                  "label": "o 3"
+                },
+                {
+                  "node": "l",
+                  "frag": "peš₁₃",
+                  "id": "P346360.l0617a",
+                  "ref": "P346360.6.1",
+                  "inst": "peš[pregnant]",
+                  "sig": "@epsd2/literary%sux:peš₁₃=peš[thick//(to be) pregnant]V/i'V/i$peš/peš₁₃#~",
+                  "f": {
+                    "lang": "sux",
+                    "form": "peš₁₃",
+                    "delim": "",
+                    "gdl": [
+                      {
+                        "v": "peš₁₃",
+                        "id": "P346360.6.1.0"
+                      }
+                    ],
+                    "cf": "peš",
+                    "gw": "thick",
+                    "sense": "(to be) pregnant",
+                    "norm0": "peš",
+                    "pos": "V/i",
+                    "epos": "V/i",
+                    "base": "peš₁₃",
+                    "morph": "~"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346360.6.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346360.6.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "l",
+                  "frag": "tur₅-ra",
+                  "id": "P346360.l0617b",
+                  "ref": "P346360.6.2",
+                  "inst": "tur[ill]",
+                  "sig": "@epsd2/literary%sux:tur₅-ra=tur[ill//(to be) ill, sick]V/i'V/i$tur,ak/tur₅+-ra=r.a#~,ak",
+                  "f": {
+                    "lang": "sux",
+                    "form": "tur₅-ra",
+                    "gdl": [
+                      {
+                        "v": "tur₅",
+                        "id": "P346360.6.2.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ra",
+                        "id": "P346360.6.2.1"
+                      }
+                    ],
+                    "cf": "tur",
+                    "gw": "ill",
+                    "sense": "(to be) ill, sick",
+                    "norm0": "tur,ak",
+                    "pos": "V/i",
+                    "epos": "V/i",
+                    "base": "tur₅",
+                    "cont": "-ra=r.a",
+                    "morph": "~,ak"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346360.6.2"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346360.6.2"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "line-start",
+                  "ref": "P346360.7",
+                  "n": "4",
+                  "label": "o 4"
+                },
+                {
+                  "node": "l",
+                  "frag": "im-ma-dirig-ga-⸢ta⸣",
+                  "id": "P346360.l0617c",
+                  "ref": "P346360.7.1",
+                  "inst": "dirig[make more than]",
+                  "sig": "@epsd2/literary%sux:im-ma-dirig-ga-ta=dirig[exceed//to make more than]V/i'V/t$Vmma:dirig;a,ta/dirig#Vmma:~;a,ta",
+                  "f": {
+                    "lang": "sux",
+                    "form": "im-ma-dirig-ga-ta",
+                    "gdl": [
+                      {
+                        "v": "im",
+                        "id": "P346360.7.1.0",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ma",
+                        "id": "P346360.7.1.1",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "dirig",
+                        "id": "P346360.7.1.2",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ga",
+                        "id": "P346360.7.1.3",
+                        "delim": "-"
+                      },
+                      {
+                        "v": "ta",
+                        "id": "P346360.7.1.4",
+                        "break": "damaged",
+                        "ho": "1",
+                        "hc": "1"
+                      }
+                    ],
+                    "cf": "dirig",
+                    "gw": "exceed",
+                    "sense": "to make more than",
+                    "norm0": "Vmma:dirig;a,ta",
+                    "pos": "V/i",
+                    "epos": "V/t",
+                    "base": "dirig",
+                    "morph": "Vmma:~;a,ta"
+                  },
+                  "props": [
+                    {
+                      "name": "field",
+                      "group": "env",
+                      "ngram": "-1",
+                      "ref": "P346360.7.1"
+                    },
+                    {
+                      "name": "discourse",
+                      "group": "env",
+                      "value": "body",
+                      "ngram": "-1",
+                      "ref": "P346360.7.1"
+                    }
+                  ]
+                },
+                {
+                  "node": "d",
+                  "type": "nonx",
+                  "ref": "P346360.8",
+                  "strict": "1",
+                  "extent": "1",
+                  "scope": "line",
+                  "state": "ruling"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
