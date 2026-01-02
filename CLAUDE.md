@@ -11,6 +11,37 @@ This is a **Sumerian-English neural machine translation (NMT)** research project
 
 **Optimized for:** 2× NVIDIA H100 80GB + Intel Xeon Platinum 8480+ (52 cores)
 
+## Current State
+
+**Status:** Fully functional pipeline with trained models ready for inference.
+
+### Trained Models
+
+| Model | Size | Architecture | Status |
+|-------|------|--------------|--------|
+| `models/sumerian_mt5_final/` | 1.1 GB | mT5-small (300M params) | **Production ready** |
+| `models/sumerian_mt5_continued/` | 1.1 GB | mT5-small | Checkpoint |
+| `models/sumerian_mt5_ddp/` | 1.1 GB | mT5-small (DDP trained) | Checkpoint |
+| `models/sumerian_tiny_mlm/` | 122 MB | RoBERTa-tiny (4M params) | Phase 1 encoder |
+
+**Final model architecture:** 8 encoder layers, 8 decoder layers, 512 hidden dim, 6 attention heads
+
+### Extracted Data
+
+| Corpus | Lines | Location |
+|--------|-------|----------|
+| ETCSL Gold (human translations) | 5,826 | `output/parallel_corpus.jsonl` |
+| ORACC Silver (synthetic) | 47,927 | `output/oracc_synthetic_combined.jsonl` |
+| Training set | 10,000 | `output_training_v2_clean/finetune/train_augmented_v2.jsonl` |
+| Validation set | 1,000 | `output_training_v2_clean/finetune/valid.jsonl` |
+| Monolingual (MLM) | 100,000 | `output_training_v2_clean/pretrain/corpus_monolingual.txt` |
+
+### Raw Data Sources
+
+- `ota_20/etcsl/` - ETCSL XML corpus (Oxford Text Archive)
+- `data/oracc/epsd2-literary/` - ORACC literary texts
+- `data/oracc/epsd2-royal/` - ORACC royal inscriptions
+
 ## Training Data
 
 | Corpus | Pairs | Unique Translations | Quality | Source |
@@ -158,10 +189,22 @@ sumerian_translation/
 ### Normalization
 
 ETCSL and ORACC use different conventions that must be unified:
-- ETCSL: `ĝ`, subscripts like `₂`
-- ORACC: `ŋ`, different subscript handling
+- ETCSL: `ĝ`, subscripts like `₂`, determinative placeholders `{{DET_DIVINE}}`
+- ORACC: `ŋ`, different subscript handling, inline determinatives
 
-Use `normalization_bridge.py` for consistent tokenization.
+Use `normalization_bridge.py` for consistent tokenization:
+```python
+from processors.normalization_bridge import unify_conventions, normalize_etcsl, normalize_oracc
+text = unify_conventions("lugal ŋar", source="auto")  # Auto-detects source
+```
+
+### Task Prefix
+
+mT5 models require a task prefix for translation:
+```python
+TASK_PREFIX = "translate Sumerian to English: "
+input_text = TASK_PREFIX + sumerian_text
+```
 
 ### Data Quality
 
@@ -174,6 +217,25 @@ Use `normalization_bridge.py` for consistent tokenization.
 - BLEU: 15-25 (low-resource baseline)
 - chrF: 30-40
 - Word alignment F1: 0.6+
+
+## Training Data Format
+
+JSONL files with nested structure:
+```json
+{
+  "source": {"text_normalized": "lugal e2 gal", "text_raw": "lugal e₂ gal"},
+  "target": {"text": "the king of the great house"},
+  "quality": {"has_damage": false, "has_supplied": false}
+}
+```
+
+Access fields in code:
+```python
+from common.io import load_jsonl
+data = load_jsonl(Paths.TRAIN_FILE)
+source = item["source"]["text_normalized"]
+target = item["target"]["text"]
+```
 
 ## Configuration
 
@@ -213,13 +275,16 @@ CLI flags for runtime customization:
 
 ## Model Checkpoints
 
-Trained models saved to `models/`:
-- `sumerian_tiny_mlm/` - Phase 1 RoBERTa encoder
-- `sumerian_mt5_final/` - mT5 Seq2Seq (recommended)
-
-To continue training from checkpoint:
+Use `sumerian_mt5_final` for inference (production model). To continue training:
 ```bash
 python3.11 train_nmt.py --resume models/sumerian_mt5_final
+```
+
+## Testing
+
+```bash
+# Validate trained model on 30 examples with match statistics
+python3.11 test_inference.py
 ```
 
 ## Dependencies
