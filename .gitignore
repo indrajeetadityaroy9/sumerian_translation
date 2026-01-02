@@ -1,38 +1,42 @@
-# Python
+# ==============================
+# Environments
+# ==============================
+venv/
+.venv/
+env/
+.env/
+
+# ==============================
+# Python cache / build artifacts
+# ==============================
 __pycache__/
-*.py[cod]
-*$py.class
+*.pyc
+*.pyo
+*.pyd
 *.so
-.Python
 *.egg-info/
-.eggs/
 dist/
 build/
 
-# Virtual environments
-venv/
-env/
-.env
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-
+# ==============================
 # Jupyter
+# ==============================
 .ipynb_checkpoints/
 
-# OS
+# ==============================
+# ML artifacts / experiment outputs
+# ==============================
+checkpoints/
+logs/
+outputs/
+runs/
+wandb/
+mlruns/
+
+# ==============================
+# OS / editor noise
+# ==============================
 .DS_Store
 Thumbs.db
-
-# Temp files
-*.tmp
-*.temp
-*.log
-
-# Large data files that shouldn't be in git (already in LFS or too large)
-data/oracc/*.zip
-data/oracc/oracc-master/
-data/oracc/compass-master/
+.vscode/
+.idea/

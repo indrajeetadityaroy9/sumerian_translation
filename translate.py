@@ -43,7 +43,9 @@ def load_model(model_dir: Path, use_compile: bool = True, verbose: bool = True):
     if verbose:
         print(f"Loading model from {model_dir}...")
         if hw["cuda_available"]:
-            print(f"  GPU: {hw['gpu_name']} ({hw['gpu_memory']:.1f} GB)")
+            gpu_name = hw['gpu_names'][0] if hw['gpu_names'] else "Unknown"
+            gpu_mem = hw['gpu_memory'][0] if hw['gpu_memory'] else 0
+            print(f"  GPU: {gpu_name} ({gpu_mem:.1f} GB)")
             print(f"  BF16: {hw['bf16_supported']}")
             print(f"  Flash Attention 2: {hw['flash_attn_available']}")
 

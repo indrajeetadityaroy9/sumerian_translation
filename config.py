@@ -17,7 +17,6 @@ class Paths:
 
     # Model checkpoints
     MODELS = ROOT / "models"
-    MLM_CHECKPOINT = MODELS / "sumerian_tiny_mlm"
     NMT_CHECKPOINT = MODELS / "sumerian_mt5_final"
 
     # Data directories
@@ -42,6 +41,16 @@ class Paths:
     ORACC_DATA = ROOT / "data" / "oracc"
     ETCSL_DATA = ROOT / "ota_20" / "etcsl"
 
+    # Consolidated Parquet data (preferred format)
+    CONSOLIDATED_DIR = ROOT / "data" / "consolidated"
+    ETCSL_PARQUET = CONSOLIDATED_DIR / "etcsl_gold.parquet"
+    ORACC_LITERARY_PARQUET = CONSOLIDATED_DIR / "oracc_literary.parquet"
+    ORACC_ROYAL_PARQUET = CONSOLIDATED_DIR / "oracc_royal.parquet"
+    GLOSSARY_PARQUET = CONSOLIDATED_DIR / "glossary_sux.parquet"
+
+    # Archives
+    ARCHIVES_DIR = ROOT / "archives"
+
     @classmethod
     def ensure_dirs(cls):
         """Create all output directories if they don't exist."""
@@ -49,38 +58,12 @@ class Paths:
         cls.OUTPUT.mkdir(parents=True, exist_ok=True)
         (cls.TRAINING_DATA / "finetune").mkdir(parents=True, exist_ok=True)
         (cls.TRAINING_DATA / "pretrain").mkdir(parents=True, exist_ok=True)
+        cls.CONSOLIDATED_DIR.mkdir(parents=True, exist_ok=True)
+        cls.ARCHIVES_DIR.mkdir(parents=True, exist_ok=True)
 
 
 class ModelConfigs:
     """Model architecture configurations."""
-
-    # Size presets for RoBERTa-style models
-    SIZES = {
-        "tiny": {
-            "hidden_size": 256,
-            "num_hidden_layers": 4,
-            "num_attention_heads": 4,
-            "intermediate_size": 1024,
-        },
-        "small": {
-            "hidden_size": 512,
-            "num_hidden_layers": 6,
-            "num_attention_heads": 8,
-            "intermediate_size": 2048,
-        },
-        "base": {
-            "hidden_size": 768,
-            "num_hidden_layers": 12,
-            "num_attention_heads": 12,
-            "intermediate_size": 3072,
-        },
-        "large": {
-            "hidden_size": 1024,
-            "num_hidden_layers": 24,
-            "num_attention_heads": 16,
-            "intermediate_size": 4096,
-        },
-    }
 
     # mT5 model variants
     MT5_MODELS = {
@@ -91,27 +74,9 @@ class ModelConfigs:
 
 
 class TrainingDefaults:
-    """Default training hyperparameters."""
+    """Default training hyperparameters for mT5 fine-tuning."""
 
-    # MLM pre-training (Phase 1)
-    MLM = {
-        "batch_size": 512,
-        "epochs": 50,
-        "learning_rate": 1e-4,
-        "max_length": 128,
-        "warmup_ratio": 0.06,
-    }
-
-    # NMT fine-tuning with custom encoder-decoder
-    NMT = {
-        "batch_size": 256,
-        "epochs": 20,
-        "learning_rate": 5e-5,
-        "max_length": 128,
-        "warmup_ratio": 0.06,
-    }
-
-    # mT5 fine-tuning (recommended)
+    # mT5 fine-tuning
     MT5 = {
         "batch_size": 64,
         "epochs": 20,

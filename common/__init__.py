@@ -15,7 +15,6 @@ from .metrics import compute_bleu_chrf, load_metrics, create_compute_metrics_fn
 from .training import (
     create_training_args,
     create_seq2seq_training_args,
-    create_mlm_training_args,
     apply_compile,
     setup_precision,
 )
@@ -39,7 +38,6 @@ __all__ = [
     # training
     "create_training_args",
     "create_seq2seq_training_args",
-    "create_mlm_training_args",
     "apply_compile",
     "setup_precision",
     # quality
