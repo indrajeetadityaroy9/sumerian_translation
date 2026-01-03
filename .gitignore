@@ -1,48 +1,207 @@
 # ==============================
-# Environments
+# Virtual Environments
 # ==============================
 venv/
 .venv/
 env/
 .env/
+ENV/
+.ENV/
+virtualenv/
+
+# ==============================
+# Claude Code Configuration
+# ==============================
+CLAUDE.md
 
 # ==============================
 # Python cache / build artifacts
 # ==============================
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
 *.so
+*.egg
 *.egg-info/
 dist/
 build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
 
 # ==============================
 # Jupyter
 # ==============================
 .ipynb_checkpoints/
+*.ipynb
 
 # ==============================
-# ML artifacts / experiment outputs
+# Data Files and Directories
 # ==============================
+# Consolidated data (parquet files)
+data/
+!data/.gitkeep
+
+# Raw source archives
+archives/
+!archives/.gitkeep
+
+# Generated output files
+output/
+!output/.gitkeep
+
+# Training data and artifacts
+output_training_v2_clean/
+!output_training_v2_clean/.gitkeep
+
+# ORACC raw data (if downloaded)
+ota_20/
+
+# ==============================
+# Large File Types
+# ==============================
+# Parquet data files
+*.parquet
+
+# Compressed archives
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.zip
+*.7z
+*.rar
+
+# Training data files
+*.jsonl
+*.jsonl.gz
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.h5
+*.hdf5
+*.onnx
+
+# Pickle files
+*.pkl
+*.pickle
+
+# ==============================
+# Model Checkpoints and Artifacts
+# ==============================
+models/
+!models/.gitkeep
 checkpoints/
-logs/
-outputs/
-runs/
-wandb/
-mlruns/
+!checkpoints/.gitkeep
 
-# ==============================
-# OS / editor noise
-# ==============================
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-**/.nfs*
+# Specific checkpoint patterns
+**/checkpoint-*/
 **/optimizer.pt
 **/scheduler.pt
 **/rng_state.pth
-models/**/checkpoint-*/
-output_training_v2_clean/**/*.jsonl
+**/trainer_state.json
+**/training_args.bin
+
+# ==============================
+# ML Experiment Tracking
+# ==============================
+logs/
+runs/
+wandb/
+mlruns/
+tensorboard/
+lightning_logs/
+
+# ==============================
+# Evaluation and Reports
+# ==============================
+# Keep report templates but ignore generated reports
+academic_report.md
+**/audit/*.csv
+**/eval_*.md
+
+# ==============================
+# OS and Editor Files
+# ==============================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.directory
+
+# NFS temp files
+**/.nfs*
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ==============================
+# Testing and Coverage
+# ==============================
+.coverage
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.coverage
+htmlcov/
+.pytest_cache/
+.hypothesis/
+
+# ==============================
+# Documentation Build
+# ==============================
+docs/_build/
+site/
+
+# ==============================
+# Secrets and Credentials
+# ==============================
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets.yaml
+secrets.json
+credentials.json
+
+# ==============================
+# Misc
+# ==============================
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+.cache/
+*.pid

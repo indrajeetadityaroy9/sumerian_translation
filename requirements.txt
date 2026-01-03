@@ -1,0 +1,58 @@
+# Sumerian NMT Dependencies
+# Install with: pip install -r requirements.txt
+# Or use: pip install -e . (with pyproject.toml)
+
+# =============================================================================
+# PyTorch - Core deep learning framework
+# =============================================================================
+# For CUDA support, install separately with appropriate CUDA version:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+torch>=2.0
+
+# =============================================================================
+# HuggingFace Ecosystem
+# =============================================================================
+transformers>=4.30
+datasets>=2.14
+accelerate>=0.21
+sentencepiece>=0.1.99
+protobuf>=3.20
+
+# =============================================================================
+# Evaluation Metrics
+# =============================================================================
+evaluate>=0.4
+sacrebleu>=2.3
+bert-score>=0.3.13
+
+# =============================================================================
+# Data Processing
+# =============================================================================
+pandas>=2.0
+pyarrow>=12.0
+lxml>=4.9
+numpy>=1.24
+
+# =============================================================================
+# Utilities
+# =============================================================================
+tqdm>=4.65
+
+# =============================================================================
+# Graph Augmentation (for entity substitution pipeline)
+# =============================================================================
+networkx>=3.1
+python-Levenshtein>=0.21
+
+# =============================================================================
+# Tokenizer Experiments (Morfessor, ByT5 testing)
+# =============================================================================
+morfessor>=2.0
+
+# =============================================================================
+# Optional: Flash Attention 2 (for faster inference on H100/A100)
+# =============================================================================
+# Requires separate installation:
+# pip install ninja packaging
+# pip install flash-attn --no-build-isolation

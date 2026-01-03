@@ -51,6 +51,15 @@ class Paths:
     # Archives
     ARCHIVES_DIR = ROOT / "archives"
 
+    # Graph Augmentation
+    GRAPH_AUGMENTED = TRAINING_DATA / "finetune" / "train_graph_augmented.jsonl"
+    AUDIT_DIR = TRAINING_DATA / "finetune" / "audit"
+
+    # Ablation Study Datasets
+    ABLATION_BASELINE = TRAINING_DATA / "finetune" / "train_baseline.jsonl"
+    ABLATION_NAIVE = TRAINING_DATA / "finetune" / "train_exact_only.jsonl"
+    ABLATION_SMART = TRAINING_DATA / "finetune" / "train_substitution.jsonl"
+
     @classmethod
     def ensure_dirs(cls):
         """Create all output directories if they don't exist."""
@@ -60,6 +69,7 @@ class Paths:
         (cls.TRAINING_DATA / "pretrain").mkdir(parents=True, exist_ok=True)
         cls.CONSOLIDATED_DIR.mkdir(parents=True, exist_ok=True)
         cls.ARCHIVES_DIR.mkdir(parents=True, exist_ok=True)
+        cls.AUDIT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 class ModelConfigs:
@@ -71,6 +81,14 @@ class ModelConfigs:
         "base": "google/mt5-base",      # 580M params
         "large": "google/mt5-large",    # 1.2B params
     }
+
+
+class ControlTokens:
+    """Control tokens for data provenance tracking in graph augmentation."""
+    GOLD = "<gold>"      # Original ETCSL gold data
+    SILVER = "<silver>"  # High-confidence matches (skeleton ≥ 95%)
+    AUG = "<aug>"        # Entity substitution augmented
+    GLOSS = "<gloss>"    # Glossary-based augmented
 
 
 class TrainingDefaults:

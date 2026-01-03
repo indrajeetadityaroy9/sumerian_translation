@@ -1,0 +1,187 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sumerian-nmt"
+version = "1.0.0"
+description = "Neural Machine Translation system for Sumerian-to-English translation using mT5"
+readme = "CLAUDE.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Sumerian NMT Project"}
+]
+keywords = [
+    "NMT",
+    "neural-machine-translation",
+    "sumerian",
+    "ancient-languages",
+    "mT5",
+    "transformers",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+dependencies = [
+    # PyTorch - Core deep learning framework
+    # Note: For CUDA support, install separately:
+    # pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+    "torch>=2.0",
+
+    # HuggingFace Ecosystem
+    "transformers>=4.30",
+    "datasets>=2.14",
+    "accelerate>=0.21",
+    "sentencepiece>=0.1.99",
+    "protobuf>=3.20",
+
+    # Evaluation Metrics
+    "evaluate>=0.4",
+    "sacrebleu>=2.3",
+    "bert-score>=0.3.13",
+
+    # Data Processing
+    "pandas>=2.0",
+    "pyarrow>=12.0",
+    "lxml>=4.9",
+    "numpy>=1.24",
+
+    # Utilities
+    "tqdm>=4.65",
+
+    # Graph Augmentation
+    "networkx>=3.1",
+    "python-Levenshtein>=0.21",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "isort>=5.12",
+    "mypy>=1.0",
+    "ruff>=0.0.270",
+]
+
+tokenizer = [
+    # Tokenizer experiments (Morfessor, ByT5 testing)
+    "morfessor>=2.0",
+]
+
+flash-attn = [
+    # Flash Attention 2 for faster inference on compatible GPUs
+    # Requires: ninja, packaging
+    # Install with: pip install flash-attn --no-build-isolation
+    "ninja>=1.11",
+    "packaging>=23.0",
+]
+
+all = [
+    "sumerian-nmt[dev,tokenizer]",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sumerian-nmt/sumerian-translation"
+"Bug Tracker" = "https://github.com/sumerian-nmt/sumerian-translation/issues"
+
+[project.scripts]
+sumerian-train = "train:main"
+sumerian-translate = "translate:main"
+sumerian-evaluate = "evaluate_academic:main"
+sumerian-augment = "processors.graph_augmentor:main"
+sumerian-ablation = "run_ablation:main"
+
+[tool.setuptools]
+packages = [
+    "common",
+    "processors",
+    "processors.graph_engine",
+    "etcsl_extractor",
+    "etcsl_extractor.parsers",
+    "etcsl_extractor.exporters",
+    "etcsl_extractor.processors",
+    "etcsl_extractor.utils",
+]
+py-modules = [
+    "config",
+    "train",
+    "translate",
+    "evaluate_academic",
+    "run_ablation",
+    "test_inference",
+]
+
+[tool.setuptools.package-data]
+"*" = ["*.json", "*.txt", "*.md"]
+
+[tool.black]
+line-length = 100
+target-version = ['py310', 'py311', 'py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | venv
+  | __pycache__
+  | \.eggs
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+skip = [".git", "venv", "__pycache__"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = [
+    ".git",
+    "venv",
+    "__pycache__",
+    "*.egg-info",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E501",  # line too long (handled by black)
+    "B008",  # do not perform function calls in argument defaults
+]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+exclude = [
+    "venv",
+    "__pycache__",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
