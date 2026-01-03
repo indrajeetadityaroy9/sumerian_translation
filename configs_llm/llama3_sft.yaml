@@ -1,0 +1,86 @@
+# Axolotl Configuration for Llama-3 SFT on Sumerian Translation
+# Optimized for 2x H100 80GB
+
+base_model: meta-llama/Meta-Llama-3.1-8B-Instruct
+model_type: LlamaForCausalLM
+tokenizer_type: AutoTokenizer
+trust_remote_code: true
+
+# Load in 4-bit for memory efficiency during training
+load_in_8bit: false
+load_in_4bit: true
+
+# LoRA Configuration
+adapter: lora
+lora_r: 64
+lora_alpha: 128
+lora_dropout: 0.05
+lora_target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+lora_target_linear: true
+
+# Dataset Configuration
+datasets:
+  - path: data/final_llm_ready/sft_train.json
+    type: alpaca
+
+# Validation
+val_set_size: 0.0  # Using separate test file
+
+# Training Configuration
+sequence_len: 512
+sample_packing: true
+pad_to_sequence_len: true
+
+# Hyperparameters
+num_epochs: 3
+micro_batch_size: 4
+gradient_accumulation_steps: 16
+learning_rate: 2e-4
+lr_scheduler: cosine
+warmup_ratio: 0.03
+weight_decay: 0.01
+
+# Optimizer
+optimizer: adamw_torch_fused
+
+# Precision
+bf16: true
+fp16: false
+tf32: true
+
+# Flash Attention
+flash_attention: true
+xformers_attention: false
+
+# Gradient Checkpointing
+gradient_checkpointing: true
+
+# Output
+output_dir: models_llm/sumerian_llama3_sft
+
+# Logging
+logging_steps: 10
+save_strategy: epoch
+save_total_limit: 3
+
+# Evaluation
+eval_strategy: epoch
+eval_sample_packing: false
+
+# Wandb (optional)
+wandb_project: sumerian-translation
+wandb_run_id: llama3-sft
+
+# DeepSpeed (optional - for multi-GPU)
+# deepspeed: configs_llm/deepspeed_zero3.json
+
+# Misc
+seed: 42
+strict: false

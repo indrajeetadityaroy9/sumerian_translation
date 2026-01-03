@@ -12,7 +12,7 @@ virtualenv/
 # ==============================
 # Claude Code Configuration
 # ==============================
-CLAUDE.md
+# CLAUDE.md is now tracked
 
 # ==============================
 # Python cache / build artifacts
@@ -47,21 +47,20 @@ pip-delete-this-directory.txt
 # ==============================
 # Data Files and Directories
 # ==============================
-# Consolidated data (parquet files)
-data/
-!data/.gitkeep
+# Track zip archives for reproducibility
+# Uncompressed data directories (extracted from zips)
+data/final_llm_ready/
+data/consolidated/
+data/archive/
+data/raw_source/
 
 # Raw source archives
 archives/
 !archives/.gitkeep
 
-# Generated output files
+# Generated output files (extracted from zips)
 output/
-!output/.gitkeep
-
-# Training data and artifacts
 output_training_v2_clean/
-!output_training_v2_clean/.gitkeep
 
 # ORACC raw data (if downloaded)
 ota_20/
@@ -72,11 +71,11 @@ ota_20/
 # Parquet data files
 *.parquet
 
-# Compressed archives
+# Compressed archives (except .zip which we track for reproducibility)
 *.tar.gz
 *.tar.bz2
 *.tar.xz
-*.zip
+# *.zip  # TRACKED: zip files contain datasets for reproducibility
 *.7z
 *.rar
 
