@@ -65,12 +65,37 @@ class EntitySwapper:
     """
 
     # Compound phrase patterns that need review
+    # P3-2 fix: Expanded patterns based on corpus analysis
     COMPOUND_PATTERNS = [
-        r'(king|queen|lord|lady|god|goddess)\s+',      # Titles before name
-        r'(the\s+\w+)\s+',                             # "The X" before name
-        r'(shepherd|ruler|priest|priestess)\s+',      # Roles before name
+        # Titles and roles before name
+        r'(king|queen|lord|lady|god|goddess)\s+',      # Royal/divine titles
+        r'(shepherd|ruler|priest|priestess)\s+',       # Religious/political roles
+        r'(divine|mighty|great|holy)\s+',              # Divine epithets
+        r'(prince|princess|en|ensi|lugal)\s+',         # Sumerian titles
+
+        # "The X" patterns
+        r'(the\s+\w+)\s+',                             # "The shepherd X", "The god X"
+
+        # Family relationship patterns
+        r'(son|daughter|child|mother|father)\s+of\s+', # "son of X"
+        r'(wife|husband|spouse)\s+of\s+',              # "wife of X"
+        r'(servant|slave|minister)\s+of\s+',           # "servant of X"
+
+        # Building/place relationship patterns
+        r'(temple|shrine|house|city|land)\s+of\s+',    # "temple of X"
+        r'(gate|wall|ziggurat)\s+of\s+',               # "gate of X"
+
+        # Vocative patterns
+        r'\bO\s+',                                      # "O X" (vocative)
+        r'(hail|praise|glory to)\s+',                  # "Hail X", "Praise X"
+
+        # Possessive and genitive patterns
         r"'s\s*$",                                     # Possessive after name
         r'\s+of\s+\w+$',                               # "of X" after name
+
+        # Additional contextual patterns
+        r'(beloved|chosen|favorite)\s+of\s+',          # "beloved of X"
+        r'(fear|wrath|might)\s+of\s+',                 # "wrath of X"
     ]
 
     def __init__(self, safety_checker: Optional[SafetyChecker] = None):

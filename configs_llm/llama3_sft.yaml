@@ -1,14 +1,33 @@
 # Axolotl Configuration for Llama-3 SFT on Sumerian Translation
-# Optimized for 2x H100 80GB
+# Optimized for 2x H100 80GB SXM5 + 52 vCPUs
+#
+# IMPORTANT: Uses native Llama-3 Instruct chat template for consistency
+# between training and evaluation. See AUDIT_REPORT.md P0-1.
+#
+# Hardware Requirements:
+# - GPU: NVIDIA H100 80GB (or A100 80GB with reduced batch size)
+# - CPU: 16+ cores recommended for dataloader workers
+# - RAM: 64GB+ system memory
+# - For A100: reduce micro_batch_size to 16, gradient_accumulation_steps to 16
 
 base_model: meta-llama/Meta-Llama-3.1-8B-Instruct
 model_type: LlamaForCausalLM
 tokenizer_type: AutoTokenizer
 trust_remote_code: true
 
-# Load in 4-bit for memory efficiency during training
+# Use native Llama-3 Instruct chat template (CRITICAL for eval consistency)
+chat_template: llama3
+
+# Multi-GPU DDP Configuration (2x H100 80GB)
+ddp: true
+
+# Llama-3 requires explicit pad token configuration
+special_tokens:
+  pad_token: "<|end_of_text|>"
+
+# H100 Optimization: Full 16-bit LoRA (no quantization for best quality)
 load_in_8bit: false
-load_in_4bit: true
+load_in_4bit: false
 
 # LoRA Configuration
 adapter: lora
@@ -26,22 +45,40 @@ lora_target_modules:
 lora_target_linear: true
 
 # Dataset Configuration
+# Uses chat_template format to match Llama-3 Instruct structure
 datasets:
   - path: data/final_llm_ready/sft_train.json
-    type: alpaca
+    type: chat_template
+    # Alpaca fields map to chat: instruction+input -> user, output -> assistant
+    field_instruction: instruction
+    field_input: input
+    field_output: output
+    # System prompt for Sumerology context
+    system_prompt: "You are an expert Sumerologist specializing in translating ancient Sumerian cuneiform texts into modern English. Provide accurate, scholarly translations."
 
-# Validation
-val_set_size: 0.0  # Using separate test file
+# Validation - use test file for validation during training (P1-3 fix)
+datasets_test:
+  - path: data/final_llm_ready/sft_test.json
+    type: chat_template
+    field_instruction: instruction
+    field_input: input
+    field_output: output
+    system_prompt: "You are an expert Sumerologist specializing in translating ancient Sumerian cuneiform texts into modern English. Provide accurate, scholarly translations."
+
+# Validation settings
+val_set_size: 0.0  # Using explicit test dataset above
+eval_steps: 100  # Evaluate every 100 steps
+eval_strategy: steps
 
 # Training Configuration
 sequence_len: 512
 sample_packing: true
 pad_to_sequence_len: true
 
-# Hyperparameters
+# Hyperparameters (Dual H100 80GB DDP)
 num_epochs: 3
-micro_batch_size: 4
-gradient_accumulation_steps: 16
+micro_batch_size: 64  # Per-GPU batch size (doubled for 2 GPUs)
+gradient_accumulation_steps: 4  # Effective batch = 64 * 4 * 2 GPUs = 512
 learning_rate: 2e-4
 lr_scheduler: cosine
 warmup_ratio: 0.03
@@ -50,17 +87,22 @@ weight_decay: 0.01
 # Optimizer
 optimizer: adamw_torch_fused
 
-# Precision
+# Precision (H100 BF16 optimized)
 bf16: true
 fp16: false
 tf32: true
 
-# Flash Attention
+# Flash Attention 2 (H100 optimized)
 flash_attention: true
 xformers_attention: false
 
-# Gradient Checkpointing
+# Gradient checkpointing needed for full 16-bit training
 gradient_checkpointing: true
+
+# DataLoader optimization for 52 vCPUs
+dataloader_num_workers: 28  # Increased from 16 to utilize more cores
+dataloader_pin_memory: true
+dataloader_prefetch_factor: 4  # Prefetch for H100 throughput
 
 # Output
 output_dir: models_llm/sumerian_llama3_sft
@@ -69,17 +111,6 @@ output_dir: models_llm/sumerian_llama3_sft
 logging_steps: 10
 save_strategy: epoch
 save_total_limit: 3
-
-# Evaluation
-eval_strategy: epoch
-eval_sample_packing: false
-
-# Wandb (optional)
-wandb_project: sumerian-translation
-wandb_run_id: llama3-sft
-
-# DeepSpeed (optional - for multi-GPU)
-# deepspeed: configs_llm/deepspeed_zero3.json
 
 # Misc
 seed: 42

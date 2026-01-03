@@ -12,7 +12,7 @@ Components:
 """
 
 from .safety import SafetyChecker
-from .builder import EntityGraph, LineNode
+from .builder import EntityGraph, LineNode, build_combined_graph_parallel
 from .matcher import LineMatcher, LineMatch
 from .swapper import EntitySwapper, AugmentedPair
 
@@ -24,4 +24,5 @@ __all__ = [
     'LineMatch',
     'EntitySwapper',
     'AugmentedPair',
+    'build_combined_graph_parallel',
 ]

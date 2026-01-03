@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "sumerian-nmt"
 version = "1.0.0"
-description = "Neural Machine Translation system for Sumerian-to-English translation using mT5"
+description = "Neural Machine Translation system for Sumerian-to-English translation using Llama-3"
 readme = "CLAUDE.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"
@@ -17,8 +17,9 @@ keywords = [
     "neural-machine-translation",
     "sumerian",
     "ancient-languages",
-    "mT5",
+    "llama",
     "transformers",
+    "low-resource",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -42,6 +43,8 @@ dependencies = [
     "transformers>=4.30",
     "datasets>=2.14",
     "accelerate>=0.21",
+    "peft>=0.6.0",           # LoRA adapter loading
+    "bitsandbytes>=0.41.0",  # 4-bit quantization
     "sentencepiece>=0.1.99",
     "protobuf>=3.20",
 
@@ -87,8 +90,15 @@ flash-attn = [
     "packaging>=23.0",
 ]
 
+vllm = [
+    # vLLM for high-throughput inference (10-100x faster)
+    # Requires: CUDA 11.8+, H100/A100 recommended
+    # Install with: pip install -e ".[vllm]"
+    "vllm>=0.4.0",
+]
+
 all = [
-    "sumerian-nmt[dev,tokenizer]",
+    "sumerian-nmt[dev,tokenizer,vllm]",
 ]
 
 [project.urls]
@@ -96,11 +106,15 @@ all = [
 "Bug Tracker" = "https://github.com/sumerian-nmt/sumerian-translation/issues"
 
 [project.scripts]
-sumerian-train = "train:main"
-sumerian-translate = "translate:main"
-sumerian-evaluate = "evaluate_academic:main"
+# Data Pipeline
+sumerian-extract = "etcsl_extractor.main:main"
+sumerian-prepare = "processors.prepare_training_data:main"
 sumerian-augment = "processors.graph_augmentor:main"
-sumerian-ablation = "run_ablation:main"
+sumerian-consolidate = "processors.consolidate_for_llm:main"
+sumerian-dpo = "processors.create_dpo_pairs:main"
+# Evaluation
+sumerian-evaluate = "evaluation.evaluate_llm:main"
+sumerian-compare = "evaluation.compare_models:main"
 
 [tool.setuptools]
 packages = [
@@ -112,14 +126,10 @@ packages = [
     "etcsl_extractor.exporters",
     "etcsl_extractor.processors",
     "etcsl_extractor.utils",
+    "evaluation",
 ]
 py-modules = [
     "config",
-    "train",
-    "translate",
-    "evaluate_academic",
-    "run_ablation",
-    "test_inference",
 ]
 
 [tool.setuptools.package-data]

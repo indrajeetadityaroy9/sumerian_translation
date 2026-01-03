@@ -1,15 +1,28 @@
 # Axolotl Configuration for Llama-3 DPO Alignment
 # Phase 2: Preference alignment after SFT
-# Optimized for 2x H100 80GB
+# Optimized for 2x H100 80GB - Full 16-bit LoRA
+#
+# IMPORTANT: Uses native Llama-3 Instruct chat template for consistency
+# with SFT training and evaluation. See AUDIT_REPORT.md P0-2.
+#
+# Hardware Requirements:
+# - GPU: NVIDIA H100 80GB (or A100 80GB with reduced batch size)
+# - For A100: reduce micro_batch_size to 8
 
 base_model: models_llm/sumerian_llama3_sft  # Start from SFT checkpoint
 model_type: LlamaForCausalLM
 tokenizer_type: AutoTokenizer
 trust_remote_code: true
 
-# Load configuration
+# Use native Llama-3 Instruct chat template (must match SFT config)
+chat_template: llama3
+
+# Multi-GPU DDP Configuration (2x H100 80GB)
+ddp: true
+
+# H100 Optimization: Full 16-bit (no quantization)
 load_in_8bit: false
-load_in_4bit: true
+load_in_4bit: false
 
 # LoRA Configuration (continue from SFT)
 adapter: lora
@@ -27,10 +40,17 @@ lora_target_modules:
 lora_target_linear: true
 
 # DPO Dataset Configuration
+# Uses chat_template format with DPO-specific fields for Llama-3 consistency
 datasets:
   - path: data/final_llm_ready/dpo_pairs.json
-    type: chatml.intel
-    # Format: {"instruction", "input", "chosen", "rejected"}
+    type: chat_template.default
+    # DPO format fields (matches create_dpo_pairs.py output)
+    field_instruction: instruction
+    field_input: input
+    field_chosen: chosen
+    field_rejected: rejected
+    # System prompt must match SFT config
+    system_prompt: "You are an expert Sumerologist specializing in translating ancient Sumerian cuneiform texts into modern English. Provide accurate, scholarly translations."
 
 # DPO Training
 rl: dpo
@@ -41,10 +61,10 @@ sequence_len: 512
 sample_packing: false  # DPO doesn't use packing
 pad_to_sequence_len: true
 
-# Hyperparameters (lower LR for alignment)
+# Hyperparameters (Dual H100 80GB DDP, lower LR for alignment)
 num_epochs: 1
-micro_batch_size: 2
-gradient_accumulation_steps: 32
+micro_batch_size: 32  # Per-GPU batch size (doubled for 2 GPUs)
+gradient_accumulation_steps: 4  # Effective batch = 32 * 4 * 2 GPUs = 256
 learning_rate: 5e-5
 lr_scheduler: cosine
 warmup_ratio: 0.1
@@ -53,16 +73,21 @@ weight_decay: 0.01
 # Optimizer
 optimizer: adamw_torch_fused
 
-# Precision
+# Precision (H100 BF16 optimized)
 bf16: true
 fp16: false
 tf32: true
 
-# Flash Attention
+# Flash Attention 2
 flash_attention: true
 
 # Gradient Checkpointing
 gradient_checkpointing: true
+
+# DataLoader optimization for 52 vCPUs
+dataloader_num_workers: 28
+dataloader_pin_memory: true
+dataloader_prefetch_factor: 4
 
 # Output
 output_dir: models_llm/sumerian_llama3_dpo
@@ -71,10 +96,6 @@ output_dir: models_llm/sumerian_llama3_dpo
 logging_steps: 5
 save_strategy: epoch
 save_total_limit: 2
-
-# Wandb
-wandb_project: sumerian-translation
-wandb_run_id: llama3-dpo
 
 # Misc
 seed: 42

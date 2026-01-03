@@ -14,21 +14,28 @@ Control tokens injected:
 - <aug>: Entity substitution augmented
 - <gloss>: Glossary-based augmented
 
+Optimized for 52 vCPU systems with parallel processing.
+
 Usage:
     python processors/graph_augmentor.py
     python processors/graph_augmentor.py --output train_graph_augmented.jsonl
     python processors/graph_augmentor.py --circle1-only
+    python processors/graph_augmentor.py --parallel --workers 48  # Parallel mode
 """
 
 import argparse
 import json
+from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
 from dataclasses import asdict
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 
 from tqdm import tqdm
 
-from config import Paths
+from common.io import ChunkedParquetWriter
+from common.parallel import get_optimal_workers, parallel_map
+
+from config import ControlTokens, Paths
 from processors.entity_linker import EntityLinker
 from processors.graph_engine import (
     EntityGraph,
@@ -37,14 +44,6 @@ from processors.graph_engine import (
     SafetyChecker,
     AugmentedPair,
 )
-
-
-class ControlTokens:
-    """Control tokens for data provenance tracking."""
-    GOLD = "<gold>"      # Original ETCSL gold data
-    SILVER = "<silver>"  # High-confidence matches (skeleton ≥ 95%)
-    AUG = "<aug>"        # Entity substitution augmented
-    GLOSS = "<gloss>"    # Glossary-based augmented
 
 
 class GraphAugmentor:
@@ -192,6 +191,63 @@ class GraphAugmentor:
 
         return pairs
 
+    def run_circle1_parallel(
+        self,
+        max_per_line: int = 5,
+        num_workers: Optional[int] = None,
+        verbose: bool = True
+    ) -> List[AugmentedPair]:
+        """
+        Run Circle 1 augmentation with parallel processing.
+
+        Uses ThreadPoolExecutor for parallel matching/swapping while
+        sharing the entity graph across workers.
+
+        Args:
+            max_per_line: Maximum matches per source line
+            num_workers: Number of workers (default: auto-detect for 52 vCPUs)
+            verbose: Print progress
+
+        Returns:
+            List of augmented pairs
+        """
+        if num_workers is None:
+            num_workers = get_optimal_workers()
+
+        if verbose:
+            print(f"\nRunning Circle 1 (ETCSL ↔ ETCSL) with {num_workers} workers...")
+
+        etcsl_lines = [l for l in self.graph.get_etcsl_lines()
+                       if l.entities and l.has_translation]
+
+        def process_line(line):
+            """Process a single line (matching + swapping)."""
+            results = []
+            matches = self.matcher.find_circle1_matches(line, max_per_line)
+            for match in matches:
+                result = self.swapper.swap_entities(match)
+                if result:
+                    results.append(result)
+            return results
+
+        # Use ThreadPoolExecutor to avoid pickling issues with shared graph
+        pairs = []
+        with ThreadPoolExecutor(max_workers=num_workers) as executor:
+            futures = list(tqdm(
+                executor.map(process_line, etcsl_lines),
+                total=len(etcsl_lines),
+                desc="Circle 1 (parallel)",
+                disable=not verbose
+            ))
+            for batch in futures:
+                pairs.extend(batch)
+
+        self.stats['circle1_count'] = len(pairs)
+        if verbose:
+            print(f"  Generated {len(pairs)} Circle 1 pairs")
+
+        return pairs
+
     def run_circle2(
         self,
         max_per_line: int = 5,
@@ -226,10 +282,64 @@ class GraphAugmentor:
 
         return pairs
 
+    def run_circle2_parallel(
+        self,
+        max_per_line: int = 5,
+        num_workers: Optional[int] = None,
+        verbose: bool = True
+    ) -> List[AugmentedPair]:
+        """
+        Run Circle 2 augmentation with parallel processing.
+
+        Args:
+            max_per_line: Maximum matches per template line
+            num_workers: Number of workers (default: auto-detect)
+            verbose: Print progress
+
+        Returns:
+            List of augmented pairs
+        """
+        if num_workers is None:
+            num_workers = get_optimal_workers()
+
+        if verbose:
+            print(f"\nRunning Circle 2 (ORACC → ETCSL) with {num_workers} workers...")
+
+        oracc_lines = [l for l in self.graph.get_oracc_lines() if l.entities]
+
+        def process_line(line):
+            """Process a single ORACC line."""
+            results = []
+            matches = self.matcher.find_circle2_matches(line, max_per_line)
+            for match in matches:
+                result = self.swapper.swap_entities(match)
+                if result:
+                    results.append(result)
+            return results
+
+        pairs = []
+        with ThreadPoolExecutor(max_workers=num_workers) as executor:
+            futures = list(tqdm(
+                executor.map(process_line, oracc_lines),
+                total=len(oracc_lines),
+                desc="Circle 2 (parallel)",
+                disable=not verbose
+            ))
+            for batch in futures:
+                pairs.extend(batch)
+
+        self.stats['circle2_count'] = len(pairs)
+        if verbose:
+            print(f"  Generated {len(pairs)} Circle 2 pairs")
+
+        return pairs
+
     def run_full_pipeline(
         self,
         max_per_line: int = 5,
-        verbose: bool = True
+        verbose: bool = True,
+        parallel: bool = False,
+        num_workers: Optional[int] = None
     ) -> List[Dict]:
         """
         Run full augmentation pipeline and return training records.
@@ -239,6 +349,8 @@ class GraphAugmentor:
         Args:
             max_per_line: Maximum matches per source line
             verbose: Print progress
+            parallel: Use parallel processing (default: False)
+            num_workers: Number of workers for parallel mode
 
         Returns:
             List of training records with source/target
@@ -246,9 +358,13 @@ class GraphAugmentor:
         if self.graph is None:
             self.initialize(verbose)
 
-        # Run both circles
-        circle1_pairs = self.run_circle1(max_per_line, verbose)
-        circle2_pairs = self.run_circle2(max_per_line, verbose)
+        # Run both circles (parallel or sequential)
+        if parallel:
+            circle1_pairs = self.run_circle1_parallel(max_per_line, num_workers, verbose)
+            circle2_pairs = self.run_circle2_parallel(max_per_line, num_workers, verbose)
+        else:
+            circle1_pairs = self.run_circle1(max_per_line, verbose)
+            circle2_pairs = self.run_circle2(max_per_line, verbose)
 
         self.augmented_pairs = circle1_pairs + circle2_pairs
 
@@ -275,6 +391,10 @@ class GraphAugmentor:
                 "target": {
                     "text": pair.target_text,
                     "original": pair.original_target,
+                },
+                "quality": {
+                    "synthetic": True,
+                    "method": pair.match_type,
                 },
                 "metadata": {
                     "source_line_id": pair.source_line_id,
@@ -308,6 +428,56 @@ class GraphAugmentor:
                 f.write(json.dumps(record, ensure_ascii=False) + '\n')
 
         print(f"Exported {len(records)} records to {output_path}")
+
+    def export_parquet(
+        self,
+        output_dir: Path,
+        records: List[Dict],
+        prefix: str = "graph_augmented",
+        chunk_size: int = 10000,
+    ):
+        """
+        Export records to chunked parquet files for GitHub-friendly storage.
+
+        Args:
+            output_dir: Directory for parquet chunks
+            records: List of training records
+            prefix: Filename prefix for chunks
+            chunk_size: Records per chunk (default: 10000)
+        """
+        # Flatten records for parquet (nested dicts don't work well)
+        flat_records = []
+        for record in records:
+            source = record.get("source", {})
+            target = record.get("target", {})
+            metadata = record.get("metadata", {})
+
+            flat_record = {
+                "source_text": source.get("text_normalized", ""),
+                "source_original": source.get("original", ""),
+                "target_text": target.get("text", ""),
+                "target_original": target.get("original", ""),
+                "source_line_id": metadata.get("source_line_id", ""),
+                "template_line_id": metadata.get("template_line_id", ""),
+                "match_type": metadata.get("match_type", ""),
+                "skeleton_similarity": metadata.get("skeleton_similarity", 0.0),
+                "confidence": metadata.get("confidence", 0.0),
+                "is_compound": metadata.get("is_compound", False),
+                "substitutions_json": json.dumps(metadata.get("substitutions", [])),
+            }
+            flat_records.append(flat_record)
+
+        writer = ChunkedParquetWriter(
+            output_dir=output_dir,
+            prefix=prefix,
+            chunk_size=chunk_size,
+            compression="snappy",
+            generator="graph_augmentor.py",
+        )
+        writer.add_records(flat_records)
+        metadata = writer.finalize()
+
+        print(f"Exported {len(records)} records to {output_dir}/")
 
     def get_statistics(self) -> dict:
         """Get comprehensive statistics."""
@@ -355,6 +525,29 @@ def main():
         action="store_true",
         help="Only run Circle 2 (ORACC → ETCSL)"
     )
+    parser.add_argument(
+        "--parallel",
+        action="store_true",
+        help="Use parallel processing (recommended for 52+ vCPU systems)"
+    )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=None,
+        help="Number of worker threads for parallel mode (default: auto-detect)"
+    )
+    parser.add_argument(
+        "--output-format",
+        choices=["jsonl", "parquet", "both"],
+        default="both",
+        help="Output format: jsonl (legacy), parquet (GitHub-friendly), or both (default)"
+    )
+    parser.add_argument(
+        "--chunk-size",
+        type=int,
+        default=10000,
+        help="Records per parquet chunk (default: 10000, ~5-30MB per chunk)"
+    )
 
     args = parser.parse_args()
 
@@ -362,13 +555,20 @@ def main():
     print("Graph-Enhanced Sumerian NMT Data Augmentation")
     print("=" * 70)
 
+    if args.parallel:
+        workers = args.workers or get_optimal_workers()
+        print(f"Parallel mode: ENABLED ({workers} workers)")
+
     # Initialize augmentor
     augmentor = GraphAugmentor(min_frequency=args.min_frequency)
     augmentor.initialize()
 
     # Run pipeline
     if args.circle1_only:
-        pairs = augmentor.run_circle1(args.max_per_line)
+        if args.parallel:
+            pairs = augmentor.run_circle1_parallel(args.max_per_line, args.workers)
+        else:
+            pairs = augmentor.run_circle1(args.max_per_line)
         records = []
         for pair in pairs:
             token = ControlTokens.SILVER if pair.skeleton_similarity >= 0.95 else ControlTokens.AUG
@@ -377,7 +577,10 @@ def main():
                 "target": {"text": pair.target_text},
             })
     elif args.circle2_only:
-        pairs = augmentor.run_circle2(args.max_per_line)
+        if args.parallel:
+            pairs = augmentor.run_circle2_parallel(args.max_per_line, args.workers)
+        else:
+            pairs = augmentor.run_circle2(args.max_per_line)
         records = []
         for pair in pairs:
             token = ControlTokens.SILVER if pair.skeleton_similarity >= 0.95 else ControlTokens.AUG
@@ -386,10 +589,29 @@ def main():
                 "target": {"text": pair.target_text},
             })
     else:
-        records = augmentor.run_full_pipeline(args.max_per_line)
+        records = augmentor.run_full_pipeline(
+            args.max_per_line,
+            parallel=args.parallel,
+            num_workers=args.workers
+        )
 
-    # Export
-    augmentor.export_jsonl(args.output, records)
+    # Export based on output format
+    print("\n" + "=" * 70)
+    print("Exporting Output")
+    print("=" * 70)
+
+    parquet_dir = args.output.parent / "graph_augmented_parquet"
+
+    if args.output_format in ("jsonl", "both"):
+        augmentor.export_jsonl(args.output, records)
+
+    if args.output_format in ("parquet", "both"):
+        augmentor.export_parquet(
+            output_dir=parquet_dir,
+            records=records,
+            prefix="graph_augmented",
+            chunk_size=args.chunk_size,
+        )
 
     # Print statistics
     print("\n" + "=" * 70)

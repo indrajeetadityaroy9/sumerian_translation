@@ -9,9 +9,12 @@ This enables efficient lookup of:
 - All lines containing a specific entity
 - All entities in a specific line
 - Lines sharing entity patterns for augmentation
+
+Optimized for parallel loading on 52 vCPU systems.
 """
 
 import json
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, List, Optional, Set, Tuple
@@ -288,6 +291,87 @@ class EntityGraph:
             f"entities={self.stats['entities_unique']}, "
             f"edges={self.stats['edges']})"
         )
+
+
+def build_combined_graph_parallel(
+    etcsl_path: Path,
+    oracc_literary_path: Path,
+    oracc_royal_path: Path,
+    linker: EntityLinker,
+    verbose: bool = True
+) -> EntityGraph:
+    """
+    Build combined entity graph with parallel loading.
+
+    Loads ETCSL, ORACC literary, and ORACC royal corpora in parallel
+    using ThreadPoolExecutor for 2-3x speedup on initialization.
+
+    Args:
+        etcsl_path: Path to ETCSL parquet
+        oracc_literary_path: Path to ORACC literary parquet
+        oracc_royal_path: Path to ORACC royal parquet
+        linker: EntityLinker for ORACC entity resolution
+        verbose: Print progress
+
+    Returns:
+        Merged EntityGraph containing all three corpora
+    """
+    if verbose:
+        print("Building combined graph with parallel loading...")
+
+    # Define loading tasks
+    def load_etcsl():
+        if verbose:
+            print("  Loading ETCSL...")
+        graph = EntityGraph.from_etcsl(etcsl_path)
+        if verbose:
+            print(f"    ETCSL: {graph.stats['lines_total']} lines")
+        return graph
+
+    def load_oracc_literary():
+        if not oracc_literary_path.exists():
+            return None
+        if verbose:
+            print("  Loading ORACC literary...")
+        graph = EntityGraph.from_oracc(oracc_literary_path, linker, 'oracc_literary')
+        if verbose:
+            print(f"    ORACC literary: {graph.stats['lines_total']} lines")
+        return graph
+
+    def load_oracc_royal():
+        if not oracc_royal_path.exists():
+            return None
+        if verbose:
+            print("  Loading ORACC royal...")
+        graph = EntityGraph.from_oracc(oracc_royal_path, linker, 'oracc_royal')
+        if verbose:
+            print(f"    ORACC royal: {graph.stats['lines_total']} lines")
+        return graph
+
+    # Execute in parallel
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        etcsl_future = executor.submit(load_etcsl)
+        oracc_lit_future = executor.submit(load_oracc_literary)
+        oracc_royal_future = executor.submit(load_oracc_royal)
+
+        # Wait for all to complete
+        etcsl_graph = etcsl_future.result()
+        oracc_lit_graph = oracc_lit_future.result()
+        oracc_royal_graph = oracc_royal_future.result()
+
+    # Merge graphs
+    if verbose:
+        print("  Merging graphs...")
+
+    if oracc_lit_graph:
+        etcsl_graph.merge(oracc_lit_graph)
+    if oracc_royal_graph:
+        etcsl_graph.merge(oracc_royal_graph)
+
+    if verbose:
+        print(f"  Combined: {etcsl_graph}")
+
+    return etcsl_graph
 
 
 def main():

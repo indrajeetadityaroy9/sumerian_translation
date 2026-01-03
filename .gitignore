@@ -12,7 +12,8 @@ virtualenv/
 # ==============================
 # Claude Code Configuration
 # ==============================
-# CLAUDE.md is now tracked
+# CLAUDE.md is tracked, but plans directory is not
+.claude/
 
 # ==============================
 # Python cache / build artifacts
@@ -23,6 +24,7 @@ __pycache__/
 *.so
 *.egg
 *.egg-info/
+sumerian_nmt.egg-info/
 dist/
 build/
 eggs/
@@ -47,20 +49,42 @@ pip-delete-this-directory.txt
 # ==============================
 # Data Files and Directories
 # ==============================
-# Track zip archives for reproducibility
-# Uncompressed data directories (extracted from zips)
-data/final_llm_ready/
-data/consolidated/
-data/archive/
-data/raw_source/
+# Ignore contents of data subdirectories but track zip archives
+# For directories with zip archives we want to track, use pattern:
+# dir/*         - ignore all contents
+# !dir/*.zip    - but track zip files
+
+# data/final_llm_ready - track zip archives for reproducibility
+data/final_llm_ready/*
+!data/final_llm_ready/*.zip
+data/final_llm_ready/*_parquet/
+
+# data/consolidated - track zip (contains source parquets)
+data/consolidated/*
+!data/consolidated/*.zip
+
+# data/archive - track zip
+data/archive/*
+!data/archive/*.zip
+
+# data/raw_source - track zip
+data/raw_source/*
+!data/raw_source/*.zip
 
 # Raw source archives
 archives/
 !archives/.gitkeep
 
-# Generated output files (extracted from zips)
+# Generated output files and archives
 output/
-output_training_v2_clean/
+
+# output_training_v2_clean - track zip archives for reproducibility
+# Need to not ignore finetune dir so we can track zips inside it
+output_training_v2_clean/*
+!output_training_v2_clean/finetune/
+output_training_v2_clean/finetune/*
+!output_training_v2_clean/finetune/*.zip
+output_training_v2_clean/finetune/*_parquet/
 
 # ORACC raw data (if downloaded)
 ota_20/
@@ -68,7 +92,7 @@ ota_20/
 # ==============================
 # Large File Types
 # ==============================
-# Parquet data files
+# Parquet data files (use chunked parquet zips for reproducibility)
 *.parquet
 
 # Compressed archives (except .zip which we track for reproducibility)
@@ -79,9 +103,20 @@ ota_20/
 *.7z
 *.rar
 
-# Training data files
+# Training data files (JSONL)
 *.jsonl
 *.jsonl.gz
+
+# Training data files (JSON) - use parquet instead for reproducibility
+# These are large dataset JSON files, not config files
+data/**/*.json
+output/**/*.json
+output_training_v2_clean/**/*.json
+!**/*_metadata.json
+!**/stats.json
+
+# BUT track parquet metadata JSON files for reproducibility
+!*_metadata.json
 
 # Model weights and checkpoints
 *.pt
@@ -102,8 +137,14 @@ ota_20/
 # ==============================
 models/
 !models/.gitkeep
+models_llm/
+!models_llm/.gitkeep
 checkpoints/
 !checkpoints/.gitkeep
+
+# Axolotl/training run artifacts
+last_run_prepared/
+prepared/
 
 # Specific checkpoint patterns
 **/checkpoint-*/
@@ -128,6 +169,7 @@ lightning_logs/
 # ==============================
 # Keep report templates but ignore generated reports
 academic_report.md
+llm_evaluation_report.md
 **/audit/*.csv
 **/eval_*.md
 

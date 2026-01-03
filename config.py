@@ -8,6 +8,7 @@ Supports both:
 All paths and configurations for training, evaluation, and inference.
 """
 
+import re
 from pathlib import Path
 
 
@@ -135,7 +136,7 @@ class LLMConfig:
         """Format a prompt in Llama-3 Instruct format."""
         return f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
 
-{cls.SYSTEM_PROMPT}<|eot_id|><|start_header_id|>user<|end_header_id|}
+{cls.SYSTEM_PROMPT}<|eot_id|><|start_header_id|>user<|end_header_id|>
 
 {instruction}
 
@@ -185,6 +186,21 @@ class ControlTokens:
     SILVER = "<silver>"  # High-confidence matches (skeleton >= 95%)
     AUG = "<aug>"        # Entity substitution augmented
     GLOSS = "<gloss>"    # Glossary-based augmented
+
+    # Compiled patterns for text cleaning and validation
+    PATTERN = re.compile(r'<(?:gold|aug|silver|gloss)>\s*')
+
+    # Extended patterns to catch variants (whitespace, case variations)
+    VARIANTS = [
+        re.compile(r'<gold>', re.IGNORECASE),
+        re.compile(r'<aug>', re.IGNORECASE),
+        re.compile(r'<silver>', re.IGNORECASE),
+        re.compile(r'<gloss>', re.IGNORECASE),
+        re.compile(r'<\s*gold\s*>', re.IGNORECASE),
+        re.compile(r'<\s*aug\s*>', re.IGNORECASE),
+        re.compile(r'<\s*silver\s*>', re.IGNORECASE),
+        re.compile(r'<\s*gloss\s*>', re.IGNORECASE),
+    ]
 
 
 # =============================================================================

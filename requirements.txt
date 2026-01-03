@@ -1,58 +1,61 @@
-# Sumerian NMT Dependencies
+# Sumerian NMT Dependencies (H100/CUDA 12.1+ Optimized)
 # Install with: pip install -r requirements.txt
 # Or use: pip install -e . (with pyproject.toml)
 
 # =============================================================================
-# PyTorch - Core deep learning framework
+# PyTorch - Core deep learning framework (H100/CUDA 12.1+)
 # =============================================================================
-# For CUDA support, install separately with appropriate CUDA version:
-# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-torch>=2.0
+torch>=2.2.0
+torchvision
+torchaudio
 
 # =============================================================================
-# HuggingFace Ecosystem
+# LLM Training Stack (Axolotl + Flash Attention)
 # =============================================================================
-transformers>=4.30
-datasets>=2.14
-accelerate>=0.21
-sentencepiece>=0.1.99
-protobuf>=3.20
+transformers>=4.40.0
+accelerate>=0.30.0
+peft>=0.10.0
+bitsandbytes>=0.43.0
+datasets
+trl>=0.8.0
+
+# Axolotl - LLM fine-tuning framework
+# Install separately: pip install axolotl[flash-attn,deepspeed]
+# Or: pip install 'axolotl[flash-attn,deepspeed] @ git+https://github.com/OpenAccess-AI-Collective/axolotl'
+
+# Flash Attention 2 (H100/A100 optimized)
+# Requires: pip install ninja packaging
+# Then: pip install flash-attn>=2.5.0 --no-build-isolation
+flash-attn>=2.5.0
+
+# =============================================================================
+# Graph Augmentation & Data Processing
+# =============================================================================
+networkx>=3.1
+python-Levenshtein>=0.21
+pandas>=2.0
+numpy>=1.24
+scipy
+pyarrow>=12.0
+lxml>=4.9
 
 # =============================================================================
 # Evaluation Metrics
 # =============================================================================
-evaluate>=0.4
 sacrebleu>=2.3
+evaluate>=0.4
 bert-score>=0.3.13
-
-# =============================================================================
-# Data Processing
-# =============================================================================
-pandas>=2.0
-pyarrow>=12.0
-lxml>=4.9
-numpy>=1.24
+absl-py
+rouge_score
 
 # =============================================================================
 # Utilities
 # =============================================================================
 tqdm>=4.65
+sentencepiece>=0.1.99
+protobuf>=3.20
 
 # =============================================================================
-# Graph Augmentation (for entity substitution pipeline)
-# =============================================================================
-networkx>=3.1
-python-Levenshtein>=0.21
-
-# =============================================================================
-# Tokenizer Experiments (Morfessor, ByT5 testing)
+# Tokenizer Experiments
 # =============================================================================
 morfessor>=2.0
-
-# =============================================================================
-# Optional: Flash Attention 2 (for faster inference on H100/A100)
-# =============================================================================
-# Requires separate installation:
-# pip install ninja packaging
-# pip install flash-attn --no-build-isolation

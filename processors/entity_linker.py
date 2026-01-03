@@ -70,58 +70,225 @@ class EntityLinker:
 
     # Manual alias mappings: Surface Form -> Glossary Citation Form
     # Handles philological mismatches between text forms and dictionary headwords
+    # P2-2 fix: Expanded with more royal names, geographic names, and common variants
     MANUAL_ALIASES = {
+        # Divine Names (DN)
         # Inanna variants -> Inanak (the glossary form)
         'inanna': 'Inanak',
         '{d}inanna': 'Inanak',
         'inana': 'Inanak',
         '{d}inana': 'Inanak',
-        # Nippur/Nibru (Settlement Name)
-        'nibru': 'Nibru',
-        'nibru{ki}': 'Nibru',
-        '{ki}nibru': 'Nibru',
-        'nippur': 'Nibru',
-        # Enlil variants (backup)
+        # Enlil variants
         'en-lil': 'Enlil',
         'en-lil2': 'Enlil',
         '{d}en-lil': 'Enlil',
         '{d}en-lil2': 'Enlil',
+        'enlil': 'Enlil',
+        '{d}enlil': 'Enlil',
         # Enki variants
         'en-ki': 'Enkik',
         '{d}en-ki': 'Enkik',
         'enki': 'Enkik',
+        '{d}enki': 'Enkik',
         # Utu variants
         '{d}utu': 'Utu',
+        'utu': 'Utu',
         # Nanna/Suen variants
         '{d}nanna': 'Nanna',
+        'nanna': 'Nanna',
         '{d}suen': 'Suen',
         'su-en': 'Suen',
         '{d}su-en': 'Suen',
-        # Common geographic names
-        'unug': 'Unug',  # Uruk
-        'urim': 'Urim',  # Ur
-        'uri': 'Urim',
+        'suen': 'Suen',
+        # Ninlil variants
+        '{d}nin-lil': 'Ninlil',
+        '{d}nin-lil2': 'Ninlil',
+        'nin-lil': 'Ninlil',
+        'ninlil': 'Ninlil',
+        # Ninhursag variants
+        '{d}nin-hur-sag': 'Ninhursag',
+        '{d}ninhursag': 'Ninhursag',
+        'ninhursag': 'Ninhursag',
+        # Ninurta variants
+        '{d}nin-urta': 'Ninurta',
+        '{d}ninurta': 'Ninurta',
+        'ninurta': 'Ninurta',
+        # Ningirsu variants
+        '{d}nin-gir2-su': 'Ningirsu',
+        '{d}ningirsu': 'Ningirsu',
+        'ningirsu': 'Ningirsu',
+        # Dumuzid variants
+        '{d}dumu-zid': 'Dumuzid',
+        '{d}dumuzid': 'Dumuzid',
+        'dumuzid': 'Dumuzid',
+        'dumuzi': 'Dumuzid',
+        '{d}dumuzi': 'Dumuzid',
+        # Ereshkigal variants
+        '{d}eresh-ki-gal': 'Ereškigal',
+        '{d}ereshkigal': 'Ereškigal',
+        'ereshkigal': 'Ereškigal',
+
+        # Royal Names (RN)
+        # Shulgi variants
+        'szul-gi': 'Šulgi',
+        '{d}szul-gi': 'Šulgi',
+        'sulgi': 'Šulgi',
+        'shulgi': 'Šulgi',
+        '{d}shulgi': 'Šulgi',
+        # Ur-Namma variants
+        'ur-{d}namma': 'Urnamma',
+        'ur-namma': 'Urnamma',
+        'ur-nammu': 'Urnamma',
+        '{d}ur-namma': 'Urnamma',
+        'urnamma': 'Urnamma',
+        # Gudea variants
+        'gu3-de2-a': 'Gudea',
+        'gudea': 'Gudea',
+        # Gilgamesh variants
+        '{d}gilgamesh': 'Gilgameš',
+        'gilgamesh': 'Gilgameš',
+        '{d}bilgames': 'Gilgameš',
+        'bilgames': 'Gilgameš',
+        'bilgamesh': 'Gilgameš',
+        # Enmerkar variants
+        'en-me-er-kar2': 'Enmerkar',
+        'enmerkar': 'Enmerkar',
+        # Lugalbanda variants
+        'lugal-ban3-da': 'Lugalbanda',
+        'lugalbanda': 'Lugalbanda',
+        '{d}lugal-ban3-da': 'Lugalbanda',
+        # Sargon variants
+        'szar-ru-gi': 'Šarrugi',
+        'sargon': 'Šarrugi',
+        # Naram-Sin variants
+        'na-ra-am-{d}suen': 'Naramsin',
+        'naram-sin': 'Naramsin',
+        'naramsin': 'Naramsin',
+        # Ibbi-Sin variants
+        'ib-bi-{d}suen': 'Ibbisuen',
+        'ibbi-sin': 'Ibbisuen',
+        'ibbisuen': 'Ibbisuen',
+        # Amar-Sin variants
+        'amar-{d}suen': 'Amarsuen',
+        'amar-sin': 'Amarsuen',
+        'amarsin': 'Amarsuen',
+        # Shu-Sin variants
+        'szu-{d}suen': 'Šusuen',
+        'shu-sin': 'Šusuen',
+        'shusuen': 'Šusuen',
+        # Lipit-Ishtar variants
+        'li-pi2-it-esz4-tar2': 'Lipiteštar',
+        'lipit-ishtar': 'Lipiteštar',
+        'lipitishtar': 'Lipiteštar',
+        # Ishme-Dagan variants
+        'isz-me-{d}da-gan': 'Išmedagan',
+        'ishme-dagan': 'Išmedagan',
+        'ishmedagan': 'Išmedagan',
+        # Iddin-Dagan variants
+        'i-din-{d}da-gan': 'Iddindagan',
+        'iddin-dagan': 'Iddindagan',
+        'iddindagan': 'Iddindagan',
+
+        # Geographic Names (GN)
+        # Nippur/Nibru
+        'nibru': 'Nibru',
+        'nibru{ki}': 'Nibru',
+        '{ki}nibru': 'Nibru',
+        'nippur': 'Nibru',
+        # Uruk/Unug
+        'unug': 'Unug',
+        'unug{ki}': 'Unug',
+        '{ki}unug': 'Unug',
+        'uruk': 'Unug',
+        # Ur/Urim
+        'urim': 'Urim',
+        'urim2': 'Urim',
+        'urim{ki}': 'Urim',
         '{ki}urim': 'Urim',
+        'uri': 'Urim',
+        'ur': 'Urim',
+        '{ki}uri': 'Urim',
+        # Eridu
         'eridu': 'Eridug',
         '{ki}eridu': 'Eridug',
         'eridug': 'Eridug',
-        # Akkad
+        '{ki}eridug': 'Eridug',
+        # Akkad/Agade
         'agade': 'Akkad',
         '{ki}agade': 'Akkad',
+        'akkad': 'Akkad',
+        'akkade': 'Akkad',
+        # Lagash
+        'lagasz': 'Lagaš',
+        '{ki}lagasz': 'Lagaš',
+        'lagash': 'Lagaš',
+        # Girsu
+        'gir2-su': 'Girsu',
+        '{ki}gir2-su': 'Girsu',
+        'girsu': 'Girsu',
+        # Umma
+        'umma': 'Umma',
+        '{ki}umma': 'Umma',
+        # Larsa
+        'larsa': 'Larsa',
+        '{ki}larsa': 'Larsa',
+        # Isin
+        'i3-si-in': 'Isin',
+        '{ki}i3-si-in': 'Isin',
+        'isin': 'Isin',
+        # Kish
+        'kisz': 'Kiš',
+        '{ki}kisz': 'Kiš',
+        'kish': 'Kiš',
+        # Sippar
+        'sippar': 'Sippar',
+        '{ki}sippar': 'Sippar',
+        'zimbir': 'Sippar',
+        # Babylon
+        'babilla': 'Babilla',
+        '{ki}babilla': 'Babilla',
+        'babylon': 'Babilla',
+        # Dilmun
+        'dilmun': 'Dilmun',
+        '{ki}dilmun': 'Dilmun',
+        # Meluhha
+        'meluhha': 'Meluḫḫa',
+        '{ki}meluhha': 'Meluḫḫa',
+        'meluḫḫa': 'Meluḫḫa',
+        # Magan
+        'magan': 'Magan',
+        '{ki}magan': 'Magan',
+        # Elam
+        'elam': 'Elam',
+        '{ki}elam': 'Elam',
+        # Aratta
+        'aratta': 'Aratta',
+        '{ki}aratta': 'Aratta',
+        # Ekur (temple complex at Nippur)
+        'e2-kur': 'Ekur',
+        'ekur': 'Ekur',
+        # Eanna (temple at Uruk)
+        'e2-an-na': 'Eanna',
+        'eanna': 'Eanna',
+        # Abzu (Enki's temple at Eridu)
+        'abzu': 'Abzu',
+        'ab-zu': 'Abzu',
     }
 
-    def __init__(self, glossary_path: Optional[Path] = None):
+    def __init__(self, glossary_path: Optional[Path] = None, log_failed_lookups: bool = False):
         """
         Initialize entity linker with glossary data.
 
         Args:
             glossary_path: Path to glossary parquet file. If None, uses default from config.
+            log_failed_lookups: If True, log failed lookups to file for review (P2-2 fix)
         """
         if glossary_path is None:
             from config import Paths
             glossary_path = Paths.GLOSSARY_PARQUET
 
         self.glossary_path = Path(glossary_path)
+        self.log_failed_lookups = log_failed_lookups
 
         # Primary lookup: exact citation_form -> Entity
         self._exact_index: Dict[str, Entity] = {}
@@ -131,6 +298,9 @@ class EntityLinker:
 
         # Type-based index for substitution candidates
         self._by_type: Dict[str, List[Entity]] = {t: [] for t in self.ENTITY_TYPES}
+
+        # Failed lookup tracking (P2-2 fix)
+        self._failed_lookups: Dict[str, int] = {}  # lemma -> count
 
         # Statistics
         self.stats = {
@@ -285,8 +455,45 @@ class EntityLinker:
             self.stats['lookup_normalized'] += 1
             return result
 
+        # P2-2 fix: Track failed lookups for review
         self.stats['lookup_failed'] += 1
+        if self.log_failed_lookups:
+            self._failed_lookups[lemma] = self._failed_lookups.get(lemma, 0) + 1
+
         return None
+
+    def save_failed_lookups(self, output_path: Path) -> None:
+        """
+        Save failed lookup log to file for review.
+
+        P2-2 fix: Enables analysis of failed lookups to expand alias list.
+
+        Args:
+            output_path: Path to save failed lookups (sorted by frequency)
+        """
+        if not self._failed_lookups:
+            print("No failed lookups to save.")
+            return
+
+        # Sort by frequency (most frequent failures first)
+        sorted_failures = sorted(
+            self._failed_lookups.items(),
+            key=lambda x: x[1],
+            reverse=True
+        )
+
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write("# Failed Entity Lookups\n")
+            f.write("# Format: lemma<TAB>count\n")
+            f.write("# Review these to expand MANUAL_ALIASES\n\n")
+            for lemma, count in sorted_failures:
+                f.write(f"{lemma}\t{count}\n")
+
+        print(f"Saved {len(sorted_failures)} failed lookups to {output_path}")
+
+    def get_failed_lookups(self) -> Dict[str, int]:
+        """Get dictionary of failed lookups and their counts."""
+        return dict(self._failed_lookups)
 
     def get_type(self, lemma: str) -> Optional[str]:
         """Get entity type (DN, RN, GN) for a lemma."""
