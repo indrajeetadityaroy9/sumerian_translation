@@ -103,14 +103,26 @@ sumerian-dpo --parallel --output-format both
 
 After `pip install -e .`, these commands are available:
 
+| Command | Module | Purpose |
+|---------|--------|---------|
+| `sumerian-extract` | `data_ingestion.extractor` | Extract ETCSL corpus from XML |
+| `sumerian-prepare` | `data_processing.splitter` | Create train/valid split |
+| `sumerian-augment` | `graph_augmentation.pipeline` | Run entity substitution |
+| `sumerian-consolidate` | `data_processing.alpaca_formatter` | Convert to Alpaca format |
+| `sumerian-dpo` | `data_processing.dpo_generator` | Create DPO pairs |
+| `sumerian-evaluate` | `evaluation.llm_evaluator` | Evaluate model |
+| `sumerian-compare` | `evaluation.model_comparison` | Compare models |
+
+### Automation Scripts
+
 ```bash
-sumerian-extract    # sumerian_nmt.data_ingestion.extractor
-sumerian-prepare    # sumerian_nmt.data_processing.splitter
-sumerian-augment    # sumerian_nmt.graph_augmentation.pipeline
-sumerian-consolidate # sumerian_nmt.data_processing.alpaca_formatter
-sumerian-dpo        # sumerian_nmt.data_processing.dpo_generator
-sumerian-evaluate   # sumerian_nmt.evaluation.llm_evaluator
-sumerian-compare    # sumerian_nmt.evaluation.model_comparison
+# Run full pipeline (setup + data processing)
+./scripts/run_all.sh
+
+# Individual steps
+./scripts/00_setup.sh         # Create venv, install dependencies
+./scripts/01_extract_corpus.sh # Extract and prepare corpus
+./scripts/03_augment.sh       # Run graph augmentation
 ```
 
 ### Parquet Output for Reproducibility
@@ -181,19 +193,6 @@ from sumerian_nmt.utils.validation import (
 )
 ```
 
-### Key Modules
-
-| Module | Purpose |
-|--------|---------|
-| `sumerian_nmt.config` | Central config: `Paths`, `LLMConfig`, `ControlTokens` |
-| `sumerian_nmt.utils.io` | JSONL and chunked Parquet I/O utilities |
-| `sumerian_nmt.utils.text` | Text cleaning and normalization |
-| `sumerian_nmt.utils.metrics` | BLEU/chrF computation |
-| `sumerian_nmt.graph_augmentation` | **NOVEL**: Two-Circle entity substitution |
-| `sumerian_nmt.data_ingestion` | ETCSL/ORACC corpus extraction |
-| `sumerian_nmt.data_processing` | Training data preparation |
-| `sumerian_nmt.evaluation` | LLM evaluation with WMT metrics |
-
 ### Data Formats
 
 **SFT (Alpaca format)** - `data/final_llm_ready/sft_train.json`:
@@ -252,3 +251,5 @@ isort .
 ruff check .
 mypy .
 ```
+
+Line length is 100 characters (configured in pyproject.toml).

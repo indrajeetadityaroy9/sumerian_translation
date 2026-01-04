@@ -1,61 +1,39 @@
-# Sumerian NMT Dependencies (H100/CUDA 12.1+ Optimized)
-# Install with: pip install -r requirements.txt
-# Or use: pip install -e . (with pyproject.toml)
+# --- Core Deep Learning (H100 Optimized) ---
+# Note: Torch installation handled via --index-url in setup script
+torch>=2.4.0
+torchvision>=0.19.0
+torchaudio>=2.4.0
+accelerate>=0.33.0
 
-# =============================================================================
-# PyTorch - Core deep learning framework (H100/CUDA 12.1+)
-# =============================================================================
-torch>=2.2.0
-torchvision
-torchaudio
+# --- LLM Engine & Inference ---
+transformers>=4.43.0         # Required for Llama-3.1
+peft>=0.12.0                 # For loading LoRA adapters
+bitsandbytes>=0.43.1         # For 4-bit/8-bit quantization/loading
+triton>=3.0.0                # Kernel optimization
 
-# =============================================================================
-# LLM Training Stack (Axolotl + Flash Attention)
-# =============================================================================
-transformers>=4.40.0
-accelerate>=0.30.0
-peft>=0.10.0
-bitsandbytes>=0.43.0
-datasets
-trl>=0.8.0
+# --- Evaluation Metrics (WMT Standards) ---
+sacrebleu>=2.4.2             # The standard for BLEU
+rouge_score>=0.1.2           # For ROUGE-L
+bert_score>=0.3.13           # Semantic Similarity
+evaluate>=0.4.2              # HuggingFace Metric Wrapper
+scikit-learn>=1.5.0          # For Bootstrap Resampling (Significance)
+scipy>=1.14.0                # Statistical functions
 
-# Axolotl - LLM fine-tuning framework
-# Install separately: pip install axolotl[flash-attn,deepspeed]
-# Or: pip install 'axolotl[flash-attn,deepspeed] @ git+https://github.com/OpenAccess-AI-Collective/axolotl'
+# --- Data Processing & Graph Engine ---
+networkx>=3.3                # For the Augmentation Graph
+python-Levenshtein>=0.25.1   # For Skeleton Similarity & Fuzzy Matching
+pandas>=2.2.2                # Data manipulation
+numpy>=1.26.4                # Math operations
+pyarrow>=17.0.0              # Parquet file I/O
+datasets>=2.20.0             # HF Dataset handling
 
-# Flash Attention 2 (H100/A100 optimized)
-# Requires: pip install ninja packaging
-# Then: pip install flash-attn>=2.5.0 --no-build-isolation
-flash-attn>=2.5.0
+# --- Utilities ---
+tqdm>=4.66.4                 # Progress bars
+protobuf>=5.27.2             # Serialization
+sentencepiece>=0.2.0         # Tokenizer backend (legacy mT5)
+huggingface_hub>=0.24.0      # Auth for gated models
 
-# =============================================================================
-# Graph Augmentation & Data Processing
-# =============================================================================
-networkx>=3.1
-python-Levenshtein>=0.21
-pandas>=2.0
-numpy>=1.24
-scipy
-pyarrow>=12.0
-lxml>=4.9
-
-# =============================================================================
-# Evaluation Metrics
-# =============================================================================
-sacrebleu>=2.3
-evaluate>=0.4
-bert-score>=0.3.13
-absl-py
-rouge_score
-
-# =============================================================================
-# Utilities
-# =============================================================================
-tqdm>=4.65
-sentencepiece>=0.1.99
-protobuf>=3.20
-
-# =============================================================================
-# Tokenizer Experiments
-# =============================================================================
-morfessor>=2.0
+# --- Development ---
+pytest>=8.3.0                # Unit testing
+black>=24.4.2                # Formatting
+isort>=5.13.2                # Import sorting
