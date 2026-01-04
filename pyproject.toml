@@ -107,29 +107,29 @@ all = [
 
 [project.scripts]
 # Data Pipeline
-sumerian-extract = "etcsl_extractor.main:main"
-sumerian-prepare = "processors.prepare_training_data:main"
-sumerian-augment = "processors.graph_augmentor:main"
-sumerian-consolidate = "processors.consolidate_for_llm:main"
-sumerian-dpo = "processors.create_dpo_pairs:main"
+sumerian-extract = "sumerian_nmt.data_ingestion.extractor:main"
+sumerian-prepare = "sumerian_nmt.data_processing.splitter:main"
+sumerian-augment = "sumerian_nmt.graph_augmentation.pipeline:main"
+sumerian-consolidate = "sumerian_nmt.data_processing.alpaca_formatter:main"
+sumerian-dpo = "sumerian_nmt.data_processing.dpo_generator:main"
 # Evaluation
-sumerian-evaluate = "evaluation.evaluate_llm:main"
-sumerian-compare = "evaluation.compare_models:main"
+sumerian-evaluate = "sumerian_nmt.evaluation.llm_evaluator:main"
+sumerian-compare = "sumerian_nmt.evaluation.model_comparison:main"
 
 [tool.setuptools]
+package-dir = {"" = "src"}
 packages = [
-    "common",
-    "processors",
-    "processors.graph_engine",
-    "etcsl_extractor",
-    "etcsl_extractor.parsers",
-    "etcsl_extractor.exporters",
-    "etcsl_extractor.processors",
-    "etcsl_extractor.utils",
-    "evaluation",
-]
-py-modules = [
-    "config",
+    "sumerian_nmt",
+    "sumerian_nmt.graph_augmentation",
+    "sumerian_nmt.data_ingestion",
+    "sumerian_nmt.data_ingestion.parsers",
+    "sumerian_nmt.data_ingestion.exporters",
+    "sumerian_nmt.data_ingestion.processors",
+    "sumerian_nmt.data_ingestion.utils",
+    "sumerian_nmt.data_processing",
+    "sumerian_nmt.evaluation",
+    "sumerian_nmt.baselines",
+    "sumerian_nmt.utils",
 ]
 
 [tool.setuptools.package-data]
